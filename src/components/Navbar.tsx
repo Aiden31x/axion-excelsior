@@ -9,12 +9,12 @@ export default function Navbar() {
   const [partnersDropdown, setPartnersDropdown] = useState(false);
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <nav className="bg-white/95 backdrop-blur-md shadow-lg border-b border-purple-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center hover-lift">
               <div className="w-15 h-15 relative">
                 <Image
                   src="/logo4.png"
@@ -25,7 +25,7 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <span className="ml-3 text-xl font-semibold text-gray-900">
+              <span className="ml-3 text-xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Axion Excelsior
               </span>
             </Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
               <div className="relative">
                 <button
                   onClick={() => setSchoolsDropdown(!schoolsDropdown)}
-                  className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium flex items-center"
+                  className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium flex items-center transition-colors duration-200"
                 >
                   Schools
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,11 +46,11 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {schoolsDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-lg border border-gray-200">
-                    <Link href="/services#lms" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+                  <div className="absolute top-full left-0 mt-1 w-48 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
+                    <Link href="/services#lms" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       K-12 Schools
                     </Link>
-                    <Link href="/services#lms" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+                    <Link href="/services#lms" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       Higher Education
                     </Link>
                   </div>
@@ -61,7 +61,7 @@ export default function Navbar() {
               <div className="relative">
                 <button
                   onClick={() => setPartnersDropdown(!partnersDropdown)}
-                  className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium flex items-center"
+                  className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium flex items-center transition-colors duration-200"
                 >
                   Application Partners
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,27 +69,27 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {partnersDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-lg border border-gray-200">
-                    <Link href="/services#driving" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+                  <div className="absolute top-full left-0 mt-1 w-48 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
+                    <Link href="/services#driving" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       Driving Schools
                     </Link>
-                    <Link href="/services#aviation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+                    <Link href="/services#aviation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       Aviation Institutes
                     </Link>
-                    <Link href="/services#manufacturing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+                    <Link href="/services#manufacturing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       Manufacturing
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link href="/services" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              <Link href="/services" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
                 Our Services
               </Link>
-              <Link href="/about" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              <Link href="/about" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
                 About Us
               </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              <Link href="/contact" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
                 Contact
               </Link>
             </div>
@@ -97,8 +97,7 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-           
-            <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+            <Link href="/contact" className="bg-gradient-purple-blue hover:opacity-90 text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover-lift shadow-lg">
               Request Demo
             </Link>
           </div>
@@ -107,7 +106,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 hover:text-blue-600 focus:outline-none"
+              className="text-gray-700 hover:text-purple-600 focus:outline-none transition-colors duration-200"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -120,20 +119,17 @@ export default function Navbar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-            <Link href="/services" className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md border-t border-purple-100">
+            <Link href="/services" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors duration-200">
               Our Services
             </Link>
-            <Link href="/about" className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600">
+            <Link href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors duration-200">
               About Us
             </Link>
-            <Link href="/contact" className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600">
+            <Link href="/contact" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors duration-200">
               Contact
             </Link>
-            <Link href="/login" className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600">
-              Login
-            </Link>
-            <Link href="/contact" className="block px-3 py-2 text-base font-medium bg-blue-600 text-white rounded-lg">
+            <Link href="/contact" className="block px-3 py-2 text-base font-medium bg-gradient-purple-blue text-white rounded-xl mx-3 mt-2 text-center hover-lift shadow-lg">
               Request Demo
             </Link>
           </div>

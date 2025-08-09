@@ -36,24 +36,25 @@ export default function CustomerSegments() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Who We Serve
+            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              Who We Serve
+            </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Specialized solutions for diverse training environments across Canada
           </p>
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex flex-wrap justify-center mb-12 border-b border-gray-200">
+        <div className="flex flex-wrap justify-center mb-12 border-b border-purple-200">
           {segments.map((segment) => (
             <button
               key={segment.id}
               onClick={() => setActiveTab(segment.id)}
-              className={`px-6 py-3 font-medium text-sm border-b-2 transition-colors ${
-                activeTab === segment.id
-                  ? 'border-blue-600 text-blue-600'
-                  : 'border-transparent text-gray-600 hover:text-blue-600'
-              }`}
+              className={`px-6 py-3 font-medium text-sm border-b-2 transition-all duration-300 ${activeTab === segment.id
+                  ? 'border-purple-600 text-purple-600 bg-purple-50 rounded-t-lg'
+                  : 'border-transparent text-gray-600 hover:text-purple-600 hover:bg-purple-50/50 rounded-t-lg'
+                }`}
             >
               {segment.title}
             </button>
@@ -74,7 +75,7 @@ export default function CustomerSegments() {
                 <ul className="space-y-3">
                   {segment.features.map((feature, index) => (
                     <li key={index} className="flex items-center">
-                      <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-purple-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-gray-700">{feature}</span>
@@ -82,9 +83,9 @@ export default function CustomerSegments() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
-                <div className="aspect-square bg-white rounded-xl shadow-lg flex items-center justify-center">
-                  <div className="text-6xl">
+              <div className="bg-gradient-light-purple rounded-3xl p-8 hover-lift">
+                <div className="aspect-square bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl flex items-center justify-center">
+                  <div className="text-6xl animate-float">
                     {segment.id === 'schools' && '🎓'}
                     {segment.id === 'driving' && '🚗'}
                     {segment.id === 'aviation' && '✈️'}

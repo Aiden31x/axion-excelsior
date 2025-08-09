@@ -1,2 +1,53 @@
 @import "tailwindcss";
 
+/* Custom CSS Variables for the Purple-Blue Theme */
+:root {
+    --primary-purple: #7c3aed;
+    --primary-purple-light: #a855f7;
+    --accent-blue: #3b82f6;
+    --accent-orange: #f97316;
+    --accent-pink: #ec4899;
+    --gradient-purple-blue: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+    --gradient-purple-pink: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    --gradient-light-purple: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+}
+
+/* Custom gradient classes */
+.bg-gradient-purple-blue {
+    background: var(--gradient-purple-blue);
+}
+
+.bg-gradient-purple-pink {
+    background: var(--gradient-purple-pink);
+}
+
+.bg-gradient-light-purple {
+    background: var(--gradient-light-purple);
+}
+
+/* Custom animations for modern feel */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Custom hover effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(124, 58, 237, 0.15);
+}
