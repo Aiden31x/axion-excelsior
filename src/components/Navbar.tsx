@@ -17,7 +17,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center hover-lift">
               <div className="w-15 h-15 relative">
                 <Image
-                  src="/logo4.png"
+                  src="/logo5.png"
                   alt="Axion Excelsior Logo"
                   width={100}
                   height={100}
@@ -25,7 +25,7 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <span className="ml-3 text-xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="ml-3 text-xl font-semibold text-gray-700 ">
                 Axion Excelsior
               </span>
             </Link>
