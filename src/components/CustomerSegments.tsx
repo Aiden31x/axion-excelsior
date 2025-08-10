@@ -1,30 +1,35 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const segments = [
   {
     id: 'schools',
     title: 'K–12 Schools',
     description: 'Comprehensive learning management systems designed for Canadian curriculum standards with bilingual support and provincial compliance.',
-    features: ['Assessment & Grading', 'Attendance Tracking', 'Parent Portals', 'Curriculum Alignment']
+    features: ['Assessment & Grading', 'Attendance Tracking', 'Parent Portals', 'Curriculum Alignment'],
+    image: '/schools-training.png' // You'll need to add this image
   },
   {
     id: 'driving',
     title: 'Driving Academies',
     description: 'Complete management solutions for driving schools including online booking, instructor management, and ministry compliance reporting.',
-    features: ['Online Booking', 'License Tracking', 'Instructor Scheduling', 'Progress Reports']
+    features: ['Online Booking', 'License Tracking', 'Instructor Scheduling', 'Progress Reports'],
+    image: '/driving-training.png' // You'll need to add this image
   },
   {
     id: 'aviation',
     title: 'Aviation Institutes',
     description: 'Specialized training platforms for flight schools with simulator integration and Transport Canada compliance.',
-    features: ['Flight Simulator Integration', 'Pilot Logbooks', 'Safety Tracking', 'Certification Management']
+    features: ['Flight Simulator Integration', 'Pilot Logbooks', 'Safety Tracking', 'Certification Management'],
+    image: '/aviation-training.jpeg' // You'll need to add this image
   },
   {
     id: 'manufacturing',
     title: 'Manufacturing Companies',
     description: 'Digital training solutions for manufacturing sectors including interactive manuals and safety certification programs.',
-    features: ['Interactive Manuals', 'Safety Certification', 'Onboarding Programs', 'Compliance Tracking']
+    features: ['Interactive Manuals', 'Safety Certification', 'Onboarding Programs', 'Compliance Tracking'],
+    image: '/manufacturing-training.jpeg' // You'll need to add this image
   }
 ];
 
@@ -52,8 +57,8 @@ export default function CustomerSegments() {
               key={segment.id}
               onClick={() => setActiveTab(segment.id)}
               className={`px-6 py-3 font-medium text-sm border-b-2 transition-all duration-300 ${activeTab === segment.id
-                  ? 'border-purple-600 text-purple-600 bg-purple-50 rounded-t-lg'
-                  : 'border-transparent text-gray-600 hover:text-purple-600 hover:bg-purple-50/50 rounded-t-lg'
+                ? 'border-purple-600 text-purple-600 bg-purple-50 rounded-t-lg'
+                : 'border-transparent text-gray-600 hover:text-purple-600 hover:bg-purple-50/50 rounded-t-lg'
                 }`}
             >
               {segment.title}
@@ -84,13 +89,15 @@ export default function CustomerSegments() {
                 </ul>
               </div>
               <div className="bg-gradient-light-purple rounded-3xl p-8 hover-lift">
-                <div className="aspect-square bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl flex items-center justify-center">
-                  <div className="text-6xl animate-float">
-                    {segment.id === 'schools' && '🎓'}
-                    {segment.id === 'driving' && '🚗'}
-                    {segment.id === 'aviation' && '✈️'}
-                    {segment.id === 'manufacturing' && '🏭'}
-                  </div>
+                <div className="aspect-square bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl flex items-center justify-center overflow-hidden">
+                  <Image
+                    src={segment.image}
+                    alt={`${segment.title} training`}
+                    width={300}
+                    height={300}
+                    className="w-full h-full object-cover animate-float"
+                    priority
+                  />
                 </div>
               </div>
             </div>
