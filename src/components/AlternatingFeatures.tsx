@@ -5,7 +5,7 @@ import Image from 'next/image';
 const features = [
     {
         id: 'bilingual',
-        title: 'Bilingual & Compliance Ready',
+        title: 'Bilingual Support',
         description: 'Seamlessly deliver training in both English and French while ensuring full compliance with Canadian standards and regulations.',
         image: '/bilingual-final.png', // Replace with your image path
         imagePosition: 'left',
@@ -89,7 +89,7 @@ export default function AlternatingFeatures() {
                         </span>
                     </h2>
                     <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                        Discover what makes Axion Excelsior the go-to choice for advanced digital training in Canada.
+                        Discover what makes ExcelsiorTech the go-to choice for advanced digital training in Canada.
                     </p>
                 </div>
 

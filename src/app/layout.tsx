@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Axion Excelsior',
+  title: 'ExcelsiorTech',
   description: 'Transforming training through digital solutions across schools, aviation, driving & manufacturing',
 };
 

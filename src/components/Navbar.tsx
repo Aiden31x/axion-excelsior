@@ -18,7 +18,7 @@ export default function Navbar() {
               <div className="w-15 h-15 relative">
                 <Image
                   src="/logo5.png"
-                  alt="Axion Excelsior Logo"
+                  alt="ExcelsiorTech Logo"
                   width={100}
                   height={100}
                   className="object-contain"
@@ -26,7 +26,7 @@ export default function Navbar() {
                 />
               </div>
               <span className="ml-3 text-xl font-semibold text-gray-700 ">
-                Axion Excelsior
+                ExcelsiorTech
               </span>
             </Link>
           </div>
