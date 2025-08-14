@@ -83,9 +83,6 @@ export default function Navbar() {
                 )}
               </div>
 
-              <Link href="/services" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                Our Services
-              </Link>
               <Link href="/about" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
                 About Us
               </Link>
@@ -120,9 +117,6 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md border-t border-purple-100">
-            <Link href="/services" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors duration-200">
-              Our Services
-            </Link>
             <Link href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors duration-200">
               About Us
             </Link>

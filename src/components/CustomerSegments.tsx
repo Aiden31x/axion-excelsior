@@ -7,7 +7,7 @@ const segments = [
     id: 'schools',
     title: 'K–12 Schools',
     description: 'Comprehensive learning management systems designed for Canadian curriculum standards with bilingual support and provincial compliance.',
-    features: ['Assessment & Grading', 'Attendance Tracking', 'Parent Portals', 'Curriculum Alignment'],
+    features: ['Campus Information Hub', 'Intelligent Form Management', 'Tailored Education Solutions', 'Student Wellness & Achievement','Future Proof Your Career','AI Driven Support Solutions','Interactive Engagement Strategies'],
     image: '/schools-training.png' // You'll need to add this image
   },
   {
