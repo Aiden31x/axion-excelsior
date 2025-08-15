@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const K12SchoolsPage = () => {
   const [activeFeature, setActiveFeature] = useState(0);
@@ -124,64 +125,96 @@ const K12SchoolsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-purple-700">
-      {/* Features Grid */}
-      <section className="container mx-auto px-6 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-white mb-6 bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent">
-            Revolutionary Educational Solutions
-          </h2>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Experience the future of education with our comprehensive suite of intelligent tools designed to transform learning outcomes
-          </p>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-72 h-72 rounded-full opacity-20" style={{background: '#f7f1fe'}}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-20" style={{background: '#eccaf3'}}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full opacity-10" style={{background: '#eccaf3'}}></div>
         </div>
+        
+        <div className="relative container mx-auto px-6 py-20">
+          <div className="text-center mb-16">
+            <h1 className="text-6xl font-bold text-gray-800 mb-6 leading-tight">
+              Revolutionary Educational
+              <span className="block bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+                Solutions
+              </span>
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Experience the future of education with our comprehensive suite of intelligent tools designed to transform learning outcomes
+            </p>
+          </div>
+        </div>
+      </section>
 
-        {/* Featured Spotlight */}
-        <div className="mb-20">
-          <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
-              <div className="lg:w-1/2">
-                <div className="relative">
-                  <div className={`absolute inset-0 bg-gradient-to-r ${features[activeFeature].gradient} rounded-2xl blur-xl opacity-30`}></div>
-                  <div className={`relative bg-gradient-to-r ${features[activeFeature].gradient} rounded-2xl p-8 text-center text-white`}>
-                    <div className="text-6xl mb-4">
-                      {typeof features[activeFeature].icon === 'string' && features[activeFeature].icon.startsWith('/') ? (
-                        <div className="w-16 h-16 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mx-auto">
-                          <Image
-                            src={features[activeFeature].icon}
-                            alt={features[activeFeature].title}
-                            width={32}
-                            height={32}
-                            className="object-contain"
-                          />
-                        </div>
-                      ) : (
-                        <span>{features[activeFeature].icon}</span>
-                      )}
-                    </div>
-                    <div className="text-4xl font-bold mb-2">{features[activeFeature].stats.number}</div>
-                    <div className="text-lg opacity-90">{features[activeFeature].stats.label}</div>
+      {/* Featured Spotlight */}
+      <section className="container mx-auto px-6 pb-16">
+        <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <div className="relative">
+                <div 
+                  className="absolute inset-0 rounded-2xl blur-xl opacity-20"
+                  style={{background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})`}}
+                ></div>
+                <div 
+                  className="relative rounded-2xl p-8 text-center text-white"
+                  style={{background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})`}}
+                >
+                  <div className="text-6xl mb-4">
+                    {typeof features[activeFeature].icon === 'string' && features[activeFeature].icon.startsWith('/') ? (
+                      <div className="w-20 h-20 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mx-auto">
+                        <Image
+                          src={features[activeFeature].icon}
+                          alt={features[activeFeature].title}
+                          width={36}
+                          height={36}
+                          className="object-contain"
+                        />
+                      </div>
+                    ) : (
+                      <span>{features[activeFeature].icon}</span>
+                    )}
                   </div>
+                  <div className="text-4xl font-bold mb-2">{features[activeFeature].stats.number}</div>
+                  <div className="text-lg opacity-90">{features[activeFeature].stats.label}</div>
                 </div>
               </div>
-              <div className="lg:w-1/2 text-white">
-                <div className="text-sm font-semibold text-purple-200 mb-2">{features[activeFeature].subtitle}</div>
-                <h3 className="text-3xl font-bold mb-4">{features[activeFeature].title}</h3>
-                <p className="text-lg text-white/90 mb-6 leading-relaxed">{features[activeFeature].description}</p>
-                <div className="space-y-3">
-                  {features[activeFeature].details.map((detail, index) => (
-                    <div key={index} className="flex items-center">
-                      <div className={`w-3 h-3 bg-gradient-to-r ${features[activeFeature].gradient} rounded-full mr-4`}></div>
-                      <span className="text-white/90">{detail}</span>
-                    </div>
-                  ))}
-                </div>
+            </div>
+            <div className="lg:w-1/2">
+              <div className="text-sm font-semibold text-purple-600 mb-2">{features[activeFeature].subtitle}</div>
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">{features[activeFeature].title}</h2>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">{features[activeFeature].description}</p>
+              <div className="space-y-3">
+                {features[activeFeature].details.map((detail, index) => (
+                  <div key={index} className="flex items-center">
+                    <div 
+                      className="w-3 h-3 rounded-full mr-4"
+                      style={{background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})`}}
+                    ></div>
+                    <span className="text-gray-700">{detail}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        {/* Interactive Features Grid */}
+      {/* Interactive Features Grid */}
+      <section className="container mx-auto px-6 pb-20">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            Complete Educational Ecosystem
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Discover all the tools and features that make learning seamless and effective
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <div 
@@ -193,22 +226,22 @@ const K12SchoolsPage = () => {
               style={{ transitionDelay: `${index * 100}ms` }}
               onMouseEnter={() => setActiveFeature(index)}
             >
-              {/* Background gradient that changes on hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-all duration-500`}></div>
-              
               {/* Card content */}
-              <div className="relative bg-white/95 backdrop-blur-xl p-8 h-full border border-white/20 shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.02]">
+              <div className="relative bg-white p-8 h-full border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-500 group-hover:scale-[1.02]">
                 
                 {/* Animated icon background */}
                 <div className="relative mb-6">
-                  <div className={`absolute inset-0 bg-gradient-to-r ${feature.gradient} rounded-2xl blur-lg opacity-20 group-hover:opacity-40 transition-all duration-500 scale-110`}></div>
-                  <div className="relative w-16 h-16 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div 
+                    className="absolute inset-0 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-all duration-500 scale-110"
+                    style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                  ></div>
+                  <div className="relative w-20 h-20 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100">
                     {typeof feature.icon === 'string' && feature.icon.startsWith('/') ? (
                       <Image
                         src={feature.icon}
                         alt={feature.title}
-                        width={32}
-                        height={32}
+                        width={36}
+                        height={36}
                         className="object-contain"
                       />
                     ) : (
@@ -218,7 +251,7 @@ const K12SchoolsPage = () => {
                 </div>
 
                 {/* Content */}
-                <div className="text-sm font-semibold text-gray-500 mb-2 group-hover:text-gray-600 transition-colors">
+                <div className="text-sm font-semibold text-purple-600 mb-2 group-hover:text-purple-700 transition-colors">
                   {feature.subtitle}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-gray-900 transition-colors">
@@ -230,10 +263,16 @@ const K12SchoolsPage = () => {
 
                 {/* Animated stats badge */}
                 <div className="flex items-center justify-between mb-6">
-                  <div className={`bg-gradient-to-r ${feature.gradient} text-white px-4 py-2 rounded-full text-sm font-semibold group-hover:scale-105 transition-transform duration-300`}>
+                  <div 
+                    className="text-white px-4 py-2 rounded-full text-sm font-semibold group-hover:scale-105 transition-transform duration-300"
+                    style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                  >
                     {feature.stats.number} {feature.stats.label}
                   </div>
-                  <div className={`w-2 h-2 bg-gradient-to-r ${feature.gradient} rounded-full group-hover:scale-150 transition-transform duration-300`}></div>
+                  <div 
+                    className="w-2 h-2 rounded-full group-hover:scale-150 transition-transform duration-300"
+                    style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                  ></div>
                 </div>
 
                 {/* Feature details with staggered animation */}
@@ -244,20 +283,54 @@ const K12SchoolsPage = () => {
                       className="flex items-center group-hover:translate-x-2 transition-transform duration-300"
                       style={{ transitionDelay: `${detailIndex * 100}ms` }}
                     >
-                      <div className={`w-2 h-2 bg-gradient-to-r ${feature.gradient} rounded-full mr-3 group-hover:scale-125 transition-transform duration-300`}></div>
+                      <div 
+                        className="w-2 h-2 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"
+                        style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                      ></div>
                       <span className="text-gray-700 text-sm group-hover:text-gray-800 transition-colors">{detail}</span>
                     </div>
                   ))}
                 </div>
 
                 {/* Hover indicator */}
-                <div className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${feature.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}></div>
+                <div 
+                  className="absolute bottom-0 left-0 h-1 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+                  style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                ></div>
               </div>
             </div>
           ))}
         </div>
       </section>
-    </div>
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-purple-blue relative overflow-hidden">
+      {/* Floating background orbs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
+        <div className="absolute -bottom-6 left-14 w-24 h-24 bg-white/10 rounded-full animate-float" style={{ animationDelay: '1.8s' }}></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          Ready to Transform Education?
+        </h2>
+        <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+          Join leading Canadian institutions already using Axion Excelsior to supercharge learning outcomes and streamline operations.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/contact"
+            className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+          >
+            Schedule Demo
+          </Link>
+        </div>
+      </div>
+    </section>
+          
+          </div>
+     
   );
 };
 
