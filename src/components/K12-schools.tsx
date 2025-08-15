@@ -1,12 +1,13 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const K12SchoolsPage = () => {
   const [activeFeature, setActiveFeature] = useState(0);
   const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
   const features = [
     {
-      icon: "🎓",
+      icon: "/icons/school.png",
       gradient: "from-blue-500 to-cyan-400",
       title: "Campus Information Hub",
       subtitle: "Centralized Intelligence",
@@ -16,7 +17,7 @@ const K12SchoolsPage = () => {
       color: "blue"
     },
     {
-      icon: "📝",
+      icon: "/icons/form.png",
       gradient: "from-purple-500 to-pink-400",
       title: "Intelligent Form Management",
       subtitle: "Streamlined Digital Experience",
@@ -26,7 +27,7 @@ const K12SchoolsPage = () => {
       color: "purple"
     },
     {
-      icon: "📚",
+      icon: "/icons/education.png",
       gradient: "from-green-500 to-teal-400",
       title: "Tailored Education Solutions",
       subtitle: "Personalized Learning Ecosystem",
@@ -36,7 +37,7 @@ const K12SchoolsPage = () => {
       color: "green"
     },
     {
-      icon: "💡",
+      icon: "/icons/student.png",
       gradient: "from-yellow-500 to-orange-400",
       title: "Student Wellness & Achievement",
       subtitle: "Holistic Student Support",
@@ -46,7 +47,7 @@ const K12SchoolsPage = () => {
       color: "yellow"
     },
     {
-      icon: "🚀",
+      icon: "/icons/career.png",
       gradient: "from-indigo-500 to-blue-400",
       title: "Future-Proof Your Career Planning",
       subtitle: "Pathway to Success",
@@ -56,7 +57,7 @@ const K12SchoolsPage = () => {
       color: "indigo"
     },
     {
-      icon: "📊",
+      icon: "/icons/analysis.png",
       gradient: "from-red-500 to-pink-400",
       title: "Advanced Analytics & Insights",
       subtitle: "Data-Driven Decision Making",
@@ -66,7 +67,7 @@ const K12SchoolsPage = () => {
       color: "red"
     },
     {
-      icon: "🤝",
+      icon: "/icons/handshake.png",
       gradient: "from-teal-500 to-green-400",
       title: "Interactive Engagement Hub",
       subtitle: "Connected Community",
@@ -76,7 +77,7 @@ const K12SchoolsPage = () => {
       color: "teal"
     },
     {
-      icon: "🤖",
+      icon: "/icons/aisystem.png",
       gradient: "from-violet-500 to-purple-400",
       title: "AI-Powered Support Systems",
       subtitle: "Intelligent Automation",
@@ -124,11 +125,6 @@ const K12SchoolsPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-purple-700">
-
-
-      
-
-     
       {/* Features Grid */}
       <section className="container mx-auto px-6 py-20">
         <div className="text-center mb-16">
@@ -140,9 +136,6 @@ const K12SchoolsPage = () => {
           </p>
         </div>
 
-
-      
-
         {/* Featured Spotlight */}
         <div className="mb-20">
           <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl">
@@ -151,7 +144,21 @@ const K12SchoolsPage = () => {
                 <div className="relative">
                   <div className={`absolute inset-0 bg-gradient-to-r ${features[activeFeature].gradient} rounded-2xl blur-xl opacity-30`}></div>
                   <div className={`relative bg-gradient-to-r ${features[activeFeature].gradient} rounded-2xl p-8 text-center text-white`}>
-                    <div className="text-6xl mb-4">{features[activeFeature].icon}</div>
+                    <div className="text-6xl mb-4">
+                      {typeof features[activeFeature].icon === 'string' && features[activeFeature].icon.startsWith('/') ? (
+                        <div className="w-16 h-16 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mx-auto">
+                          <Image
+                            src={features[activeFeature].icon}
+                            alt={features[activeFeature].title}
+                            width={32}
+                            height={32}
+                            className="object-contain"
+                          />
+                        </div>
+                      ) : (
+                        <span>{features[activeFeature].icon}</span>
+                      )}
+                    </div>
                     <div className="text-4xl font-bold mb-2">{features[activeFeature].stats.number}</div>
                     <div className="text-lg opacity-90">{features[activeFeature].stats.label}</div>
                   </div>
@@ -195,8 +202,18 @@ const K12SchoolsPage = () => {
                 {/* Animated icon background */}
                 <div className="relative mb-6">
                   <div className={`absolute inset-0 bg-gradient-to-r ${feature.gradient} rounded-2xl blur-lg opacity-20 group-hover:opacity-40 transition-all duration-500 scale-110`}></div>
-                  <div className={`relative w-16 h-16 bg-gradient-to-r ${feature.gradient} rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300`}>
-                    {feature.icon}
+                  <div className="relative w-16 h-16 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    {typeof feature.icon === 'string' && feature.icon.startsWith('/') ? (
+                      <Image
+                        src={feature.icon}
+                        alt={feature.title}
+                        width={32}
+                        height={32}
+                        className="object-contain"
+                      />
+                    ) : (
+                      <span className="text-2xl">{feature.icon}</span>
+                    )}
                   </div>
                 </div>
 
@@ -239,8 +256,6 @@ const K12SchoolsPage = () => {
             </div>
           ))}
         </div>
-
-      
       </section>
     </div>
   );
