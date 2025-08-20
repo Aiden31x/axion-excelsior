@@ -108,17 +108,18 @@ export default function AlternatingFeatures() {
                                         <div className="absolute inset-0 bg-gray-200 rounded-[3rem] transform rotate-1 scale-105 opacity-20"></div>
                                         <div className="absolute inset-0 bg-gray-300 rounded-[2.5rem] transform -rotate-1 scale-95 opacity-30"></div>
 
-                                        {/* Main image container (JUSTIFIED FIX) */}
-                                        <div className="relative w-full h-full flex items-center justify-center">
-  <Image
-    src={feature.image}
-    alt={feature.title}
-    fill
-    className="object-contain rounded-[2rem] shadow-lg bg-white"
-    priority={index < 2}
-  />
-</div>
-
+                                        {/* Main image container with better sizing */}
+                                        <div className="relative w-full h-full bg-white rounded-[2rem] shadow-lg overflow-hidden p-4">
+                                            <div className="relative w-full h-full">
+                                                <Image
+                                                    src={feature.image}
+                                                    alt={feature.title}
+                                                    fill
+                                                    className="object-contain"
+                                                    priority={index < 2}
+                                                />
+                                            </div>
+                                        </div>
 
                                         {/* Floating accent circle */}
                                         <div
