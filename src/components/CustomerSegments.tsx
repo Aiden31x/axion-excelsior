@@ -15,14 +15,14 @@ const segments = [
     title: 'Driving Academies',
     description: 'Complete management solutions for driving schools including online booking, instructor management, and ministry compliance reporting.',
     features: ['Online Booking', 'License Tracking', 'Instructor Scheduling', 'Progress Reports'],
-    image: '/driving-training.png' // You'll need to add this image
+    image: '/imagenew.png' // You'll need to add this image
   },
   {
     id: 'aviation',
     title: 'Aviation Institutes',
     description: 'Specialized training platforms for flight schools with simulator integration and Transport Canada compliance.',
     features: ['Flight Simulator Integration', 'Pilot Logbooks', 'Safety Tracking', 'Certification Management'],
-    image: '/aviation-training.jpeg' // You'll need to add this image
+    image: '/compliance12.png' // You'll need to add this image
   },
   {
     id: 'manufacturing',

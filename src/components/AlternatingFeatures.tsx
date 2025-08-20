@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 const features = [
     {
-        id: 'bilingual',
-        title: 'Bilingual Support',
-        description: 'Seamlessly deliver training in both English and French while ensuring full compliance with Canadian standards and regulations.',
-        image: '/bilingual-final.png', // Replace with your image path
+        id: 'trust',
+        title: 'Trusted Expertise',
+        description: 'Delivering high-quality solutions backed by proven experience, strong support, and a client-focused approach—helping you succeed with confidence.',
+        image: '/whychooseus.png',
         imagePosition: 'left',
         accentColor: 'purple'
     },
@@ -15,7 +15,7 @@ const features = [
         id: 'custom-training',
         title: 'Custom-Tailored Training Solutions',
         description: 'From schools to aviation and manufacturing, our solutions adapt to your industry\'s unique needs with precision and flexibility.',
-        image: '/custom-solutions.jpeg', // Replace with your image path
+        image: '/training1.png',
         imagePosition: 'right',
         accentColor: 'pink'
     },
@@ -23,7 +23,7 @@ const features = [
         id: 'regulatory-compliance',
         title: 'Regulatory Compliance',
         description: 'We ensure all our digital training solutions meet provincial education and industry regulations across Canada. From bilingual standards to sector-specific compliance requirements, our platforms are designed to keep your institution aligned with the latest guidelines.',
-        image: '/compliance.jpeg', // Replace with your image path
+        image: '/compliancefinal.png',
         imagePosition: 'left',
         accentColor: 'blue'
     }
@@ -54,11 +54,8 @@ export default function AlternatingFeatures() {
             }
         );
 
-        // Observe all feature elements
         Object.values(featureRefs.current).forEach((ref) => {
-            if (ref) {
-                observer.observe(ref);
-            }
+            if (ref) observer.observe(ref);
         });
 
         return () => observer.disconnect();
@@ -99,8 +96,9 @@ export default function AlternatingFeatures() {
                             key={feature.id}
                             ref={setFeatureRef(feature.id)}
                             data-feature-id={feature.id}
-                            className={`grid lg:grid-cols-2 gap-12 items-center ${feature.imagePosition === 'right' ? 'lg:grid-flow-col-dense' : ''
-                                }`}
+                            className={`grid lg:grid-cols-2 gap-12 items-center ${
+                                feature.imagePosition === 'right' ? 'lg:grid-flow-col-dense' : ''
+                            }`}
                         >
                             {/* Image Section */}
                             <div className={`relative ${feature.imagePosition === 'right' ? 'lg:col-start-2' : ''}`}>
@@ -110,17 +108,17 @@ export default function AlternatingFeatures() {
                                         <div className="absolute inset-0 bg-gray-200 rounded-[3rem] transform rotate-1 scale-105 opacity-20"></div>
                                         <div className="absolute inset-0 bg-gray-300 rounded-[2.5rem] transform -rotate-1 scale-95 opacity-30"></div>
 
-                                        {/* Main image container */}
-                                        <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-gradient-to-br from-purple-100 to-pink-100">
-                                            <Image
-                                                src={feature.image}
-                                                alt={feature.title}
-                                                fill
-                                                className="object-cover"
-                                                priority={index < 2}
-                                                onError={() => console.log(`Image failed to load: ${feature.image}`)}
-                                            />
-                                        </div>
+                                        {/* Main image container (JUSTIFIED FIX) */}
+                                        <div className="relative w-full h-full flex items-center justify-center">
+  <Image
+    src={feature.image}
+    alt={feature.title}
+    fill
+    className="object-contain rounded-[2rem] shadow-lg bg-white"
+    priority={index < 2}
+  />
+</div>
+
 
                                         {/* Floating accent circle */}
                                         <div
@@ -149,10 +147,11 @@ export default function AlternatingFeatures() {
                             {/* Text Section */}
                             <div className={`${feature.imagePosition === 'right' ? 'lg:col-start-1' : ''}`}>
                                 <div
-                                    className={`transition-all duration-1000 ease-out ${visibleFeatures.has(feature.id)
-                                        ? 'opacity-100 translate-y-0'
-                                        : 'opacity-0 translate-y-8'
-                                        }`}
+                                    className={`transition-all duration-1000 ease-out ${
+                                        visibleFeatures.has(feature.id)
+                                            ? 'opacity-100 translate-y-0'
+                                            : 'opacity-0 translate-y-8'
+                                    }`}
                                 >
                                     <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
                                         {feature.title}

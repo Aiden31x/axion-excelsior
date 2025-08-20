@@ -40,7 +40,7 @@ export default function Hero() {
               <div className="aspect-[3/4] bg-gradient-light-purple rounded-2xl overflow-hidden relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-blue-400/20"></div>
                 <Image
-                  src="/hero-training-image.png"
+                  src="/herosection.png"
                   alt="Digital Training Solutions - Aviation, Driving, and Manufacturing"
                   width={400}
                   height={533}

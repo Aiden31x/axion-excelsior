@@ -17,7 +17,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center hover-lift">
               <div className="w-15 h-15 relative">
                 <Image
-                  src="/logo5.png"
+                  src="/logo_final.png"
                   alt="ExcelsiorTech Logo"
                   width={100}
                   height={100}
