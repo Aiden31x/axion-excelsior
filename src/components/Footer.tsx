@@ -15,9 +15,9 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-lg">A</span>
+                <span className="text-white font-bold text-lg">ET</span>
               </div>
-              <span className="ml-3 text-xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Axion Excelsior</span>
+              <span className="ml-3 text-xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"> ExcelsiorTech</span>
             </div>
             <p className="text-gray-700 mb-6 leading-relaxed">
               Transforming training through digital solutions across schools, aviation,
@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="border-t border-purple-200 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm">
-              © 2025 Axion Excelsior. All rights reserved.
+              © 2025  ExcelsiorTechInc. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-gray-600 text-sm flex items-center">

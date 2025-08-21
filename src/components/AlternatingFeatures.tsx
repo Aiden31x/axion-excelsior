@@ -13,7 +13,7 @@ const features = [
     },
     {
         id: 'custom-training',
-        title: 'Custom-Tailored Training Solutions',
+        title: 'Custom-Tailored Learning Management Solutions',
         description: 'From schools to aviation and manufacturing, our solutions adapt to your industry\'s unique needs with precision and flexibility.',
         image: '/training1.png',
         imagePosition: 'right',

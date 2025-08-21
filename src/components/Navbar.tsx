@@ -26,7 +26,7 @@ export default function Navbar() {
                 />
               </div>
               <span className="ml-3 text-xl font-semibold text-gray-700 ">
-                ExcelsiorTech
+                ExcelsiorTech Inc.
               </span>
             </Link>
           </div>
@@ -50,9 +50,7 @@ export default function Navbar() {
                     <Link href="/schools" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       K-12 Schools
                     </Link>
-                    <Link href="/services#lms" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
-                      Higher Education
-                    </Link>
+                    
                   </div>
                 )}
               </div>
@@ -63,21 +61,19 @@ export default function Navbar() {
                   onClick={() => setPartnersDropdown(!partnersDropdown)}
                   className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium flex items-center transition-colors duration-200"
                 >
-                  Application Partners
+                  Tailored Extras
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
                 {partnersDropdown && (
                   <div className="absolute top-full left-0 mt-1 w-48 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
-                    <Link href="/services#driving" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
-                      Driving Schools
-                    </Link>
+                   
                     <Link href="/services#aviation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
-                      Aviation Institutes
+                      Training Academies
                     </Link>
                     <Link href="/services#manufacturing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
-                      Manufacturing
+                      Product Guides
                     </Link>
                   </div>
                 )}

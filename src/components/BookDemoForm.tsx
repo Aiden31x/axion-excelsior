@@ -1,5 +1,13 @@
 'use client';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+// EmailJS configuration - Replace these with your actual values from EmailJS dashboard
+const EMAILJS_CONFIG = {
+  serviceId: 'service_n058jsv',     // e.g., 'service_abc123'
+  templateId: 'template_f6mvkpa',   // e.g., 'template_xyz789'
+  publicKey: 'PUoe2EQuAEuKYqytP'    // e.g., 'abcdefghijklmnop'
+};
 
 export default function BookDemoForm() {
   const [formData, setFormData] = useState({
@@ -11,6 +19,8 @@ export default function BookDemoForm() {
     message: ''
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
@@ -21,8 +31,13 @@ export default function BookDemoForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleWhatsAppSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!formData.name || !formData.organization || !formData.email || !formData.service) {
+      alert('Please fill in all required fields before proceeding.');
+      return;
+    }
 
     const phoneNumber = '917889177625'; // Replace with your WhatsApp number in international format
     const text = `Hello, I would like to book a demo.
@@ -39,8 +54,57 @@ Message: ${formData.message}`;
     window.open(waLink, '_blank');
   };
 
+  const handleEmailSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!formData.name || !formData.organization || !formData.email || !formData.service) {
+      alert('Please fill in all required fields before proceeding.');
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      // Initialize EmailJS once
+      emailjs.init(EMAILJS_CONFIG.publicKey);
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        organization: formData.organization,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+        to_email: 'aryandadwal2004@gmail.com' // Replace with your email
+      };
+
+      const response = await emailjs.send(
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
+        templateParams
+      );
+
+      console.log('Email sent successfully:', response);
+      alert('✅ Demo request sent successfully! We will contact you soon.');
+
+      setFormData({
+        name: '',
+        organization: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      alert('❌ Failed to send email. Please try the WhatsApp option or contact us directly.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <div className="space-y-6">
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -143,12 +207,28 @@ Message: ${formData.message}`;
         />
       </div>
 
-      <button
-        type="submit"
-        className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold"
-      >
-        Book a Demo on WhatsApp
-      </button>
-    </form>
+      <div className="space-y-3">
+        <button
+          type="button"
+          onClick={handleWhatsAppSubmit}
+          className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+        >
+          Book a Demo on WhatsApp
+        </button>
+        
+        <button
+          type="button"
+          onClick={handleEmailSubmit}
+          disabled={isLoading}
+          className={`w-full px-6 py-3 rounded-lg font-semibold transition-colors ${
+            isLoading 
+              ? 'bg-gray-400 cursor-not-allowed text-white' 
+              : 'bg-blue-600 hover:bg-blue-700 text-white'
+          }`}
+        >
+          {isLoading ? '📧 Sending Email...' : 'Book a Demo via Email'}
+        </button>
+      </div>
+    </div>
   );
 }
