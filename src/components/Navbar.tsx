@@ -15,17 +15,17 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center hover-lift">
-              <div className="w-15 h-15 relative">
+              <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
                   src="/logo_final.png"
                   alt="ExcelsiorTech Logo"
-                  width={100}
-                  height={100}
+                  width={48}
+                  height={48}
                   className="object-contain"
                   priority
                 />
               </div>
-              <span className="ml-3 text-xl font-semibold text-gray-700 ">
+              <span className="ml-3 text-xl font-semibold text-gray-700">
                 ExcelsiorTech Inc.
               </span>
             </Link>
