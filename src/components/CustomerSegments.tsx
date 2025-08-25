@@ -19,9 +19,9 @@ const segments = [
   },
   {
     id: 'manufacturing',
-    title: 'Manufacturing Companies',
+    title: 'User Guides',
     description: 'Digital training solutions for manufacturing sectors including interactive manuals and safety certification programs.',
-    features: ['Interactive Manuals', 'Safety Certification', 'Onboarding Programs', 'Compliance Tracking'],
+    features: ['Aircraft Maintenance Manuals (AMM)', 'Illustrated Parts Catalogues (IPC)', 'Illustrated Parts Catalogues (IPC)', 'Component Maintenance Manuals (CMM)', 'Troubleshooting Manuals (TSM) / Aircraft Fault Isolation (AFI)','Wiring Diagram Manuals (WDM)','Service Bulletins (SB)','Engine Maintenance Manuals (EMM)','Engine Maintenance Manuals (EMM)','E-Catalogues','User Manuals','Safety Instructions'],
     image: '/manufacturing-training.jpeg' // You'll need to add this image
   }
 ];

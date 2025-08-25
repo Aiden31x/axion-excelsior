@@ -72,7 +72,7 @@ export default function Navbar() {
                     <Link href="/services#aviation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       Training Academies
                     </Link>
-                    <Link href="/services#manufacturing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
+                    <Link href="/userguide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       Product Guides
                     </Link>
                   </div>
