@@ -13,8 +13,8 @@ const segments = [
   {
     id: 'training',
     title: 'Training Academies',
-    description: 'Specialized training platforms for flight schools with simulator integration and Transport Canada compliance.',
-    features: ['Flight Simulator Integration', 'Pilot Logbooks', 'Safety Tracking', 'Certification Management'],
+    description: 'Cutting-edge training academies built to deliver real-world skill development through advanced simulators and intelligent learning systems. From driving schools to pilot programs, our solutions prepare learners for safety, efficiency, and confidence in any environment.',
+    features: ['Driving Excellence', 'Pilot Training Programs', 'Adaptive Learning Frameworks', 'Safety-First Methodology','Cost-Effective Scalability','Future-Ready Skills'],
     image: '/compliance12.png' // You'll need to add this image
   },
   {
