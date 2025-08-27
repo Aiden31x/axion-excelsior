@@ -235,20 +235,20 @@ const DrivingSimulatorPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 ia-purple-50 to-pink-50">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 rounded-full opacity-20 bg-blue-100"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-20 bg-indigo-100"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full opacity-10 bg-cyan-100"></div>
-        </div>
+        <div className="absolute top-20 left-10 w-72 h-72 rounded-full opacity-20" style={{background: '#f7f1fe'}}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-20" style={{background: '#eccaf3'}}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full opacity-10" style={{background: '#eccaf3'}}></div>
+       </div>
         
         <div className="relative container mx-auto px-6 py-20">
           <div className="text-center mb-16">
             <h1 className="text-6xl font-bold text-gray-800 mb-6 leading-tight">
               Excelsior Driving
-              <span className="block bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
                 Simulator
               </span>
             </h1>
@@ -257,7 +257,7 @@ const DrivingSimulatorPage = () => {
             </p>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto border border-gray-200 shadow-lg">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Our versatile indoor driving simulator provides comprehensive training for aspirant drivers of <span className="font-semibold text-blue-600">Light</span>, <span className="font-semibold text-green-600">Medium</span>, and <span className="font-semibold text-purple-600">Heavy vehicles</span>. With options for Left or Right Hand drive, our simulator is ideal for driving schools and institutes.
+                Our versatile indoor driving simulator provides comprehensive training for aspirant drivers of <span className="font-semibold text-violet-300">Light</span>, <span className="font-semibold text-violet-400">Medium</span>, and <span className="font-semibold text-violet-500">Heavy vehicles</span>. With options for Left or Right Hand drive, our simulator is ideal for driving schools and institutes.
               </p>
             </div>
           </div>
@@ -514,7 +514,7 @@ const DrivingSimulatorPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 relative overflow-hidden">
+      <section className="py-20 bg-gradient-purple-blue relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-pulse"></div>
           <div className="absolute -bottom-6 left-14 w-24 h-24 bg-white/10 rounded-full animate-pulse" style={{ animationDelay: '1.8s' }}></div>

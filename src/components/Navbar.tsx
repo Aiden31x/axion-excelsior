@@ -105,6 +105,11 @@ export default function Navbar() {
 
  {/* Language Selector (with custom image) */}
 <div className="flex items-center p-5">
+
+  English
+  <span className="mx-2 text-gray-400">|</span>
+  Français
+  <span className='mx-2'></span>
   <Image
     src="/canada-flag-icon.svg"
     alt="Canadian Flag"
@@ -112,9 +117,6 @@ export default function Navbar() {
     height={30}
     className="mr-2"
   />
-  English
-  <span className="mx-2 text-gray-400">|</span>
-  Français
 </div>
 </div>
 
