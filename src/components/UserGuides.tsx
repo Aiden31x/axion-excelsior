@@ -1,21 +1,15 @@
 "use client"
-import React, { useState, useEffect } from 'react';
-import { 
-  AlertTriangle, 
-  Zap, 
-  Hammer, 
-  Shield 
-} from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
+
 
 const TechnicalPublicationsPage = () => {
   const [activeFeature, setActiveFeature] = useState(0);
-  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
+  const [isVisible, setIsVisible] = useState({});
 
-  const spotlightFeatures:SpotlightFeature[] = [
+  const spotlightFeatures = [
     {
-      icon: <Shield className="w-8 h-8" />,
+      icon: "/alternating/compliance.png",
       gradient: "from-blue-500 to-cyan-400",
       title: "Compliance Accuracy",
       subtitle: "Documentation Excellence",
@@ -25,7 +19,7 @@ const TechnicalPublicationsPage = () => {
       color: "blue"
     },
     {
-      icon: <Zap className="w-8 h-8" />,
+      icon: "/alternating/onboarding.png",
       gradient: "from-green-500 to-emerald-400",
       title: "Faster Onboarding",
       subtitle: "Team Efficiency",
@@ -35,7 +29,7 @@ const TechnicalPublicationsPage = () => {
       color: "green"
     },
     {
-      icon: <Hammer className="w-8 h-8" />,
+      icon: "/alternating/problem-solving.png",
       gradient: "from-purple-500 to-pink-400",
       title: "Issue Resolution Rate",
       subtitle: "Problem-Solving Excellence",
@@ -45,7 +39,7 @@ const TechnicalPublicationsPage = () => {
       color: "purple"
     },
     {
-      icon: <AlertTriangle className="w-8 h-8 " />,
+      icon: "/alternating/safety (1).png",
       gradient: "from-red-500 to-orange-400",
       title: "Safety Aligned",
       subtitle: "Safety-First Engineering",
@@ -56,7 +50,7 @@ const TechnicalPublicationsPage = () => {
     }
   ];
 
-  const services: Service[] = [
+  const services = [
     {
       icon: "/userguide/aircraft.png",
       gradient: "from-blue-500 to-cyan-400",
@@ -206,49 +200,9 @@ const TechnicalPublicationsPage = () => {
 
     return () => observer.disconnect();
   }, []);
-  type Color =
-  | "blue"
-  | "indigo"
-  | "green"
-  | "purple"
-  | "yellow"
-  | "red"
-  | "teal"
-  | "violet"
-  | "orange"
-  | "cyan"
-  | "emerald"
-  | "rose";
 
-  interface SpotlightFeature {
-    icon: React.JSX.Element;
-    gradient: string;
-    title: string;
-    subtitle: string;
-    description: string;
-    details: string[];
-    stats: {
-      number: string;
-      label: string;
-    };
-    color: Color; // 👈 change from string → Color
-  }
-  interface Service {
-    icon: string; // 👈 not string, should be a React element
-    gradient: string;
-    title: string;
-    subtitle: string;
-    description: string;
-    details: string[];
-    stats: {
-      number: string;
-      label: string;
-    };
-    color: Color; // 👈 Color union, not string
-  }
-
-  const getColorClasses = (color: Color): string => {
-    const colorMap: Record<Color,string> = {
+  const getColorClasses = (color) => {
+    const colorMap = {
       blue: '#3b82f6, #06b6d4',
       indigo: '#6366f1, #3b82f6',
       green: '#10b981, #14b8a6',
@@ -295,8 +249,8 @@ const TechnicalPublicationsPage = () => {
         </div>
       </section>
 
-           {/* Featured Spotlight */}
-           <section className="container mx-auto px-6 pb-16">
+      {/* Featured Spotlight */}
+      <section className="container mx-auto px-6 pb-16">
         <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
@@ -310,10 +264,12 @@ const TechnicalPublicationsPage = () => {
                   style={{background: `linear-gradient(to right, ${getColorClasses(spotlightFeatures[activeFeature].color)})`}}
                 >
                   <div className="text-6xl mb-4">
-                    <div className="w-20 h-20 bg-white/30 backdrop-blur-sm rounded-lg flex items-center justify-center mx-auto border border-white/20">
-                      <div className="text-white drop-shadow-lg" style={{filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))'}}>
-                        {spotlightFeatures[activeFeature].icon}
-                      </div>
+                    <div className="w-20 h-20 bg-white/30  rounded-lg flex items-center justify-center mx-auto border border-white/20">
+                      <img
+                        src={spotlightFeatures[activeFeature].icon}
+                        alt={spotlightFeatures[activeFeature].title}
+                        className="w-10 h-10 object-contain "
+                      />
                     </div>
                   </div>
                   <div className="text-4xl font-bold mb-2">{spotlightFeatures[activeFeature].stats.number}</div>
@@ -377,15 +333,11 @@ const TechnicalPublicationsPage = () => {
                     style={{background: `linear-gradient(to right, ${getColorClasses(service.color)})`}}
                   ></div>
                   <div className="relative w-20 h-20 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100">
-                    {typeof service.icon === 'string' ? (
-                      <img
-                        src={service.icon}
-                        alt={service.title}
-                        className="w-10 h-10 object-contain"
-                      />
-                    ) : (
-                      service.icon
-                    )}
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className="w-10 h-10 object-contain"
+                    />
                   </div>
                 </div>
 
@@ -438,32 +390,33 @@ const TechnicalPublicationsPage = () => {
         </div>
       </section>
 
-    {/* CTA Section */}
-    <section className="py-20 bg-gradient-purple-blue relative overflow-hidden">
-      {/* Floating background orbs */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
-        <div className="absolute -bottom-6 left-14 w-24 h-24 bg-white/10 rounded-full animate-float" style={{ animationDelay: '1.8s' }}></div>
-      </div>
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-purple-600 to-blue-600 relative overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-pulse"></div>
+          <div className="absolute -bottom-6 left-14 w-24 h-24 bg-white/10 rounded-full animate-pulse" style={{ animationDelay: '1.8s' }}></div>
+        </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Ready to Elevate Your Documentation Standards?
-        </h2>
-        <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-        Partner with Excelsior Technical Publications and empower your teams with precise, compliant, and future-ready technical manuals.
-        </p>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Ready to Elevate Your Documentation Standards?
+          </h2>
+          <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Partner with Excelsior Technical Publications and empower your teams with precise, compliant, and future-ready technical manuals.
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <Link
             href="/contact"
             className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
-            Schedule Demo
-          </Link>
+              Schedule Demo
+              </Link>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   );
 };
