@@ -18,9 +18,6 @@ export default function CTASection() {
           designed for the modern Canadian marketplace.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/contact" className="bg-white text-purple-600 hover:bg-purple-50 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift shadow-lg">
-            Explore Programs
-          </Link>
           <Link href="/contact" className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift">
             Book a Demo
           </Link>
