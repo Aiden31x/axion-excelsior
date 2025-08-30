@@ -21,15 +21,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center hover-lift">
-              <div className="w-12 h-12 relative flex items-center justify-center">
+              <div className="relative flex items-center justify-center h-14 w-14">
                 <Image
-                  src="/logo_final.png"
+                  src="/logofinal_1.jpeg"
                   alt="ExcelsiorTech Logo"
-                  width={48}
-                  height={48}
-                  className="object-contain"
+                  fill
+                  className="object-contain rounded-md"
                   priority
                 />
               </div>
@@ -75,10 +74,10 @@ export default function Navbar() {
                 </button>
                 {partnersDropdown && (
                   <div className="absolute top-full left-0 mt-1 w-48 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
-                    <Link href="/trainingacademy" className="block px-4 py-2  text-gray-700 text-md hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
+                    <Link href="/trainingacademy" className="block px-4 py-2 text-gray-700 text-md hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       Training Academies
                     </Link>
-                    <Link href="/userguide" className="block px-4 py-2  text-gray-700 text-md hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
+                    <Link href="/userguide" className="block px-4 py-2 text-gray-700 text-md hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
                       Product Guides
                     </Link>
                   </div>
@@ -95,31 +94,28 @@ export default function Navbar() {
           </div>
 
           {/* Right side with Language Selector and CTA */}
-<div className="hidden md:flex items-center space-x-4">
-  <Link
-    href="/contact"
-    className="bg-gradient-purple-blue hover:opacity-90 text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover-lift shadow-lg"
-  >
-    Request Demo
-  </Link>
+          <div className="hidden md:flex items-center space-x-4">
+            <Link
+              href="/contact"
+              className="bg-gradient-purple-blue hover:opacity-90 text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover-lift shadow-lg"
+            >
+              Request Demo
+            </Link>
 
- {/* Language Selector (with custom image) */}
-<div className="flex items-center p-5">
-
-  English
-  <span className="mx-2 text-gray-400">|</span>
-  Français
-  <span className='mx-2'></span>
-  <Image
-    src="/canada-flag-icon.svg"
-    alt="Canadian Flag"
-    width={30}
-    height={30}
-    className="mr-2"
-  />
-</div>
-</div>
-
+            {/* Language Selector */}
+            <div className="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-purple-50 transition-colors duration-200">
+              <span className="text-gray-700 text-sm font-medium">English</span>
+              <span className="text-gray-400">|</span>
+              <span className="text-gray-700 text-sm font-medium">Français</span>
+              <Image
+                src="/canada-flag-icon.svg"
+                alt="Canadian Flag"
+                width={20}
+                height={15}
+                className="ml-1"
+              />
+            </div>
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-2">
