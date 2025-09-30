@@ -10,7 +10,7 @@ export default function Navbar() {
   const [currentLanguage, setCurrentLanguage] = useState('English');
   const [languageDropdown, setLanguageDropdown] = useState(false);
 
-  const handleLanguageChange = (language) => {
+  const handleLanguageChange = (language: string) => {
     setCurrentLanguage(language);
     // Add your language switching logic here
     console.log('Language changed to:', language);
@@ -127,9 +127,9 @@ export default function Navbar() {
               >
                 {/* Canadian Flag SVG */}
                 <svg className="w-4 h-4 mr-1" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="24" height="16" fill="#FF0000"/>
-                  <rect x="6" y="0" width="12" height="16" fill="#FFFFFF"/>
-                  <path d="M12 3L13.5 6H16.5L14.25 7.5L15 10.5L12 8.5L9 10.5L9.75 7.5L7.5 6H10.5L12 3Z" fill="#FF0000"/>
+                  <rect width="24" height="16" fill="#FF0000" />
+                  <rect x="6" y="0" width="12" height="16" fill="#FFFFFF" />
+                  <path d="M12 3L13.5 6H16.5L14.25 7.5L15 10.5L12 8.5L9 10.5L9.75 7.5L7.5 6H10.5L12 3Z" fill="#FF0000" />
                 </svg>
                 {currentLanguage === 'English' ? 'EN' : 'FR'}
               </button>
@@ -137,21 +137,19 @@ export default function Navbar() {
                 <div className="absolute top-full right-0 mt-1 w-28 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
                   <button
                     onClick={() => handleLanguageChange('English')}
-                    className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${
-                      currentLanguage === 'English' 
-                        ? 'bg-purple-50 text-purple-600' 
+                    className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${currentLanguage === 'English'
+                        ? 'bg-purple-50 text-purple-600'
                         : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
-                    }`}
+                      }`}
                   >
                     English
                   </button>
                   <button
                     onClick={() => handleLanguageChange('Français')}
-                    className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${
-                      currentLanguage === 'Français' 
-                        ? 'bg-purple-50 text-purple-600' 
+                    className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${currentLanguage === 'Français'
+                        ? 'bg-purple-50 text-purple-600'
                         : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
-                    }`}
+                      }`}
                   >
                     Français
                   </button>

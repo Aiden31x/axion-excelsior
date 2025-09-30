@@ -1,9 +1,9 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { 
-  Car, 
-  Gauge, 
-  CloudRain, 
+import {
+  Car,
+  Gauge,
+  CloudRain,
   BarChart3,
   Users,
   GraduationCap,
@@ -18,7 +18,7 @@ import Link from 'next/link';
 
 const DrivingSimulatorPage = () => {
   const [activeFeature, setActiveFeature] = useState(0);
-  const [isVisible, setIsVisible] = useState({});
+  const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
 
   const spotlightFeatures = [
     {
@@ -220,8 +220,8 @@ const DrivingSimulatorPage = () => {
     return () => observer.disconnect();
   }, []);
 
-  const getColorClasses = (color) => {
-    const colorMap = {
+  const getColorClasses = (color: string) => {
+    const colorMap: { [key: string]: string } = {
       blue: '#3b82f6, #06b6d4',
       indigo: '#6366f1, #3b82f6',
       green: '#10b981, #14b8a6',
@@ -239,11 +239,11 @@ const DrivingSimulatorPage = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 rounded-full opacity-20" style={{background: '#f7f1fe'}}></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-20" style={{background: '#eccaf3'}}></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full opacity-10" style={{background: '#eccaf3'}}></div>
-       </div>
-        
+          <div className="absolute top-20 left-10 w-72 h-72 rounded-full opacity-20" style={{ background: '#f7f1fe' }}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-20" style={{ background: '#eccaf3' }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full opacity-10" style={{ background: '#eccaf3' }}></div>
+        </div>
+
         <div className="relative container mx-auto px-6 py-20">
           <div className="text-center mb-16">
             <h1 className="text-6xl font-bold text-gray-800 mb-6 leading-tight">
@@ -270,17 +270,17 @@ const DrivingSimulatorPage = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <div className="relative">
-                <div 
+                <div
                   className="absolute inset-0 rounded-2xl blur-xl opacity-20"
-                  style={{background: `linear-gradient(to right, ${getColorClasses(spotlightFeatures[activeFeature].color)})`}}
+                  style={{ background: `linear-gradient(to right, ${getColorClasses(spotlightFeatures[activeFeature].color)})` }}
                 ></div>
-                <div 
+                <div
                   className="relative rounded-2xl p-8 text-center text-white"
-                  style={{background: `linear-gradient(to right, ${getColorClasses(spotlightFeatures[activeFeature].color)})`}}
+                  style={{ background: `linear-gradient(to right, ${getColorClasses(spotlightFeatures[activeFeature].color)})` }}
                 >
                   <div className="text-6xl mb-4">
                     <div className="w-20 h-20 bg-white/30 backdrop-blur-sm rounded-lg flex items-center justify-center mx-auto border border-white/20">
-                    <img
+                      <img
                         src={spotlightFeatures[activeFeature].icon}
                         alt={spotlightFeatures[activeFeature].title}
                         className="w-15 h-15 object-contain "
@@ -299,9 +299,9 @@ const DrivingSimulatorPage = () => {
               <div className="space-y-3">
                 {spotlightFeatures[activeFeature].details.map((detail, index) => (
                   <div key={index} className="flex items-center">
-                    <div 
+                    <div
                       className="w-3 h-3 rounded-full mr-4"
-                      style={{background: `linear-gradient(to right, ${getColorClasses(spotlightFeatures[activeFeature].color)})`}}
+                      style={{ background: `linear-gradient(to right, ${getColorClasses(spotlightFeatures[activeFeature].color)})` }}
                     ></div>
                     <span className="text-gray-700">{detail}</span>
                   </div>
@@ -331,35 +331,34 @@ const DrivingSimulatorPage = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               id={`feature-${index}`}
-              className={`group relative overflow-hidden rounded-2xl transition-all duration-700 transform ${
-                isVisible[`feature-${index}`] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}
+              className={`group relative overflow-hidden rounded-2xl transition-all duration-700 transform ${isVisible[`feature-${index}`] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                }`}
               style={{ transitionDelay: `${index * 100}ms` }}
               onMouseEnter={() => setActiveFeature(index % spotlightFeatures.length)}
             >
               <div className="relative bg-white p-8 h-full border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-500 group-hover:scale-[1.02]">
-                
+
                 <div className="relative mb-6">
-                  <div 
+                  <div
                     className="absolute inset-0 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-all duration-500 scale-110"
-                    style={{background: `linear-gradient(to right, ${getColorClasses(feature.color)})`}}
+                    style={{ background: `linear-gradient(to right, ${getColorClasses(feature.color)})` }}
                   ></div>
                   <div className="relative w-20 h-20 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100">
-                    <div 
+                    <div
                       className="text-white drop-shadow-lg"
-                      style={{filter: `drop-shadow(0 0 10px ${getColorClasses(feature.color).split(',')[0]})`}}
+                      style={{ filter: `drop-shadow(0 0 10px ${getColorClasses(feature.color).split(',')[0]})` }}
                     >
                     </div>
                     <div className="relative w-20 h-20 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100">
-                    <img
-                      src={feature.icon}
-                      alt={feature.title}
-                      className="w-12 h-12 object-contain"
-                    />
-                  </div>
+                      <img
+                        src={feature.icon}
+                        alt={feature.title}
+                        className="w-12 h-12 object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -374,37 +373,37 @@ const DrivingSimulatorPage = () => {
                 </p>
 
                 <div className="flex items-center justify-between mb-6">
-                  <div 
+                  <div
                     className="text-white px-4 py-2 rounded-full text-sm font-semibold group-hover:scale-105 transition-transform duration-300"
-                    style={{background: `linear-gradient(to right, ${getColorClasses(feature.color)})`}}
+                    style={{ background: `linear-gradient(to right, ${getColorClasses(feature.color)})` }}
                   >
                     {feature.stats.number} {feature.stats.label}
                   </div>
-                  <div 
+                  <div
                     className="w-2 h-2 rounded-full group-hover:scale-150 transition-transform duration-300"
-                    style={{background: `linear-gradient(to right, ${getColorClasses(feature.color)})`}}
+                    style={{ background: `linear-gradient(to right, ${getColorClasses(feature.color)})` }}
                   ></div>
                 </div>
 
                 <div className="space-y-3">
                   {feature.details.map((detail, detailIndex) => (
-                    <div 
-                      key={detailIndex} 
+                    <div
+                      key={detailIndex}
                       className="flex items-center group-hover:translate-x-2 transition-transform duration-300"
                       style={{ transitionDelay: `${detailIndex * 100}ms` }}
                     >
-                      <div 
+                      <div
                         className="w-2 h-2 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"
-                        style={{background: `linear-gradient(to right, ${getColorClasses(feature.color)})`}}
+                        style={{ background: `linear-gradient(to right, ${getColorClasses(feature.color)})` }}
                       ></div>
                       <span className="text-gray-700 text-sm group-hover:text-gray-800 transition-colors">{detail}</span>
                     </div>
                   ))}
                 </div>
 
-                <div 
+                <div
                   className="absolute bottom-0 left-0 h-1 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                  style={{background: `linear-gradient(to right, ${getColorClasses(feature.color)})`}}
+                  style={{ background: `linear-gradient(to right, ${getColorClasses(feature.color)})` }}
                 ></div>
               </div>
             </div>
@@ -424,34 +423,33 @@ const DrivingSimulatorPage = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <div 
+              <div
                 key={index}
                 id={`benefit-${index}`}
-                className={`bg-white rounded-2xl p-8 text-center shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-500 hover:scale-105 ${
-                  isVisible[`benefit-${index}`] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                }`}
+                className={`bg-white rounded-2xl p-8 text-center shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-500 hover:scale-105 ${isVisible[`benefit-${index}`] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                  }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
                 <div className="relative mb-6">
-                  <div 
+                  <div
                     className="w-16 h-16 rounded-full flex items-center justify-center mx-auto text-white shadow-lg"
-                    style={{background: `linear-gradient(to right, ${getColorClasses(benefit.color)})`}}
+                    style={{ background: `linear-gradient(to right, ${getColorClasses(benefit.color)})` }}
                   >
 
-                  <div className="relative w-20 h-20 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100">
-                    <img
-                      src={benefit.icon}
-                      alt={benefit.title}
-                      className="w-10 h-10 object-contain"
-                    />
-                  </div>
+                    <div className="relative w-20 h-20 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100">
+                      <img
+                        src={benefit.icon}
+                        alt={benefit.title}
+                        className="w-10 h-10 object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">{benefit.title}</h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">{benefit.description}</p>
-                <div 
+                <div
                   className="inline-block px-4 py-2 rounded-full text-white text-sm font-semibold"
-                  style={{background: `linear-gradient(to right, ${getColorClasses(benefit.color)})`}}
+                  style={{ background: `linear-gradient(to right, ${getColorClasses(benefit.color)})` }}
                 >
                   {benefit.stats}
                 </div>
@@ -472,37 +470,36 @@ const DrivingSimulatorPage = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {idealFor.map((item, index) => (
-            <div 
+            <div
               key={index}
               id={`ideal-${index}`}
-              className={`group bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:scale-105 ${
-                isVisible[`ideal-${index}`] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}
+              className={`group bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:scale-105 ${isVisible[`ideal-${index}`] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                }`}
               style={{ transitionDelay: `${index * 300}ms` }}
             >
               <div className="flex items-center mb-6">
-                <div 
+                <div
                   className="w-20 h-20 rounded-2xl flex items-center justify-center mr-6 text-white group-hover:scale-110 transition-transform duration-300"
-                  style={{background: `linear-gradient(to right, ${getColorClasses(item.color)})`}}
+                  style={{ background: `linear-gradient(to right, ${getColorClasses(item.color)})` }}
                 >
                   <img
-                     src={item.icon}
-                     alt={item.title}
-                     className="w-10 h-10 object-contain"
-              />
+                    src={item.icon}
+                    alt={item.title}
+                    className="w-10 h-10 object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>
                 </div>
               </div>
-              
+
               <div className="space-y-3">
                 {item.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center">
-                    <div 
+                    <div
                       className="w-3 h-3 rounded-full mr-4"
-                      style={{background: `linear-gradient(to right, ${getColorClasses(item.color)})`}}
+                      style={{ background: `linear-gradient(to right, ${getColorClasses(item.color)})` }}
                     ></div>
                     <span className="text-gray-700">{feature}</span>
                   </div>
@@ -530,11 +527,11 @@ const DrivingSimulatorPage = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-blue-600 hover:bg-blue-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <Link
-            href="/contact"
-            className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-          >
-              Schedule Demo
+              <Link
+                href="/contact"
+                className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                Schedule Demo
               </Link>
             </button>
           </div>
