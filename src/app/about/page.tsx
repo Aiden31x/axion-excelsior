@@ -28,7 +28,7 @@ interface TeamMember {
 
 // Main AboutUs Component
 const AboutUs: React.FC = () => {
-  
+
   const teamMembers: TeamMember[] = [
     {
       name: "Tata Rao",
@@ -54,7 +54,7 @@ const AboutUs: React.FC = () => {
     },
     {
       name: "Payal Uniyal",
-      role: "Head of Sales & Operations",
+      role: "HR Operations & Finance Manager",
       briefDesc: "Driving sales growth and operational excellence for 20+ years.",
       detailedDesc: [
         "Leads expansion, client success, and seamless execution.",
@@ -63,7 +63,7 @@ const AboutUs: React.FC = () => {
       gradient: "from-purple-500 to-indigo-500",
       image: "/aboutus/payal.jpg"
     }
-  ];  
+  ];
 
   const coreValues: CoreValue[] = [
     { icon: "/aboutus/innovation.png", title: "Innovation", desc: "Always ahead of the curve", color: "purple" },
@@ -75,11 +75,11 @@ const AboutUs: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-violet-50 to-indigo-50">
       <Navbar />
-      
+
       {/* Hero Section with Mountain Background */}
       <section className="relative py-24 px-6 overflow-hidden mt-16 min-h-screen flex items-center justify-center">
         {/* Mountain Background */}
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             backgroundImage: `url('/abtus.png')`,
@@ -88,15 +88,15 @@ const AboutUs: React.FC = () => {
             backgroundAttachment: 'fixed'
           }}
         ></div>
-        
+
         {/* Purple Mountain Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-violet-800/20 to-indigo-900/30"></div>
-        
+
         {/* Floating Elements */}
         <div className="absolute top-20 right-20 w-32 h-32 bg-purple-400/15 rounded-full blur-2xl animate-pulse"></div>
         <div className="absolute bottom-20 left-20 w-40 h-40 bg-violet-400/15 rounded-full blur-2xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-400/10 rounded-full blur-3xl"></div>
-        
+
         <div className="relative max-w-6xl mx-auto text-center text-white z-10">
           <div className="mb-12">
             <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tight bg-gradient-to-r from-white via-purple-100 to-violet-100 bg-clip-text text-transparent">
@@ -122,11 +122,11 @@ const AboutUs: React.FC = () => {
               <p className="text-xl text-gray-700 leading-relaxed">
                 <strong className="text-purple-600">Excelsior Tech Inc</strong> is a young, ambitious EdTech startup with a simple yet powerful mindset of forward-thinking technology, a startup committed to building innovative digital solutions that empower businesses and individuals. Founded with the belief that technology should simplify lives, we are on a mission to bridge the gap between ideas and execution with smart, scalable, and user-friendly products.
               </p>
-              
+
               <p className="text-xl text-gray-700 leading-relaxed">
                 Our journey began with a question:
               </p>
-              
+
               <p className="text-xl text-gray-700 leading-relaxed font-medium">
                 <strong className="text-violet-600">&quot;What if schools, educators, students, and parents could all work together on one unified platform, with everything they need at their fingertips?&quot;</strong>
               </p>
@@ -136,7 +136,7 @@ const AboutUs: React.FC = () => {
       </section>
 
       {/* Mission & Vision - Updated with Three Column Layout */}
-     <StorySection />
+      <StorySection />
 
       {/* Core Values - Updated with Purple Theme and Fixed Icon Rendering */}
       <section className="py-20 px-6 bg-gradient-to-br from-violet-50/30 via-purple-50/30 to-indigo-50/30">
@@ -148,7 +148,7 @@ const AboutUs: React.FC = () => {
             <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-700 via-violet-600 to-indigo-600 bg-clip-text text-transparent mb-4">Our Ethics</h2>
             <p className="text-xl text-purple-700/80">The principles that guide everything we do</p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {coreValues.map((value: CoreValue, index: number) => {
               const gradientClasses: { [key: string]: string } = {
@@ -161,8 +161,8 @@ const AboutUs: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-400/10 to-violet-400/10 rounded-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
                   <div className="relative bg-white/90 backdrop-blur-lg rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100/50 text-center group-hover:border-purple-200/70 h-full flex flex-col">
                     <div className={`w-16 h-16 bg-gradient-to-br ${gradientClasses[value.color] || 'from-purple-500 to-purple-600'} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg flex-shrink-0`}>
-                      <img 
-                        src={value.icon} 
+                      <img
+                        src={value.icon}
                         alt={value.title}
                         className="w-8 h-8 object-contain"
                       />
@@ -187,7 +187,7 @@ const AboutUs: React.FC = () => {
             <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-700 via-violet-600 to-indigo-600 bg-clip-text text-transparent mb-4">Leadership Team</h2>
             <p className="text-xl text-purple-700/80">The visionaries behind our success</p>
           </div>
-          
+
           <div className="grid lg:grid-cols-3 gap-8">
             {teamMembers.map((member: TeamMember, index: number) => (
               <FlipTeamMemberCard key={index} member={member} />

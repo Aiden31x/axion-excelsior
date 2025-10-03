@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BookDemoForm from '@/components/BookDemoForm';
+import Image from 'next/image';
 
 export default function Contact() {
   return (
@@ -18,8 +19,14 @@ export default function Contact() {
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex items-center justify-center mb-6">
-            <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-2xl">ET</span>
+            <div className="w-16 h-16 rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
+              <Image
+                src="/logofinal_1.jpeg"
+                alt="ExcelsiorTech Logo"
+                width={64}
+                height={64}
+                className="object-contain"
+              />
             </div>
             <span className="ml-4 text-3xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">ExcelsiorTech</span>
           </div>

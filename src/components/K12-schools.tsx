@@ -119,7 +119,7 @@ const K12SchoolsPage = () => {
 
   const coreFeatures = [
     "Assessment & Grading",
-    "Attendance Tracking", 
+    "Attendance Tracking",
     "Parent Portals",
     "Curriculum Alignment"
   ];
@@ -130,11 +130,11 @@ const K12SchoolsPage = () => {
       <section className="relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 rounded-full opacity-20" style={{background: '#f7f1fe'}}></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-20" style={{background: '#eccaf3'}}></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full opacity-10" style={{background: '#eccaf3'}}></div>
+          <div className="absolute top-20 left-10 w-72 h-72 rounded-full opacity-20" style={{ background: '#f7f1fe' }}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-20" style={{ background: '#eccaf3' }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full opacity-10" style={{ background: '#eccaf3' }}></div>
         </div>
-        
+
         <div className="relative container mx-auto px-6 py-20">
           <div className="text-center mb-16">
             <h1 className="text-6xl font-bold text-gray-800 mb-6 leading-tight">
@@ -156,13 +156,13 @@ const K12SchoolsPage = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <div className="relative">
-                <div 
+                <div
                   className="absolute inset-0 rounded-2xl blur-xl opacity-20"
-                  style={{background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})`}}
+                  style={{ background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})` }}
                 ></div>
-                <div 
+                <div
                   className="relative rounded-2xl p-8 text-center text-white"
-                  style={{background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})`}}
+                  style={{ background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})` }}
                 >
                   <div className="text-6xl mb-4">
                     {typeof features[activeFeature].icon === 'string' && features[activeFeature].icon.startsWith('/') ? (
@@ -191,9 +191,9 @@ const K12SchoolsPage = () => {
               <div className="space-y-3">
                 {features[activeFeature].details.map((detail, index) => (
                   <div key={index} className="flex items-center">
-                    <div 
+                    <div
                       className="w-3 h-3 rounded-full mr-4"
-                      style={{background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})`}}
+                      style={{ background: `linear-gradient(to right, ${features[activeFeature].color === 'blue' ? '#3b82f6, #06b6d4' : features[activeFeature].color === 'purple' ? '#8b5cf6, #ec4899' : features[activeFeature].color === 'green' ? '#10b981, #14b8a6' : '#f59e0b, #f97316'})` }}
                     ></div>
                     <span className="text-gray-700">{detail}</span>
                   </div>
@@ -217,23 +217,22 @@ const K12SchoolsPage = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               id={`feature-${index}`}
-              className={`group relative overflow-hidden rounded-2xl transition-all duration-700 transform ${
-                isVisible[`feature-${index}`] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}
+              className={`group relative overflow-hidden rounded-2xl transition-all duration-700 transform ${isVisible[`feature-${index}`] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                }`}
               style={{ transitionDelay: `${index * 100}ms` }}
               onMouseEnter={() => setActiveFeature(index)}
             >
               {/* Card content */}
               <div className="relative bg-white p-8 h-full border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-500 group-hover:scale-[1.02]">
-                
+
                 {/* Animated icon background */}
                 <div className="relative mb-6">
-                  <div 
+                  <div
                     className="absolute inset-0 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-all duration-500 scale-110"
-                    style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                    style={{ background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})` }}
                   ></div>
                   <div className="relative w-20 h-20 bg-white rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100">
                     {typeof feature.icon === 'string' && feature.icon.startsWith('/') ? (
@@ -263,29 +262,29 @@ const K12SchoolsPage = () => {
 
                 {/* Animated stats badge */}
                 <div className="flex items-center justify-between mb-6">
-                  <div 
+                  <div
                     className="text-white px-4 py-2 rounded-full text-sm font-semibold group-hover:scale-105 transition-transform duration-300"
-                    style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                    style={{ background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})` }}
                   >
                     {feature.stats.number} {feature.stats.label}
                   </div>
-                  <div 
+                  <div
                     className="w-2 h-2 rounded-full group-hover:scale-150 transition-transform duration-300"
-                    style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                    style={{ background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})` }}
                   ></div>
                 </div>
 
                 {/* Feature details with staggered animation */}
                 <div className="space-y-3">
                   {feature.details.map((detail, detailIndex) => (
-                    <div 
-                      key={detailIndex} 
+                    <div
+                      key={detailIndex}
                       className="flex items-center group-hover:translate-x-2 transition-transform duration-300"
                       style={{ transitionDelay: `${detailIndex * 100}ms` }}
                     >
-                      <div 
+                      <div
                         className="w-2 h-2 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"
-                        style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                        style={{ background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})` }}
                       ></div>
                       <span className="text-gray-700 text-sm group-hover:text-gray-800 transition-colors">{detail}</span>
                     </div>
@@ -293,44 +292,111 @@ const K12SchoolsPage = () => {
                 </div>
 
                 {/* Hover indicator */}
-                <div 
+                <div
                   className="absolute bottom-0 left-0 h-1 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                  style={{background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})`}}
+                  style={{ background: `linear-gradient(to right, ${feature.color === 'blue' ? '#3b82f6, #06b6d4' : feature.color === 'purple' ? '#8b5cf6, #ec4899' : feature.color === 'green' ? '#10b981, #14b8a6' : feature.color === 'yellow' ? '#f59e0b, #f97316' : feature.color === 'indigo' ? '#6366f1, #3b82f6' : feature.color === 'red' ? '#ef4444, #ec4899' : feature.color === 'teal' ? '#14b8a6, #10b981' : '#8b5cf6, #a855f7'})` }}
                 ></div>
               </div>
             </div>
           ))}
         </div>
       </section>
+
+      {/* Our Partners Section */}
+      <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-16">
+        <div className="container mx-auto px-4">
+          <div className="mb-4 text-center text-sm font-semibold uppercase tracking-wide text-orange-600">
+            Trusted Partnership
+          </div>
+          <h2 className="mb-4 text-center text-4xl font-bold">Our Partner</h2>
+          <p className="mx-auto mb-12 max-w-2xl text-center text-pretty text-muted-foreground">
+            Collaborating with industry leaders to deliver exceptional educational experiences
+          </p>
+
+          <div className="mx-auto max-w-5xl">
+            <div className="overflow-hidden rounded-2xl shadow-xl">
+              <div className="grid gap-0 lg:grid-cols-2">
+                {/* Partner Info */}
+                <div className="flex flex-col justify-center bg-white p-8 lg:p-12">
+                  <div className="mb-6 flex h-24 w-full items-center justify-start rounded-2xl bg-white p-4 shadow-sm">
+                    <img src="/schoolnetlogo.jpg" alt="SchoolNet India" className="h-full w-auto object-contain" />
+                  </div>
+                  <h3 className="mb-4 text-3xl font-bold text-slate-900">SchoolNet India</h3>
+                  <p className="mb-6 text-pretty text-lg leading-relaxed text-slate-700">
+                    A pioneer in educational technology with over two decades of experience, SchoolNet India empowers
+                    schools with innovative digital learning solutions, comprehensive assessment tools, and data-driven
+                    insights to enhance student outcomes and operational excellence.
+                  </p>
+                  <Link
+                    href="https://www.schoolnetindia.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-fit items-center gap-2 rounded-lg bg-orange-600 px-6 py-3 font-semibold text-white transition-all hover:bg-orange-700"
+                  >
+                    Visit Partner Website
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+
+                {/* Video */}
+                <div className="aspect-video bg-slate-900 lg:aspect-auto">
+                  <video
+                    className="h-full w-full object-cover"
+                    controls
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    poster="/path-to-your-video-poster.jpg"
+                  >
+                    <source src="/FB_Video.mp4" type="video/mp4" />
+                    <source src="/path-to-your-video.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-purple-blue relative overflow-hidden">
-      {/* Floating background orbs */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
-        <div className="absolute -bottom-6 left-14 w-24 h-24 bg-white/10 rounded-full animate-float" style={{ animationDelay: '1.8s' }}></div>
-      </div>
-
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Ready to Transform Education?
-        </h2>
-        <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Join leading Canadian institutions already using Axion Excelsior to supercharge learning outcomes and streamline operations.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/contact"
-            className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-          >
-            Schedule Demo
-          </Link>
+        {/* Floating background orbs */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
+          <div className="absolute -bottom-6 left-14 w-24 h-24 bg-white/10 rounded-full animate-float" style={{ animationDelay: '1.8s' }}></div>
         </div>
-      </div>
-    </section>
-          
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Ready to Transform Education?
+          </h2>
+          <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Join leading Canadian institutions already using Axion Excelsior to supercharge learning outcomes and streamline operations.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              Schedule Demo
+            </Link>
           </div>
-     
+        </div>
+      </section>
+
+    </div>
+
   );
 };
 
