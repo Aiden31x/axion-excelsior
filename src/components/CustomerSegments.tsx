@@ -7,21 +7,21 @@ const segments = [
     id: 'schools',
     title: 'K–12 Schools',
     description: 'Comprehensive learning management systems designed for Canadian curriculum standards with bilingual support and provincial compliance.',
-    features: ['Campus Information Hub', 'Intelligent Form Management', 'Tailored Education Solutions', 'Student Wellness & Achievement','Future Proof Your Career','AI Driven Support Solutions','Interactive Engagement Strategies'],
+    features: ['Campus Information Hub', 'Intelligent Form Management', 'Tailored Education Solutions', 'Student Wellness & Achievement', 'Unmatched Assessment Excellence.', 'AI Driven Support Solutions', 'Interactive Engagement Strategies'],
     image: '/schools-training.png' // You'll need to add this image
   },
   {
     id: 'training',
     title: 'Training Academies',
     description: 'Cutting-edge training academies built to deliver real-world skill development through advanced simulators and intelligent learning systems. From driving schools to pilot programs, our solutions prepare learners for safety, efficiency, and confidence in any environment.',
-    features: ['Driving Excellence', 'Pilot Training Programs', 'Adaptive Learning Frameworks', 'Safety-First Methodology','Cost-Effective Scalability','Future-Ready Skills'],
+    features: ['Driving Excellence', 'Pilot Training Programs', 'Adaptive Learning Frameworks', 'Safety-First Methodology', 'Cost-Effective Scalability', 'Future-Ready Skills'],
     image: '/compliance12.png' // You'll need to add this image
   },
   {
     id: 'manufacturing',
     title: 'User Guides',
     description: 'Digital training solutions for manufacturing sectors including interactive manuals and safety certification programs.',
-    features: ['Aircraft Maintenance Manuals (AMM)', 'Illustrated Parts Catalogues (IPC)', 'Illustrated Parts Catalogues (IPC)', 'Component Maintenance Manuals (CMM)', 'Troubleshooting Manuals (TSM) / Aircraft Fault Isolation (AFI)','Wiring Diagram Manuals (WDM)','Service Bulletins (SB)','Engine Maintenance Manuals (EMM)','Engine Maintenance Manuals (EMM)','E-Catalogues','User Manuals','Safety Instructions'],
+    features: ['Aircraft Maintenance Manuals (AMM)', 'Illustrated Parts Catalogues (IPC)', 'Illustrated Parts Catalogues (IPC)', 'Component Maintenance Manuals (CMM)', 'Troubleshooting Manuals (TSM) / Aircraft Fault Isolation (AFI)', 'Wiring Diagram Manuals (WDM)', 'Service Bulletins (SB)', 'Engine Maintenance Manuals (EMM)', 'Engine Maintenance Manuals (EMM)', 'E-Catalogues', 'User Manuals', 'Safety Instructions'],
     image: '/manufacturing-training.jpeg' // You'll need to add this image
   }
 ];
@@ -39,7 +39,7 @@ export default function CustomerSegments() {
             </span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Specialized solutions for diverse training environments across Canada
+            Scale talent transformation with an immersive LMS engineered to accelerate learning end‑to‑end.
           </p>
         </div>
 

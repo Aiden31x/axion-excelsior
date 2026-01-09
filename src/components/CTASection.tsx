@@ -11,11 +11,10 @@ export default function CTASection() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-          Ready to elevate your training programs?
+          Advancing capability with innovation built for the future
         </h2>
         <p className="text-xl text-purple-100 mb-8 leading-relaxed">
-          Future-proof your workforce with immersive digital training solutions
-          designed for the modern Canadian marketplace.
+          Designed for tomorrow’s potential.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact" className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift">

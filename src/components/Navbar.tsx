@@ -138,8 +138,8 @@ export default function Navbar() {
                   <button
                     onClick={() => handleLanguageChange('English')}
                     className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${currentLanguage === 'English'
-                        ? 'bg-purple-50 text-purple-600'
-                        : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
+                      ? 'bg-purple-50 text-purple-600'
+                      : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
                       }`}
                   >
                     English
@@ -147,8 +147,8 @@ export default function Navbar() {
                   <button
                     onClick={() => handleLanguageChange('Français')}
                     className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${currentLanguage === 'Français'
-                        ? 'bg-purple-50 text-purple-600'
-                        : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
+                      ? 'bg-purple-50 text-purple-600'
+                      : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
                       }`}
                   >
                     Français

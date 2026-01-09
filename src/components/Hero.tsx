@@ -15,14 +15,17 @@ export default function Hero() {
           {/* Left Column - Text */}
           <div>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              Elevate your skills with{' '}
+              Advancing capability with{' '}
               <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                Future-Proof Training
+                innovation
+              </span>{' '}
+              built for the{' '}
+              <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                future
               </span>
             </h1>
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Future-proof your workforce with immersive digital training across aviation,
-              driving, manufacturing, and education sectors.
+            <p className="text-xl text-gray-900 mb-8 leading-relaxed font-medium">
+              Designed for tomorrow’s potential.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="bg-gradient-purple-blue hover:opacity-90 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 text-center hover-lift shadow-lg">

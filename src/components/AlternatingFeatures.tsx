@@ -86,7 +86,7 @@ export default function AlternatingFeatures() {
                         </span>
                     </h2>
                     <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                        Discover what makes ExcelsiorTech the go-to choice for advanced digital training in Canada.
+                        Elevate performance with a future‑ready LMS powered by unmatched assessment excellence.
                     </p>
                 </div>
 
@@ -96,9 +96,8 @@ export default function AlternatingFeatures() {
                             key={feature.id}
                             ref={setFeatureRef(feature.id)}
                             data-feature-id={feature.id}
-                            className={`grid lg:grid-cols-2 gap-12 items-center ${
-                                feature.imagePosition === 'right' ? 'lg:grid-flow-col-dense' : ''
-                            }`}
+                            className={`grid lg:grid-cols-2 gap-12 items-center ${feature.imagePosition === 'right' ? 'lg:grid-flow-col-dense' : ''
+                                }`}
                         >
                             {/* Image Section */}
                             <div className={`relative ${feature.imagePosition === 'right' ? 'lg:col-start-2' : ''}`}>
@@ -148,11 +147,10 @@ export default function AlternatingFeatures() {
                             {/* Text Section */}
                             <div className={`${feature.imagePosition === 'right' ? 'lg:col-start-1' : ''}`}>
                                 <div
-                                    className={`transition-all duration-1000 ease-out ${
-                                        visibleFeatures.has(feature.id)
-                                            ? 'opacity-100 translate-y-0'
-                                            : 'opacity-0 translate-y-8'
-                                    }`}
+                                    className={`transition-all duration-1000 ease-out ${visibleFeatures.has(feature.id)
+                                        ? 'opacity-100 translate-y-0'
+                                        : 'opacity-0 translate-y-8'
+                                        }`}
                                 >
                                     <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
                                         {feature.title}
