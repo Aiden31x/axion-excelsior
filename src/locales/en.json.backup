@@ -1,0 +1,202 @@
+{
+    "nav": {
+        "schools": "Schools",
+        "k12Schools": "K-12 Schools",
+        "tailoredExtras": "Tailored Extras",
+        "trainingAcademies": "Training Academies",
+        "productGuides": "Product Guides",
+        "aboutUs": "About Us",
+        "contact": "Contact",
+        "requestDemo": "Request Demo",
+        "english": "English",
+        "french": "Français"
+    },
+    "hero": {
+        "title": {
+            "part1": "Advancing capability with",
+            "innovation": "innovation",
+            "part2": "built for the",
+            "future": "future"
+        },
+        "subtitle": "Designed for tomorrow's potential.",
+        "explorePrograms": "Explore Programs",
+        "bookDemo": "Book a Demo"
+    },
+    "customerSegments": {
+        "title": "Who We Serve",
+        "subtitle": "Scale talent transformation with an immersive LMS engineered to accelerate learning end‑to‑end.",
+        "schools": {
+            "title": "K–12 Schools",
+            "description": "Comprehensive learning management systems designed for Canadian curriculum standards with bilingual support and provincial compliance.",
+            "features": [
+                "Campus Information Hub",
+                "Intelligent Form Management",
+                "Tailored Education Solutions",
+                "Student Wellness & Achievement",
+                "Unmatched Assessment Excellence",
+                "AI Driven Support Solutions",
+                "Interactive Engagement Strategies"
+            ]
+        },
+        "training": {
+            "title": "Training Academies",
+            "description": "Cutting-edge training academies built to deliver real-world skill development through advanced simulators and intelligent learning systems. From driving schools to pilot programs, our solutions prepare learners for safety, efficiency, and confidence in any environment.",
+            "features": [
+                "Driving Excellence",
+                "Pilot Training Programs",
+                "Adaptive Learning Frameworks",
+                "Safety-First Methodology",
+                "Cost-Effective Scalability",
+                "Future-Ready Skills"
+            ]
+        },
+        "userGuides": {
+            "title": "User Guides",
+            "description": "Digital training solutions for manufacturing sectors including interactive manuals and safety certification programs.",
+            "features": [
+                "Aircraft Maintenance Manuals (AMM)",
+                "Illustrated Parts Catalogues (IPC)",
+                "Component Maintenance Manuals (CMM)",
+                "Troubleshooting Manuals (TSM) / Aircraft Fault Isolation (AFI)",
+                "Wiring Diagram Manuals (WDM)",
+                "Service Bulletins (SB)",
+                "Engine Maintenance Manuals (EMM)",
+                "E-Catalogues",
+                "User Manuals",
+                "Safety Instructions"
+            ]
+        }
+    },
+    "footer": {
+        "description": "Transforming training through digital solutions across schools, aviation, driving & manufacturing with bilingual and compliant platforms designed for Canada.",
+        "quickLinks": "Quick Links",
+        "contactInfo": "Contact Info",
+        "madeInCanada": "Made in Canada",
+        "forCanadianInstitutions": "for Canadian institutions",
+        "allRightsReserved": "All rights reserved."
+    },
+    "about": {
+        "title": "About Us",
+        "subtitle": "Empowering the future of education through innovative technology solutions",
+        "whoWeAre": "Who We Are",
+        "description1": "is a young, ambitious EdTech startup with a simple yet powerful mindset of forward-thinking technology, a startup committed to building innovative digital solutions that empower businesses and individuals. Founded with the belief that technology should simplify lives, we are on a mission to bridge the gap between ideas and execution with smart, scalable, and user-friendly products.",
+        "description2": "Our journey began with a question:",
+        "description3": "\"What if schools, educators, students, and parents could all work together on one unified platform, with everything they need at their fingertips?\"",
+        "ourEthics": "Our Ethics",
+        "ethicsSubtitle": "The principles that guide everything we do",
+        "values": {
+            "innovation": {
+                "title": "Innovation",
+                "description": "Always ahead of the curve"
+            },
+            "integrity": {
+                "title": "Integrity",
+                "description": "Transparency and trust in everything we do"
+            },
+            "customerFirst": {
+                "title": "Customer First",
+                "description": "Creating value for our users and clients"
+            },
+            "excellence": {
+                "title": "Excellence",
+                "description": "Striving for the highest quality in every product"
+            }
+        },
+        "leadershipTeam": "Leadership Team",
+        "leadershipSubtitle": "The visionaries behind our success"
+    },
+    "story": {
+        "title": "Our Story",
+        "history": {
+            "title": "History Of The Company",
+            "content": "Excelsior Tech Inc is a young, ambitious EdTech startup with a forward-thinking technology mindset. Founded with the belief that technology should simplify lives, we bridge the gap between ideas and execution with smart, scalable, and user-friendly products."
+        },
+        "mission": {
+            "title": "Mission",
+            "content": "To redefine how education is delivered, managed, and experienced in the modern world. We catalyze institutional excellence through cutting-edge learning solutions and bespoke services, empowering organizations to thrive in a rapidly evolving landscape."
+        },
+        "values": {
+            "title": "Company Values",
+            "content": "To become a global leader in delivering technology solutions that redefine efficiency, innovation and growth. We have built an all-in-one, cloud-based Learning management platform that blends academic excellence with operational efficiency, extending beyond schools to all industries."
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "us": "Us",
+        "subtitle": "Ready to transform your training through digital solutions? Let's discuss how we can help your Canadian institution with bilingual and compliant platforms.",
+        "requestDemo": "Request a",
+        "demo": "Demo",
+        "formSubtitle": "Fill out the form below and we'll get back to you within 24 hours to discuss your training needs",
+        "getInTouch": "Get in",
+        "touch": "Touch",
+        "getInTouchSubtitle": "Multiple ways to reach our team of digital training experts",
+        "emailUs": "Email Us",
+        "callUs": "Call Us",
+        "visitUs": "Visit Us",
+        "madeInCanada": "Made in Canada 🇨🇦",
+        "forCanadianInstitutions": "for Canadian institutions"
+    },
+    "schools": {
+        "title": "Revolutionary Educational",
+        "solutions": "Solutions",
+        "subtitle": "Experience the future of education with our comprehensive suite of intelligent tools designed to transform learning outcomes",
+        "completeEcosystem": "Complete Educational Ecosystem",
+        "ecosystemSubtitle": "Discover all the tools and features that make learning seamless and effective",
+        "partner": "Our Partner",
+        "partnerSubtitle": "Collaborating with industry leaders to deliver exceptional educational experiences",
+        "trustedPartnership": "Trusted Partnership",
+        "visitPartnerWebsite": "Visit Partner Website",
+        "schoolNetDescription": "A pioneer in educational technology with over two decades of experience, SchoolNet India empowers schools with innovative digital learning solutions, comprehensive assessment tools, and data-driven insights to enhance student outcomes and operational excellence.",
+        "readyToTransform": "Ready to Transform Education?",
+        "readySubtitle": "Join leading Canadian institutions already using Axion Excelsior to supercharge learning outcomes and streamline operations.",
+        "scheduleDemo": "Schedule Demo"
+    },
+    "driving": {
+        "title": "Excelsior Driving",
+        "simulator": "Simulator",
+        "subtitle": "Revolutionizing driver training with our versatile indoor driving simulator designed for comprehensive training of Light, Medium, and Heavy vehicle drivers",
+        "description": "Our versatile indoor driving simulator provides comprehensive training for aspirant drivers of Light, Medium, and Heavy vehicles. With options for Left or Right Hand drive, our simulator is ideal for driving schools and institutes.",
+        "completeTraining": "Complete Training Feature Suite",
+        "trainingSubtitle": "Advanced features designed to provide the most realistic and effective driver training experience",
+        "lightVehicles": "Light Vehicles",
+        "mediumVehicles": "Medium Vehicles",
+        "heavyVehicles": "Heavy Vehicles",
+        "simulationTechnology": "Simulation Technology",
+        "benefits": "Benefits",
+        "benefitsSubtitle": "Experience the advantages of modern simulation technology in driver training",
+        "idealFor": "Ideal For",
+        "idealForSubtitle": "Perfect solution for various educational and training institutions",
+        "readyToTransform": "Ready to Transform Your Driver Training?",
+        "readySubtitle": "Experience the future of driver education with our advanced simulator technology. Contact us to learn more about how we can enhance your training programs."
+    },
+    "userGuide": {
+        "title": "Precision Technical",
+        "documentation": "Documentation",
+        "subtitle": "Elevate your aviation and automotive operations with industry-leading technical publications that ensure safety, compliance, and efficiency",
+        "description": "At Excelsior Technical Publications, our team of seasoned experts has extensive experience in creating and revising high-quality technical documentation for various industries, including major Automobile, Aerospace, Medical and other sectors of the technical publications.",
+        "completeSuite": "Complete Technical Documentation Suite",
+        "suiteSubtitle": "Comprehensive solutions for aviation, automotive, medical, and industrial technical publications",
+        "automobile": "Automobile",
+        "aerospace": "Aerospace",
+        "medical": "Medical",
+        "industrial": "Industrial",
+        "readyToElevate": "Ready to Elevate Your Documentation Standards?",
+        "readySubtitle": "Partner with Excelsior Technical Publications and empower your teams with precise, compliant, and future-ready technical manuals."
+    },
+    "alternating": {
+        "title": "Why Choose Us",
+        "subtitle": "Elevate performance with a future‑ready LMS powered by unmatched assessment excellence.",
+        "trustedExpertise": {
+            "title": "Trusted Expertise",
+            "description": "Delivering high-quality solutions backed by proven experience, strong support, and a client-focused approach—helping you succeed with confidence."
+        },
+        "customTailored": {
+            "title": "Custom-Tailored Learning Management Solutions",
+            "description": "From schools to aviation and manufacturing, our solutions adapt to your industry's unique needs with precision and flexibility."
+        },
+        "regulatoryCompliance": {
+            "title": "Regulatory Compliance",
+            "description": "We ensure all our digital training solutions meet provincial education and industry regulations across Canada. From bilingual standards to sector-specific compliance requirements, our platforms are designed to keep your institution aligned with the latest guidelines."
+        }
+    }
+}

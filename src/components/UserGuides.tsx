@@ -1,177 +1,47 @@
 "use client"
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 
 const TechnicalPublicationsPage = () => {
+  const { t } = useLanguage();
   const [activeFeature, setActiveFeature] = useState(0);
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
 
-  const spotlightFeatures = [
-    {
-      icon: "/alternating/compliance.png",
-      gradient: "from-blue-500 to-cyan-400",
-      title: "Compliance Accuracy",
-      subtitle: "Documentation Excellence",
-      description: "Ensure documentation aligns perfectly with global aviation and automotive standards through rigorous quality control.",
-      details: ["Global Standards Compliance", "Quality Assurance Protocols", "Regulatory Alignment"],
-      stats: { number: "99.9%", label: "Compliance Accuracy" },
-      color: "blue"
-    },
-    {
-      icon: "/alternating/onboarding.png",
-      gradient: "from-green-500 to-emerald-400",
-      title: "Faster Onboarding",
-      subtitle: "Team Efficiency",
-      description: "Enable teams to work efficiently with clear, structured manuals that reduce training time significantly.",
-      details: ["Streamlined Training Process", "Clear Documentation Structure", "Rapid Team Integration"],
-      stats: { number: "85%", label: "Faster Onboarding" },
-      color: "green"
-    },
-    {
-      icon: "/alternating/problem-solving.png",
-      gradient: "from-purple-500 to-pink-400",
-      title: "Issue Resolution Rate",
-      subtitle: "Problem-Solving Excellence",
-      description: "Troubleshooting guides designed to minimize downtime and maximize operational efficiency.",
-      details: ["Systematic Problem Resolution", "Downtime Minimization", "Operational Excellence"],
-      stats: { number: "90%", label: "Issue Resolution Rate" },
-      color: "purple"
-    },
-    {
-      icon: "/alternating/safety (1).png",
-      gradient: "from-red-500 to-orange-400",
-      title: "Safety Aligned",
-      subtitle: "Safety-First Engineering",
-      description: "Manuals engineered with safety-first principles to ensure zero-compromise operational standards.",
-      details: ["Safety-First Design", "Risk Mitigation Protocols", "Zero-Compromise Standards"],
-      stats: { number: "100%", label: "Safety Aligned" },
-      color: "red"
-    }
+  // UI properties for spotlight features
+  const spotlightUIProps = [
+    { icon: "/alternating/compliance.png", gradient: "from-blue-500 to-cyan-400", color: "blue" },
+    { icon: "/alternating/onboarding.png", gradient: "from-green-500 to-emerald-400", color: "green" },
+    { icon: "/alternating/problem-solving.png", gradient: "from-purple-500 to-pink-400", color: "purple" },
+    { icon: "/alternating/safety (1).png", gradient: "from-red-500 to-orange-400", color: "red" }
   ];
 
-  const services = [
-    {
-      icon: "/userguide/aircraft.png",
-      gradient: "from-blue-500 to-cyan-400",
-      title: "Aircraft Maintenance Manuals (AMM)",
-      subtitle: "Comprehensive Service Guides",
-      description: "Detailed step-by-step procedures for safe and efficient aircraft maintenance operations.",
-      details: ["Inspection protocols", "Maintenance schedules", "Repair methods"],
-      stats: { number: "99%", label: "Compliance" },
-      color: "blue"
-    },
-    {
-      icon: "/userguide/catalogue.png",
-      gradient: "from-indigo-500 to-blue-400",
-      title: "Illustrated Parts Catalogues (IPC)",
-      subtitle: "Detailed Component Visualization",
-      description: "Clear, illustrated references for parts and assemblies with comprehensive visual guides.",
-      details: ["Exploded diagrams", "Component lists", "Compatibility mapping"],
-      stats: { number: "80%", label: "Faster Part Identification" },
-      color: "indigo"
-    },
-    {
-      icon: "/userguide/structure repair.png",
-      gradient: "from-green-500 to-teal-400",
-      title: "Structural Repair Manuals (SRM)",
-      subtitle: "Safe & Efficient Structural Repairs",
-      description: "Authoritative guidance for repairing structural components with precision and safety.",
-      details: ["Structural integrity standards", "Approved repair methods", "Compliance-ready documentation"],
-      stats: { number: "70%", label: "Reduced Downtime" },
-      color: "green"
-    },
-    {
-      icon: "/userguide/component.png",
-      gradient: "from-purple-500 to-pink-400",
-      title: "Component Maintenance Manuals (CMM)",
-      subtitle: "Precision Maintenance at Component Level",
-      description: "Detailed servicing and repair procedures for individual aircraft systems and components.",
-      details: ["Disassembly procedures", "Testing standards", "Compliance validation"],
-      stats: { number: "60%", label: "Enhanced Component Life" },
-      color: "purple"
-    },
-    {
-      icon: "/userguide/troubleshooting.png",
-      gradient: "from-yellow-500 to-orange-400",
-      title: "Troubleshooting & Fault Isolation (TSM/AFI)",
-      subtitle: "Smart Problem Resolution",
-      description: "Streamlined guides to isolate and fix system issues with maximum efficiency.",
-      details: ["Diagnostic flowcharts", "Failure analysis", "System recovery steps"],
-      stats: { number: "85%", label: "Faster Problem Resolution" },
-      color: "yellow"
-    },
-    {
-      icon: "/userguide/wire.png",
-      gradient: "from-red-500 to-pink-400",
-      title: "Wiring Diagram Manuals (WDM)",
-      subtitle: "Clarity in Complexity",
-      description: "Comprehensive electrical diagrams to simplify complex systems and reduce errors.",
-      details: ["Wiring layouts", "Circuit tracing", "Safe handling instructions"],
-      stats: { number: "75%", label: "Reduced Electrical Errors" },
-      color: "red"
-    },
-    {
-      icon: "/userguide/service-board.png",
-      gradient: "from-teal-500 to-green-400",
-      title: "Service Bulletins (SB)",
-      subtitle: "Critical Updates On Demand",
-      description: "Time-sensitive updates to ensure compliance and safety with latest regulations.",
-      details: ["Modification notices", "Safety alerts", "Regulatory changes"],
-      stats: { number: "100%", label: "Compliance Guarantee" },
-      color: "teal"
-    },
-    {
-      icon: "/userguide/engine.png",
-      gradient: "from-violet-500 to-purple-400",
-      title: "Engine Maintenance Manuals (EMM)",
-      subtitle: "Reliability at the Core",
-      description: "Authoritative engine maintenance procedures ensuring safety and optimal performance.",
-      details: ["Overhaul processes", "Performance checks", "Safety compliance"],
-      stats: { number: "90%", label: "Improved Engine Reliability" },
-      color: "violet"
-    },
-    {
-      icon: "/userguide/tools.png",
-      gradient: "from-orange-500 to-red-400",
-      title: "Illustrated Tools & Equipment Manuals (ITEM)",
-      subtitle: "Precision in Every Tool",
-      description: "Comprehensive guides for specialized tools and equipment handling with safety focus.",
-      details: ["Usage instructions", "Tool calibration", "Safe operation guides"],
-      stats: { number: "80%", label: "Reduced Handling Errors" },
-      color: "orange"
-    },
-    {
-      icon: "/userguide/e-catalogue.png",
-      gradient: "from-cyan-500 to-blue-400",
-      title: "E-Catalogues",
-      subtitle: "Digital Parts & Product Libraries",
-      description: "Interactive, searchable catalogues for parts and products with instant access.",
-      details: ["Cross-platform access", "Instant search", "Interactive diagrams"],
-      stats: { number: "85%", label: "Faster Access" },
-      color: "cyan"
-    },
-    {
-      icon: "/userguide/user-manual.png",
-      gradient: "from-emerald-500 to-teal-400",
-      title: "User Manuals",
-      subtitle: "Simplified Product Guidance",
-      description: "Intuitive manuals designed for end-users across industries with clear instructions.",
-      details: ["Step-by-step instructions", "Clear visuals", "Safety guidelines"],
-      stats: { number: "95%", label: "Customer Satisfaction" },
-      color: "emerald"
-    },
-    {
-      icon: "/userguide/safety.png",
-      gradient: "from-rose-500 to-pink-400",
-      title: "Safety Instructions",
-      subtitle: "Safety at the Forefront",
-      description: "Critical safety guidelines to minimize risks and ensure complete compliance.",
-      details: ["Hazard warnings", "Operational do's & don'ts", "Compliance standards"],
-      stats: { number: "100%", label: "Safety First" },
-      color: "rose"
-    }
+  const spotlightFeatures = t.userGuide.spotlightFeatures.map((feature, index) => ({
+    ...feature,
+    ...spotlightUIProps[index]
+  }));
+
+  // UI properties for services
+  const serviceUIProps = [
+    { icon: "/userguide/aircraft.png", gradient: "from-blue-500 to-cyan-400", color: "blue" },
+    { icon: "/userguide/catalogue.png", gradient: "from-indigo-500 to-blue-400", color: "indigo" },
+    { icon: "/userguide/structure repair.png", gradient: "from-green-500 to-teal-400", color: "green" },
+    { icon: "/userguide/component.png", gradient: "from-purple-500 to-pink-400", color: "purple" },
+    { icon: "/userguide/troubleshooting.png", gradient: "from-yellow-500 to-orange-400", color: "yellow" },
+    { icon: "/userguide/wire.png", gradient: "from-red-500 to-pink-400", color: "red" },
+    { icon: "/userguide/service-board.png", gradient: "from-teal-500 to-green-400", color: "teal" },
+    { icon: "/userguide/engine.png", gradient: "from-violet-500 to-purple-400", color: "violet" },
+    { icon: "/userguide/tools.png", gradient: "from-orange-500 to-red-400", color: "orange" },
+    { icon: "/userguide/e-catalogue.png", gradient: "from-cyan-500 to-blue-400", color: "cyan" },
+    { icon: "/userguide/user-manual.png", gradient: "from-emerald-500 to-teal-400", color: "emerald" },
+    { icon: "/userguide/safety.png", gradient: "from-rose-500 to-pink-400", color: "rose" }
   ];
+
+  const services = t.userGuide.services.map((service, index) => ({
+    ...service,
+    ...serviceUIProps[index]
+  }));
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -232,17 +102,17 @@ const TechnicalPublicationsPage = () => {
         <div className="relative container mx-auto px-6 py-20">
           <div className="text-center mb-16">
             <h1 className="text-6xl font-bold text-gray-800 mb-6 leading-tight">
-              Precision Technical
+              {t.userGuide.title}
               <span className="block bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-                Documentation
+                {t.userGuide.documentation}
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-              Elevate your aviation and automotive operations with industry-leading technical publications that ensure safety, compliance, and efficiency
+              {t.userGuide.subtitle}
             </p>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto border border-gray-200 shadow-lg">
               <p className="text-lg text-gray-700 leading-relaxed">
-                At <span className="font-semibold text-purple-500">Excelsior Technical Publications</span>, our team of seasoned experts has extensive experience in creating and revising high-quality technical documentation for various industries, including major <span className="font-semibold">Automobile</span>, <span className="font-semibold">Aerospace</span>, <span className="font-semibold">Medical</span> and other sectors of the technical publications.
+                {t.userGuide.description}
               </p>
             </div>
           </div>
@@ -301,16 +171,16 @@ const TechnicalPublicationsPage = () => {
       <section className="container mx-auto px-6 pb-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Complete Technical Documentation Suite
+            {t.userGuide.completeSuite}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Comprehensive solutions for aviation, automotive, medical, and industrial technical publications
+            {t.userGuide.suiteSubtitle}
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <span className="px-6 py-2 bg-blue-100 text-blue-700 rounded-full font-medium">Automobile</span>
-            <span className="px-6 py-2 bg-indigo-100 text-indigo-700 rounded-full font-medium">Aerospace</span>
-            <span className="px-6 py-2 bg-green-100 text-green-700 rounded-full font-medium">Medical</span>
-            <span className="px-6 py-2 bg-purple-100 text-purple-700 rounded-full font-medium">Industrial</span>
+            <span className="px-6 py-2 bg-blue-100 text-blue-700 rounded-full font-medium">{t.userGuide.automobile}</span>
+            <span className="px-6 py-2 bg-indigo-100 text-indigo-700 rounded-full font-medium">{t.userGuide.aerospace}</span>
+            <span className="px-6 py-2 bg-green-100 text-green-700 rounded-full font-medium">{t.userGuide.medical}</span>
+            <span className="px-6 py-2 bg-purple-100 text-purple-700 rounded-full font-medium">{t.userGuide.industrial}</span>
           </div>
         </div>
 
@@ -398,10 +268,10 @@ const TechnicalPublicationsPage = () => {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Elevate Your Documentation Standards?
+            {t.userGuide.readyToElevate}
           </h2>
           <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Partner with Excelsior Technical Publications and empower your teams with precise, compliant, and future-ready technical manuals.
+            {t.userGuide.readySubtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -410,7 +280,7 @@ const TechnicalPublicationsPage = () => {
                 href="/contact"
                 className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                Schedule Demo
+                {t.schools.scheduleDemo}
               </Link>
             </button>
           </div>

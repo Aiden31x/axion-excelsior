@@ -1,0 +1,811 @@
+{
+    "nav": {
+        "schools": "Écoles",
+        "k12Schools": "Écoles K-12",
+        "tailoredExtras": "Extras Sur Mesure",
+        "trainingAcademies": "Académies de Formation",
+        "productGuides": "Guides de Produits",
+        "aboutUs": "À Propos",
+        "contact": "Contact",
+        "requestDemo": "Demander une Démo",
+        "english": "English",
+        "french": "Français"
+    },
+    "hero": {
+        "title": {
+            "part1": "Faire progresser les capacités avec",
+            "innovation": "l'innovation",
+            "part2": "conçue pour",
+            "future": "l'avenir"
+        },
+        "subtitle": "Conçu pour le potentiel de demain.",
+        "explorePrograms": "Explorer les Programmes",
+        "bookDemo": "Réserver une Démo"
+    },
+    "customerSegments": {
+        "title": "Qui Nous Servons",
+        "subtitle": "Transformez les talents à grande échelle avec un LMS immersif conçu pour accélérer l'apprentissage de bout en bout.",
+        "schools": {
+            "title": "Écoles K–12",
+            "description": "Systèmes de gestion de l'apprentissage complets conçus pour les normes du programme canadien avec support bilingue et conformité provinciale.",
+            "features": [
+                "Centre d'Information du Campus",
+                "Gestion Intelligente des Formulaires",
+                "Solutions Éducatives Sur Mesure",
+                "Bien-être et Réussite des Étudiants",
+                "Excellence Inégalée en Évaluation",
+                "Solutions de Support Pilotées par IA",
+                "Stratégies d'Engagement Interactives"
+            ]
+        },
+        "training": {
+            "title": "Académies de Formation",
+            "description": "Académies de formation de pointe conçues pour offrir un développement de compétences réelles grâce à des simulateurs avancés et des systèmes d'apprentissage intelligents. Des écoles de conduite aux programmes de pilotage, nos solutions préparent les apprenants à la sécurité, l'efficacité et la confiance dans n'importe quel environnement.",
+            "features": [
+                "Excellence en Conduite",
+                "Programmes de Formation de Pilotes",
+                "Cadres d'Apprentissage Adaptatifs",
+                "Méthodologie Axée sur la Sécurité",
+                "Évolutivité Rentable",
+                "Compétences Prêtes pour l'Avenir"
+            ]
+        },
+        "userGuides": {
+            "title": "Guides d'Utilisation",
+            "description": "Solutions de formation numériques pour les secteurs manufacturiers, incluant des manuels interactifs et des programmes de certification de sécurité.",
+            "features": [
+                "Manuels de Maintenance d'Aéronefs (AMM)",
+                "Catalogues de Pièces Illustrés (IPC)",
+                "Manuels de Maintenance de Composants (CMM)",
+                "Manuels de Dépannage (TSM) / Isolation de Pannes d'Aéronefs (AFI)",
+                "Manuels de Schémas de Câblage (WDM)",
+                "Bulletins de Service (SB)",
+                "Manuels de Maintenance de Moteurs (EMM)",
+                "Catalogues Électroniques",
+                "Manuels d'Utilisation",
+                "Instructions de Sécurité"
+            ]
+        }
+    },
+    "footer": {
+        "description": "Transformer la formation grâce à des solutions numériques dans les écoles, l'aviation, la conduite et la fabrication avec des plateformes bilingues et conformes conçues pour le Canada.",
+        "quickLinks": "Liens Rapides",
+        "contactInfo": "Informations de Contact",
+        "madeInCanada": "Fabriqué au Canada",
+        "forCanadianInstitutions": "pour les institutions canadiennes",
+        "allRightsReserved": "Tous droits réservés."
+    },
+    "about": {
+        "title": "À Propos de Nous",
+        "subtitle": "Donner du pouvoir à l'avenir de l'éducation grâce à des solutions technologiques innovantes",
+        "whoWeAre": "Qui Nous Sommes",
+        "description1": "est une jeune startup EdTech ambitieuse avec un état d'esprit simple mais puissant de technologie avant-gardiste, une startup engagée à créer des solutions numériques innovantes qui responsabilisent les entreprises et les individus. Fondée avec la conviction que la technologie devrait simplifier la vie, nous sommes en mission pour combler le fossé entre les idées et l'exécution avec des produits intelligents, évolutifs et conviviaux.",
+        "description2": "Notre parcours a commencé avec une question :",
+        "description3": "\"Et si les écoles, les éducateurs, les étudiants et les parents pouvaient tous travailler ensemble sur une plateforme unifiée, avec tout ce dont ils ont besoin à portée de main ?\"",
+        "ourEthics": "Notre Éthique",
+        "ethicsSubtitle": "Les principes qui guident tout ce que nous faisons",
+        "values": {
+            "innovation": {
+                "title": "Innovation",
+                "description": "Toujours en avance sur la courbe"
+            },
+            "integrity": {
+                "title": "Intégrité",
+                "description": "Transparence et confiance dans tout ce que nous faisons"
+            },
+            "customerFirst": {
+                "title": "Client d'Abord",
+                "description": "Créer de la valeur pour nos utilisateurs et clients"
+            },
+            "excellence": {
+                "title": "Excellence",
+                "description": "Viser la plus haute qualité dans chaque produit"
+            }
+        },
+        "leadershipTeam": "Équipe de Direction",
+        "leadershipSubtitle": "Les visionnaires derrière notre succès"
+        ,"team": [
+            {
+                "name": "Tata Rao",
+                "role": "Directeur de la Technologie",
+                "briefDesc": "Leader technologique avec 13+ ans d'expérience dans la fourniture de solutions d'ingénierie innovantes.",
+                "detailedDesc": [
+                    "Expert en SAP, Microsoft Power Platform et technologies CAO/FAO.",
+                    "Combine compétences pratiques et vision stratégique pour accélérer la croissance."
+                ]
+            },
+            {
+                "name": "Anisha Aggarwal",
+                "role": "Marketing et Développement Commercial",
+                "briefDesc": "Marketer stratégique élargissant la portée grâce à la narration basée sur les données.",
+                "detailedDesc": [
+                    "Ingénieure industrielle compétente en analytique et expansion de marché.",
+                    "Construit des relations clients solides dans tous les secteurs."
+                ]
+            },
+            {
+                "name": "Payal Uniyal",
+                "role": "Responsable RH et Finance",
+                "briefDesc": "Stimuler la croissance des ventes et l'excellence opérationnelle depuis 20+ ans.",
+                "detailedDesc": [
+                    "Dirige l'expansion, la réussite client et l'exécution transparente.",
+                    "Co-fondatrice d'AI House Tech Ltd., apportant une perspective mondiale."
+                ]
+            }
+        ]
+    },
+    "story": {
+        "title": "Notre Histoire",
+        "history": {
+            "title": "Histoire de l'Entreprise",
+            "content": "Excelsior Tech Inc est une jeune startup EdTech ambitieuse avec un état d'esprit technologique avant-gardiste. Fondée avec la conviction que la technologie devrait simplifier la vie, nous comblons le fossé entre les idées et l'exécution avec des produits intelligents, évolutifs et conviviaux."
+        },
+        "mission": {
+            "title": "Mission",
+            "content": "Redéfinir la façon dont l'éducation est dispensée, gérée et vécue dans le monde moderne. Nous catalysons l'excellence institutionnelle grâce à des solutions d'apprentissage de pointe et des services sur mesure, permettant aux organisations de prospérer dans un paysage en évolution rapide."
+        },
+        "values": {
+            "title": "Valeurs de l'Entreprise",
+            "content": "Devenir un leader mondial dans la fourniture de solutions technologiques qui redéfinissent l'efficacité, l'innovation et la croissance. Nous avons construit une plateforme de gestion de l'apprentissage tout-en-un basée sur le cloud qui allie excellence académique et efficacité opérationnelle, s'étendant au-delà des écoles à toutes les industries."
+        }
+    },
+    "contact": {
+        "title": "Contactez",
+        "us": "Nous",
+        "subtitle": "Prêt à transformer votre formation grâce à des solutions numériques ? Discutons de la façon dont nous pouvons aider votre institution canadienne avec des plateformes bilingues et conformes.",
+        "requestDemo": "Demander une",
+        "demo": "Démo",
+        "formSubtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures pour discuter de vos besoins en formation",
+        "getInTouch": "Entrer en",
+        "touch": "Contact",
+        "getInTouchSubtitle": "Plusieurs façons de joindre notre équipe d'experts en formation numérique",
+        "emailUs": "Envoyez-nous un Email",
+        "callUs": "Appelez-nous",
+        "visitUs": "Visitez-nous",
+        "madeInCanada": "Fabriqué au Canada 🇨🇦",
+        "forCanadianInstitutions": "pour les institutions canadiennes",
+        "form": {
+            "fullName": "Nom Complet",
+            "fullNamePlaceholder": "Votre nom complet",
+            "organization": "Organisation",
+            "organizationPlaceholder": "Nom de votre organisation",
+            "emailAddress": "Adresse Email",
+            "emailPlaceholder": "votre.email@exemple.com",
+            "phoneNumber": "Numéro de Téléphone",
+            "phonePlaceholder": "+1 (XXX) XXX-XXXX",
+            "serviceOfInterest": "Service d'Intérêt",
+            "selectService": "Sélectionnez un service",
+            "message": "Message",
+            "messagePlaceholder": "Parlez-nous de vos besoins en formation...",
+            "required": "*",
+            "bookWhatsApp": "Réserver une Démo sur WhatsApp",
+            "bookEmail": "Réserver une Démo par Email",
+            "sending": "Envoi de l'Email...",
+            "requiredFieldsAlert": "Veuillez remplir tous les champs obligatoires avant de continuer.",
+            "successAlert": "✅ Demande de démo envoyée avec succès ! Nous vous contacterons bientôt.",
+            "errorAlert": "❌ Échec de l'envoi de l'email. Veuillez essayer l'option WhatsApp ou nous contacter directement.",
+            "services": {
+                "lms": "Système de Gestion de l'Apprentissage Étudiant",
+                "driving": "Système de Gestion d'École de Conduite",
+                "aviation": "Solutions d'Institut de Formation Aéronautique",
+                "manufacturing": "Formation Manufacturière et Manuels Numériques",
+                "multiple": "Plusieurs Services",
+                "other": "Autre"
+            }
+        }
+    },
+    "schools": {
+        "title": "Solutions Éducatives",
+        "solutions": "Révolutionnaires",
+        "subtitle": "Découvrez l'avenir de l'éducation avec notre suite complète d'outils intelligents conçus pour transformer les résultats d'apprentissage",
+        "completeEcosystem": "Écosystème Éducatif Complet",
+        "ecosystemSubtitle": "Découvrez tous les outils et fonctionnalités qui rendent l'apprentissage fluide et efficace",
+        "partner": "Notre Partenaire",
+        "partnerSubtitle": "Collaborer avec les leaders de l'industrie pour offrir des expériences éducatives exceptionnelles",
+        "trustedPartnership": "Partenariat de Confiance",
+        "visitPartnerWebsite": "Visiter le Site du Partenaire",
+        "schoolNetDescription": "Un pionnier de la technologie éducative avec plus de deux décennies d'expérience, SchoolNet India donne aux écoles les moyens d'utiliser des solutions d'apprentissage numérique innovantes, des outils d'évaluation complets et des informations basées sur les données pour améliorer les résultats des élèves et l'excellence opérationnelle.",
+        "readyToTransform": "Prêt à Transformer l'Éducation ?",
+        "readySubtitle": "Rejoignez les principales institutions canadiennes qui utilisent déjà Axion Excelsior pour améliorer les résultats d'apprentissage et rationaliser les opérations.",
+        "scheduleDemo": "Planifier une Démo",
+        "features": [
+            {
+                "title": "Centre d'Information du Campus",
+                "subtitle": "Intelligence Centralisée",
+                "description": "Transformez la gestion des données de votre école avec notre système d'information étudiant complet. Surveillez la présence en temps réel, suivez les progrès académiques et maintenez la conformité sans effort.",
+                "details": [
+                    "Gestion des Données Étudiantes en Temps Réel",
+                    "Gestion Complète du Campus",
+                    "Tenue de dossiers sécurisée et conforme"
+                ],
+                "stats": {
+                    "number": "99,9%",
+                    "label": "Précision des Données"
+                }
+            },
+            {
+                "title": "Gestion Intelligente des Formulaires",
+                "subtitle": "Expérience Numérique Rationalisée",
+                "description": "Révolutionnez les processus d'inscription et d'enregistrement avec des formulaires numériques alimentés par l'IA qui s'adaptent à vos besoins et fournissent des analyses prédictives.",
+                "details": [
+                    "Solutions de Formulaires Numériques",
+                    "Inscription Facilitée",
+                    "Gestion de formulaires alimentée par l'IA"
+                ],
+                "stats": {
+                    "number": "75%",
+                    "label": "Temps Économisé"
+                }
+            },
+            {
+                "title": "Solutions Éducatives Sur Mesure",
+                "subtitle": "Écosystème d'Apprentissage Personnalisé",
+                "description": "Offrez des expériences éducatives personnalisées avec notre plateforme LMS avancée conçue pour l'apprentissage collaboratif et l'alignement des programmes.",
+                "details": [
+                    "Solutions Centrées sur le Programme",
+                    "Éducation Basée sur les Données",
+                    "Technologie Éducative Personnalisable"
+                ],
+                "stats": {
+                    "number": "40%",
+                    "label": "Meilleurs Résultats"
+                }
+            },
+            {
+                "title": "Bien-être et Réussite des Étudiants",
+                "subtitle": "Soutien Holistique des Étudiants",
+                "description": "Favorisez la réussite des étudiants grâce à un suivi complet du bien-être, des informations comportementales et des stratégies d'intervention ciblées.",
+                "details": [
+                    "Plateforme Bien-être et Réussite",
+                    "Soutien Holistique des Étudiants",
+                    "Plateforme d'Épanouissement des Étudiants"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Engagement des Étudiants"
+                }
+            },
+            {
+                "title": "Planification de Carrière à L'épreuve du Temps",
+                "subtitle": "Chemin vers le Succès",
+                "description": "Préparez les étudiants à la main-d'œuvre de demain avec des outils interactifs d'exploration de carrière et des fonctionnalités de planification académique personnalisées.",
+                "details": [
+                    "Chemin vers le Succès",
+                    "Préparer au Décollage",
+                    "Étudiants Prêts pour l'Avenir"
+                ],
+                "stats": {
+                    "number": "90%",
+                    "label": "Préparation de Carrière"
+                }
+            },
+            {
+                "title": "Analytique et Informations Avancées",
+                "subtitle": "Prise de Décision Basée sur les Données",
+                "description": "Débloquez des informations puissantes avec une visualisation de données sophistiquée et des analyses prédictives pour identifier les opportunités et les risques.",
+                "details": [
+                    "Analytique de Réussite des Étudiants",
+                    "Solutions d'Amélioration Scolaire",
+                    "Intelligence Actionnable"
+                ],
+                "stats": {
+                    "number": "60%",
+                    "label": "Meilleures Décisions"
+                }
+            },
+            {
+                "title": "Centre d'Engagement Interactif",
+                "subtitle": "Communauté Connectée",
+                "description": "Construisez des communautés scolaires plus fortes avec des plateformes de communication intégrées qui tiennent tout le monde informé et engagé.",
+                "details": [
+                    "Communication Rationalisée",
+                    "Collaboration Sécurisée",
+                    "Engagement en Temps Réel"
+                ],
+                "stats": {
+                    "number": "95%",
+                    "label": "Satisfaction des Parents"
+                }
+            },
+            {
+                "title": "Systèmes de Support Alimentés par l'IA",
+                "subtitle": "Automatisation Intelligente",
+                "description": "Exploitez la technologie IA de pointe pour des évaluations plus intelligentes, des conseils personnalisés et des tâches administratives automatisées.",
+                "details": [
+                    "Éducation Améliorée par l'IA",
+                    "Solutions de Support Intelligentes",
+                    "Solutions IA Innovantes"
+                ],
+                "stats": {
+                    "number": "50%",
+                    "label": "Temps Admin Économisé"
+                }
+            }
+        ]
+    },
+    "driving": {
+        "title": "Simulateur de Conduite",
+        "simulator": "Excelsior",
+        "subtitle": "Révolutionner la formation des conducteurs avec notre simulateur de conduite intérieur polyvalent conçu pour une formation complète des conducteurs de véhicules légers, moyens et lourds",
+        "description": "Notre simulateur de conduite intérieur polyvalent offre une formation complète pour les conducteurs aspirants de véhicules légers, moyens et lourds. Avec des options pour la conduite à gauche ou à droite, notre simulateur est idéal pour les écoles de conduite et les instituts.",
+        "completeTraining": "Suite Complète de Fonctionnalités de Formation",
+        "trainingSubtitle": "Fonctionnalités avancées conçues pour offrir l'expérience de formation de conducteur la plus réaliste et efficace",
+        "lightVehicles": "Véhicules Légers",
+        "mediumVehicles": "Véhicules Moyens",
+        "heavyVehicles": "Véhicules Lourds",
+        "simulationTechnology": "Technologie de Simulation",
+        "benefits": "Avantages",
+        "benefitsSubtitle": "Découvrez les avantages de la technologie de simulation moderne dans la formation des conducteurs",
+        "idealFor": "Idéal Pour",
+        "idealForSubtitle": "Solution parfaite pour diverses institutions éducatives et de formation",
+        "readyToTransform": "Prêt à Transformer Votre Formation de Conducteur ?",
+        "readySubtitle": "Découvrez l'avenir de l'éducation des conducteurs avec notre technologie de simulateur avancée. Contactez-nous pour en savoir plus sur la façon dont nous pouvons améliorer vos programmes de formation.",
+        "spotlightFeatures": [
+            {
+                "title": "Environnement Réaliste",
+                "subtitle": "Expérience de Formation Immersive",
+                "description": "Tableau de bord réel, commandes, instrumentation et transmission offrent une expérience de conduite authentique.",
+                "details": [
+                    "Assemblage de Tableau de Bord Réel",
+                    "Commandes Authentiques",
+                    "Instrumentation Complète"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Expérience Réaliste"
+                }
+            },
+            {
+                "title": "Conditions Météorologiques",
+                "subtitle": "Formation Tous Temps",
+                "description": "Entraînez-vous dans diverses conditions météorologiques incluant la pluie, le brouillard, la neige et différentes intensités lumineuses.",
+                "details": [
+                    "Simulation de Pluie",
+                    "Conditions de Brouillard",
+                    "Éclairage Variable"
+                ],
+                "stats": {
+                    "number": "12+",
+                    "label": "Scénarios Météo"
+                }
+            },
+            {
+                "title": "Suivi de la Progression",
+                "subtitle": "Apprentissage Basé sur les Données",
+                "description": "Rapports de progression complets et fonction d'enregistrement/lecture pour suivre l'amélioration et détecter les erreurs.",
+                "details": [
+                    "Rapports de Progression",
+                    "Détection d'Erreurs",
+                    "Analytique de Performance"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Amélioration des Compétences"
+                }
+            },
+            {
+                "title": "Configuration Modulaire",
+                "subtitle": "Système de Formation Adaptatif",
+                "description": "Augmentez progressivement les niveaux de difficulté avec plusieurs stations et exercices de formation personnalisables.",
+                "details": [
+                    "Difficulté Progressive",
+                    "Stations Multiples",
+                    "Exercices Personnalisés"
+                ],
+                "stats": {
+                    "number": "50%",
+                    "label": "Apprentissage Plus Rapide"
+                }
+            }
+        ],
+        "features": [
+            {
+                "title": "Environnement de Fonctionnement Réaliste",
+                "subtitle": "Expérience Immersive",
+                "description": "Tableau de bord réel, commandes, instrumentation et transmission offrent l'expérience de simulation de conduite la plus authentique possible.",
+                "details": [
+                    "Composants de tableau de bord réels",
+                    "Systèmes de commande authentiques",
+                    "Instrumentation complète"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Réalisme"
+                }
+            },
+            {
+                "title": "Modèles de Trafic Intelligents",
+                "subtitle": "Simulation de Trafic Réaliste",
+                "description": "Des modèles de trafic avancés pilotés par l'IA créent des scénarios de conduite réalistes qui reflètent les modèles et comportements de trafic du monde réel.",
+                "details": [
+                    "Comportement du trafic IA",
+                    "Scénarios dynamiques",
+                    "Interactions réalistes"
+                ],
+                "stats": {
+                    "number": "95%",
+                    "label": "Précision du Trafic"
+                }
+            },
+            {
+                "title": "Variété de Terrains et Conditions",
+                "subtitle": "Formation Tous Temps",
+                "description": "Simulation complète de météo et terrain incluant la pluie, le brouillard, la neige et diverses conditions d'éclairage pour une formation complète.",
+                "details": [
+                    "Conditions météorologiques multiples",
+                    "Types de terrain variés",
+                    "Systèmes d'éclairage dynamiques"
+                ],
+                "stats": {
+                    "number": "15+",
+                    "label": "Scénarios Météo"
+                }
+            },
+            {
+                "title": "Configuration de Formation Modulaire",
+                "subtitle": "Système d'Apprentissage Adaptatif",
+                "description": "Niveaux de difficulté progressifs avec plusieurs stations de formation et exercices personnalisables pour correspondre au rythme d'apprentissage individuel.",
+                "details": [
+                    "Difficulté progressive",
+                    "Stations multiples",
+                    "Modules de formation personnalisés"
+                ],
+                "stats": {
+                    "number": "8",
+                    "label": "Niveaux de Formation"
+                }
+            },
+            {
+                "title": "Rythme de Formation Personnalisable",
+                "subtitle": "Apprentissage Personnalisé",
+                "description": "Programmes de formation flexibles qui s'adaptent aux vitesses et exigences d'apprentissage individuelles pour un développement optimal des compétences.",
+                "details": [
+                    "Rythme individuel",
+                    "Curriculum adaptatif",
+                    "Objectifs personnalisés"
+                ],
+                "stats": {
+                    "number": "60%",
+                    "label": "Apprentissage Plus Rapide"
+                }
+            },
+            {
+                "title": "Fonction Enregistrement/Lecture",
+                "subtitle": "Analyse de Performance",
+                "description": "Système avancé d'enregistrement et de lecture pour revoir les sessions de conduite, détecter les erreurs et suivre la progression détaillée au fil du temps.",
+                "details": [
+                    "Enregistrement de session",
+                    "Détection d'erreurs",
+                    "Suivi de progression"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Couverture de Session"
+                }
+            },
+            {
+                "title": "Rapports de Progression",
+                "subtitle": "Analytique Détaillée",
+                "description": "Rapports de progression complets avec analytique détaillée pour surveiller l'amélioration et identifier les domaines nécessitant une formation ciblée.",
+                "details": [
+                    "Analytique détaillée",
+                    "Métriques de performance",
+                    "Suivi d'amélioration"
+                ],
+                "stats": {
+                    "number": "20+",
+                    "label": "Métriques Suivies"
+                }
+            },
+            {
+                "title": "Surveillance de Performance",
+                "subtitle": "Retour en Temps Réel",
+                "description": "Surveillance de performance en temps réel avec retour instantané pour aider les stagiaires à comprendre et corriger les comportements de conduite immédiatement.",
+                "details": [
+                    "Retour en temps réel",
+                    "Corrections instantanées",
+                    "Alertes de performance"
+                ],
+                "stats": {
+                    "number": "En Direct",
+                    "label": "Système de Retour"
+                }
+            }
+        ],
+        "benefitsList": [
+            {
+                "title": "Formation Efficace",
+                "description": "Réduisez les heures de formation sur route des stagiaires tout en améliorant les compétences et la confiance.",
+                "stats": "70% Moins de Temps sur Route"
+            },
+            {
+                "title": "Portable et Polyvalent",
+                "description": "Notre simulateur est conçu pour une installation et une utilisation faciles dans divers emplacements.",
+                "stats": "N'importe quel Emplacement"
+            },
+            {
+                "title": "Rentable",
+                "description": "Minimisez les coûts associés aux méthodes de formation traditionnelles.",
+                "stats": "60% d'Économies"
+            }
+        ],
+        "idealForList": [
+            {
+                "title": "Écoles de Conduite",
+                "description": "Améliorez les programmes de formation avec notre technologie de simulateur complète.",
+                "features": [
+                    "Support de programme complet",
+                    "Types de véhicules multiples",
+                    "Suivi de progression"
+                ]
+            },
+            {
+                "title": "Instituts de Formation",
+                "description": "Fournissez une formation complète pour les conducteurs aspirants de toutes les catégories de véhicules.",
+                "features": [
+                    "Formation véhicules légers",
+                    "Formation véhicules moyens",
+                    "Formation véhicules lourds"
+                ]
+            }
+        ]
+    },
+    "userGuide": {
+        "title": "Documentation Technique",
+        "documentation": "de Précision",
+        "subtitle": "Élevez vos opérations aéronautiques et automobiles avec des publications techniques de pointe qui garantissent la sécurité, la conformité et l'efficacité",
+        "description": "Chez Excelsior Technical Publications, notre équipe d'experts chevronnés possède une vaste expérience dans la création et la révision de documentation technique de haute qualité pour diverses industries, y compris les secteurs majeurs de l'automobile, de l'aérospatiale, du médical et d'autres secteurs des publications techniques.",
+        "completeSuite": "Suite Complète de Documentation Technique",
+        "suiteSubtitle": "Solutions complètes pour les publications techniques aéronautiques, automobiles, médicales et industrielles",
+        "automobile": "Automobile",
+        "aerospace": "Aérospatiale",
+        "medical": "Médical",
+        "industrial": "Industriel",
+        "readyToElevate": "Prêt à Élever Vos Normes de Documentation ?",
+        "readySubtitle": "Associez-vous à Excelsior Technical Publications et donnez à vos équipes les moyens d'utiliser des manuels techniques précis, conformes et prêts pour l'avenir.",
+        "spotlightFeatures": [
+            {
+                "title": "Précision de Conformité",
+                "subtitle": "Excellence Documentaire",
+                "description": "Assurez-vous que la documentation s'aligne parfaitement avec les normes mondiales d'aviation et d'automobile grâce à un contrôle qualité rigoureux.",
+                "details": [
+                    "Conformité aux Normes Mondiales",
+                    "Protocoles d'Assurance Qualité",
+                    "Alignement Réglementaire"
+                ],
+                "stats": {
+                    "number": "99,9%",
+                    "label": "Précision de Conformité"
+                }
+            },
+            {
+                "title": "Intégration Plus Rapide",
+                "subtitle": "Efficacité d'Équipe",
+                "description": "Permettez aux équipes de travailler efficacement avec des manuels clairs et structurés qui réduisent considérablement le temps de formation.",
+                "details": [
+                    "Processus de Formation Rationalisé",
+                    "Structure de Documentation Claire",
+                    "Intégration Rapide d'Équipe"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Intégration Plus Rapide"
+                }
+            },
+            {
+                "title": "Taux de Résolution de Problèmes",
+                "subtitle": "Excellence en Résolution de Problèmes",
+                "description": "Guides de dépannage conçus pour minimiser les temps d'arrêt et maximiser l'efficacité opérationnelle.",
+                "details": [
+                    "Résolution Systématique de Problèmes",
+                    "Minimisation des Temps d'Arrêt",
+                    "Excellence Opérationnelle"
+                ],
+                "stats": {
+                    "number": "90%",
+                    "label": "Taux de Résolution de Problèmes"
+                }
+            },
+            {
+                "title": "Alignement Sécurité",
+                "subtitle": "Ingénierie Axée sur la Sécurité",
+                "description": "Manuels conçus selon des principes de sécurité prioritaire pour garantir des normes opérationnelles sans compromis.",
+                "details": [
+                    "Conception Axée sur la Sécurité",
+                    "Protocoles d'Atténuation des Risques",
+                    "Normes Sans Compromis"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Alignement Sécurité"
+                }
+            }
+        ],
+        "services": [
+            {
+                "title": "Manuels de Maintenance d'Aéronefs (AMM)",
+                "subtitle": "Guides de Service Complets",
+                "description": "Procédures détaillées étape par étape pour des opérations de maintenance d'aéronefs sûres et efficaces.",
+                "details": [
+                    "Protocoles d'inspection",
+                    "Calendriers de maintenance",
+                    "Méthodes de réparation"
+                ],
+                "stats": {
+                    "number": "99%",
+                    "label": "Conformité"
+                }
+            },
+            {
+                "title": "Catalogues de Pièces Illustrés (IPC)",
+                "subtitle": "Visualisation Détaillée des Composants",
+                "description": "Références illustrées claires pour les pièces et assemblages avec des guides visuels complets.",
+                "details": [
+                    "Diagrammes éclatés",
+                    "Listes de composants",
+                    "Cartographie de compatibilité"
+                ],
+                "stats": {
+                    "number": "80%",
+                    "label": "Identification Plus Rapide des Pièces"
+                }
+            },
+            {
+                "title": "Manuels de Réparation Structurelle (SRM)",
+                "subtitle": "Réparations Structurelles Sûres et Efficaces",
+                "description": "Conseils faisant autorité pour réparer les composants structurels avec précision et sécurité.",
+                "details": [
+                    "Normes d'intégrité structurelle",
+                    "Méthodes de réparation approuvées",
+                    "Documentation conforme"
+                ],
+                "stats": {
+                    "number": "70%",
+                    "label": "Temps d'Arrêt Réduit"
+                }
+            },
+            {
+                "title": "Manuels de Maintenance de Composants (CMM)",
+                "subtitle": "Maintenance de Précision au Niveau Composant",
+                "description": "Procédures détaillées d'entretien et de réparation pour les systèmes et composants individuels d'aéronefs.",
+                "details": [
+                    "Procédures de démontage",
+                    "Normes de test",
+                    "Validation de conformité"
+                ],
+                "stats": {
+                    "number": "60%",
+                    "label": "Durée de Vie des Composants Améliorée"
+                }
+            },
+            {
+                "title": "Dépannage et Isolation de Pannes (TSM/AFI)",
+                "subtitle": "Résolution Intelligente de Problèmes",
+                "description": "Guides rationalisés pour isoler et résoudre les problèmes système avec une efficacité maximale.",
+                "details": [
+                    "Organigrammes de diagnostic",
+                    "Analyse de défaillance",
+                    "Étapes de récupération système"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Résolution Plus Rapide des Problèmes"
+                }
+            },
+            {
+                "title": "Manuels de Schémas de Câblage (WDM)",
+                "subtitle": "Clarté dans la Complexité",
+                "description": "Schémas électriques complets pour simplifier les systèmes complexes et réduire les erreurs.",
+                "details": [
+                    "Dispositions de câblage",
+                    "Traçage de circuit",
+                    "Instructions de manipulation sûre"
+                ],
+                "stats": {
+                    "number": "75%",
+                    "label": "Erreurs Électriques Réduites"
+                }
+            },
+            {
+                "title": "Bulletins de Service (SB)",
+                "subtitle": "Mises à Jour Critiques à la Demande",
+                "description": "Mises à jour urgentes pour assurer la conformité et la sécurité avec les dernières réglementations.",
+                "details": [
+                    "Avis de modification",
+                    "Alertes de sécurité",
+                    "Changements réglementaires"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Garantie de Conformité"
+                }
+            },
+            {
+                "title": "Manuels de Maintenance de Moteurs (EMM)",
+                "subtitle": "Fiabilité au Cœur",
+                "description": "Procédures faisant autorité pour la maintenance des moteurs garantissant sécurité et performance optimale.",
+                "details": [
+                    "Processus de révision",
+                    "Vérifications de performance",
+                    "Conformité de sécurité"
+                ],
+                "stats": {
+                    "number": "90%",
+                    "label": "Fiabilité Moteur Améliorée"
+                }
+            },
+            {
+                "title": "Manuels d'Outils et Équipements Illustrés (ITEM)",
+                "subtitle": "Précision dans Chaque Outil",
+                "description": "Guides complets pour la manipulation d'outils et d'équipements spécialisés avec accent sur la sécurité.",
+                "details": [
+                    "Instructions d'utilisation",
+                    "Calibration d'outil",
+                    "Guides d'opération sûre"
+                ],
+                "stats": {
+                    "number": "80%",
+                    "label": "Erreurs de Manipulation Réduites"
+                }
+            },
+            {
+                "title": "Catalogues Électroniques",
+                "subtitle": "Bibliothèques Numériques de Pièces et Produits",
+                "description": "Catalogues interactifs et consultables pour pièces et produits avec accès instantané.",
+                "details": [
+                    "Accès multiplateforme",
+                    "Recherche instantanée",
+                    "Diagrammes interactifs"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Accès Plus Rapide"
+                }
+            },
+            {
+                "title": "Manuels d'Utilisation",
+                "subtitle": "Guidance Produit Simplifiée",
+                "description": "Manuels intuitifs conçus pour les utilisateurs finaux dans toutes les industries avec des instructions claires.",
+                "details": [
+                    "Instructions étape par étape",
+                    "Visuels clairs",
+                    "Directives de sécurité"
+                ],
+                "stats": {
+                    "number": "95%",
+                    "label": "Satisfaction Client"
+                }
+            },
+            {
+                "title": "Instructions de Sécurité",
+                "subtitle": "Sécurité au Premier Plan",
+                "description": "Directives de sécurité critiques pour minimiser les risques et assurer une conformité complète.",
+                "details": [
+                    "Avertissements de danger",
+                    "À faire et à ne pas faire opérationnels",
+                    "Normes de conformité"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Sécurité d'Abord"
+                }
+            }
+        ]
+    },
+    "alternating": {
+        "title": "Pourquoi Nous Choisir",
+        "subtitle": "Élevez les performances avec un LMS prêt pour l'avenir alimenté par une excellence d'évaluation inégalée.",
+        "trustedExpertise": {
+            "title": "Expertise de Confiance",
+            "description": "Fournir des solutions de haute qualité soutenues par une expérience éprouvée, un support solide et une approche centrée sur le client—vous aidant à réussir en toute confiance."
+        },
+        "customTailored": {
+            "title": "Solutions de Gestion de l'Apprentissage Sur Mesure",
+            "description": "Des écoles à l'aviation et à la fabrication, nos solutions s'adaptent aux besoins uniques de votre industrie avec précision et flexibilité."
+        },
+        "regulatoryCompliance": {
+            "title": "Conformité Réglementaire",
+            "description": "Nous veillons à ce que toutes nos solutions de formation numériques respectent les réglementations provinciales en matière d'éducation et d'industrie à travers le Canada. Des normes bilingues aux exigences de conformité spécifiques au secteur, nos plateformes sont conçues pour maintenir votre institution alignée sur les dernières directives."
+        }
+    }
+}

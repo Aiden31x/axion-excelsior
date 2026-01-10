@@ -1,6 +1,9 @@
+'use client';
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-gradient-to-br from-purple-50 via-purple-100 to-blue-50 py-16 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -20,8 +23,7 @@ export default function Footer() {
               <span className="ml-3 text-xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"> ExcelsiorTech</span>
             </div>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Transforming training through digital solutions across schools, aviation,
-              driving & manufacturing with bilingual and compliant platforms designed for Canada.
+              {t.footer.description}
             </p>
             <div className="flex space-x-4">
               {/* YouTube */}
@@ -59,16 +61,16 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-gray-900">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-900">{t.footer.quickLinks}</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/about" className="text-gray-600 hover:text-purple-600 transition-colors duration-300">
-                  About Us
+                  {t.nav.aboutUs}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-gray-600 hover:text-purple-600 transition-colors duration-300">
-                  Contact
+                  {t.nav.contact}
                 </Link>
               </li>
             </ul>
@@ -76,7 +78,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-gray-900">Contact Info</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-900">{t.footer.contactInfo}</h3>
             <div className="space-y-3">
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-purple-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,13 +99,13 @@ export default function Footer() {
         <div className="border-t border-purple-200 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm">
-              © 2025  ExcelsiorTechInc. All rights reserved.
+              © 2025 ExcelsiorTechInc. {t.footer.allRightsReserved}
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-gray-600 text-sm flex items-center">
-                Made in Canada
+                {t.footer.madeInCanada}
                 <span className="ml-2 text-red-500">🇨🇦</span>
-                <span className="ml-1">for Canadian institutions</span>
+                <span className="ml-1">{t.footer.forCanadianInstitutions}</span>
               </p>
             </div>
           </div>

@@ -1,7 +1,10 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Hero() {
+  const { t } = useLanguage();
   return (
     <section className="bg-gradient-to-br from-purple-50 via-purple-100 to-blue-50 py-20 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -15,24 +18,24 @@ export default function Hero() {
           {/* Left Column - Text */}
           <div>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              Advancing capability with{' '}
+              {t.hero.title.part1}{' '}
               <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                innovation
+                {t.hero.title.innovation}
               </span>{' '}
-              built for the{' '}
+              {t.hero.title.part2}{' '}
               <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                future
+                {t.hero.title.future}
               </span>
             </h1>
             <p className="text-xl text-gray-900 mb-8 leading-relaxed font-medium">
-              Designed for tomorrow’s potential.
+              {t.hero.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="bg-gradient-purple-blue hover:opacity-90 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 text-center hover-lift shadow-lg">
-                Explore Programs
+                {t.hero.explorePrograms}
               </Link>
               <Link href="/services" className="border-2 border-purple-500 text-purple-600 hover:bg-gradient-purple-blue hover:text-white hover:border-transparent px-8 py-4 rounded-xl font-semibold transition-all duration-300 text-center hover-lift">
-                Book a Demo
+                {t.hero.bookDemo}
               </Link>
             </div>
           </div>

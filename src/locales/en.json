@@ -1,0 +1,811 @@
+{
+    "nav": {
+        "schools": "Schools",
+        "k12Schools": "K-12 Schools",
+        "tailoredExtras": "Tailored Extras",
+        "trainingAcademies": "Training Academies",
+        "productGuides": "Product Guides",
+        "aboutUs": "About Us",
+        "contact": "Contact",
+        "requestDemo": "Request Demo",
+        "english": "English",
+        "french": "Français"
+    },
+    "hero": {
+        "title": {
+            "part1": "Advancing capability with",
+            "innovation": "innovation",
+            "part2": "built for the",
+            "future": "future"
+        },
+        "subtitle": "Designed for tomorrow's potential.",
+        "explorePrograms": "Explore Programs",
+        "bookDemo": "Book a Demo"
+    },
+    "customerSegments": {
+        "title": "Who We Serve",
+        "subtitle": "Scale talent transformation with an immersive LMS engineered to accelerate learning end‑to‑end.",
+        "schools": {
+            "title": "K–12 Schools",
+            "description": "Comprehensive learning management systems designed for Canadian curriculum standards with bilingual support and provincial compliance.",
+            "features": [
+                "Campus Information Hub",
+                "Intelligent Form Management",
+                "Tailored Education Solutions",
+                "Student Wellness & Achievement",
+                "Unmatched Assessment Excellence",
+                "AI Driven Support Solutions",
+                "Interactive Engagement Strategies"
+            ]
+        },
+        "training": {
+            "title": "Training Academies",
+            "description": "Cutting-edge training academies built to deliver real-world skill development through advanced simulators and intelligent learning systems. From driving schools to pilot programs, our solutions prepare learners for safety, efficiency, and confidence in any environment.",
+            "features": [
+                "Driving Excellence",
+                "Pilot Training Programs",
+                "Adaptive Learning Frameworks",
+                "Safety-First Methodology",
+                "Cost-Effective Scalability",
+                "Future-Ready Skills"
+            ]
+        },
+        "userGuides": {
+            "title": "User Guides",
+            "description": "Digital training solutions for manufacturing sectors including interactive manuals and safety certification programs.",
+            "features": [
+                "Aircraft Maintenance Manuals (AMM)",
+                "Illustrated Parts Catalogues (IPC)",
+                "Component Maintenance Manuals (CMM)",
+                "Troubleshooting Manuals (TSM) / Aircraft Fault Isolation (AFI)",
+                "Wiring Diagram Manuals (WDM)",
+                "Service Bulletins (SB)",
+                "Engine Maintenance Manuals (EMM)",
+                "E-Catalogues",
+                "User Manuals",
+                "Safety Instructions"
+            ]
+        }
+    },
+    "footer": {
+        "description": "Transforming training through digital solutions across schools, aviation, driving & manufacturing with bilingual and compliant platforms designed for Canada.",
+        "quickLinks": "Quick Links",
+        "contactInfo": "Contact Info",
+        "madeInCanada": "Made in Canada",
+        "forCanadianInstitutions": "for Canadian institutions",
+        "allRightsReserved": "All rights reserved."
+    },
+    "about": {
+        "title": "About Us",
+        "subtitle": "Empowering the future of education through innovative technology solutions",
+        "whoWeAre": "Who We Are",
+        "description1": "is a young, ambitious EdTech startup with a simple yet powerful mindset of forward-thinking technology, a startup committed to building innovative digital solutions that empower businesses and individuals. Founded with the belief that technology should simplify lives, we are on a mission to bridge the gap between ideas and execution with smart, scalable, and user-friendly products.",
+        "description2": "Our journey began with a question:",
+        "description3": "\"What if schools, educators, students, and parents could all work together on one unified platform, with everything they need at their fingertips?\"",
+        "ourEthics": "Our Ethics",
+        "ethicsSubtitle": "The principles that guide everything we do",
+        "values": {
+            "innovation": {
+                "title": "Innovation",
+                "description": "Always ahead of the curve"
+            },
+            "integrity": {
+                "title": "Integrity",
+                "description": "Transparency and trust in everything we do"
+            },
+            "customerFirst": {
+                "title": "Customer First",
+                "description": "Creating value for our users and clients"
+            },
+            "excellence": {
+                "title": "Excellence",
+                "description": "Striving for the highest quality in every product"
+            }
+        },
+        "leadershipTeam": "Leadership Team",
+        "leadershipSubtitle": "The visionaries behind our success"
+        ,"team": [
+            {
+                "name": "Tata Rao",
+                "role": "Chief Technology Officer",
+                "briefDesc": "Tech leader with 13+ years delivering innovative engineering solutions.",
+                "detailedDesc": [
+                    "Expert in SAP, Microsoft Power Platform, and CAD/CAM technologies.",
+                    "Blends hands-on skills with strategic vision to accelerate growth."
+                ]
+            },
+            {
+                "name": "Anisha Aggarwal",
+                "role": "Marketing & Business Development",
+                "briefDesc": "Strategic marketer growing reach through data-driven storytelling.",
+                "detailedDesc": [
+                    "Industrial Engineer skilled in analytics and market expansion.",
+                    "Builds strong client relationships across industries."
+                ]
+            },
+            {
+                "name": "Payal Uniyal",
+                "role": "HR Operations & Finance Manager",
+                "briefDesc": "Driving sales growth and operational excellence for 20+ years.",
+                "detailedDesc": [
+                    "Leads expansion, client success, and seamless execution.",
+                    "Co-founded AI House Tech Ltd., bringing a global outlook."
+                ]
+            }
+        ]
+    },
+    "story": {
+        "title": "Our Story",
+        "history": {
+            "title": "History Of The Company",
+            "content": "Excelsior Tech Inc is a young, ambitious EdTech startup with a forward-thinking technology mindset. Founded with the belief that technology should simplify lives, we bridge the gap between ideas and execution with smart, scalable, and user-friendly products."
+        },
+        "mission": {
+            "title": "Mission",
+            "content": "To redefine how education is delivered, managed, and experienced in the modern world. We catalyze institutional excellence through cutting-edge learning solutions and bespoke services, empowering organizations to thrive in a rapidly evolving landscape."
+        },
+        "values": {
+            "title": "Company Values",
+            "content": "To become a global leader in delivering technology solutions that redefine efficiency, innovation and growth. We have built an all-in-one, cloud-based Learning management platform that blends academic excellence with operational efficiency, extending beyond schools to all industries."
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "us": "Us",
+        "subtitle": "Ready to transform your training through digital solutions? Let's discuss how we can help your Canadian institution with bilingual and compliant platforms.",
+        "requestDemo": "Request a",
+        "demo": "Demo",
+        "formSubtitle": "Fill out the form below and we'll get back to you within 24 hours to discuss your training needs",
+        "getInTouch": "Get in",
+        "touch": "Touch",
+        "getInTouchSubtitle": "Multiple ways to reach our team of digital training experts",
+        "emailUs": "Email Us",
+        "callUs": "Call Us",
+        "visitUs": "Visit Us",
+        "madeInCanada": "Made in Canada 🇨🇦",
+        "forCanadianInstitutions": "for Canadian institutions",
+        "form": {
+            "fullName": "Full Name",
+            "fullNamePlaceholder": "Your full name",
+            "organization": "Organization",
+            "organizationPlaceholder": "Your organization name",
+            "emailAddress": "Email Address",
+            "emailPlaceholder": "your.email@example.com",
+            "phoneNumber": "Phone Number",
+            "phonePlaceholder": "+1 (XXX) XXX-XXXX",
+            "serviceOfInterest": "Service of Interest",
+            "selectService": "Select a service",
+            "message": "Message",
+            "messagePlaceholder": "Tell us about your training needs...",
+            "required": "*",
+            "bookWhatsApp": "Book a Demo on WhatsApp",
+            "bookEmail": "Book a Demo via Email",
+            "sending": "Sending Email...",
+            "requiredFieldsAlert": "Please fill in all required fields before proceeding.",
+            "successAlert": "✅ Demo request sent successfully! We will contact you soon.",
+            "errorAlert": "❌ Failed to send email. Please try the WhatsApp option or contact us directly.",
+            "services": {
+                "lms": "Student Learning Management System",
+                "driving": "Driving School Management System",
+                "aviation": "Aircraft Training Institute Solutions",
+                "manufacturing": "Manufacturing Training & Digital Manuals",
+                "multiple": "Multiple Services",
+                "other": "Other"
+            }
+        }
+    },
+    "schools": {
+        "title": "Revolutionary Educational",
+        "solutions": "Solutions",
+        "subtitle": "Experience the future of education with our comprehensive suite of intelligent tools designed to transform learning outcomes",
+        "completeEcosystem": "Complete Educational Ecosystem",
+        "ecosystemSubtitle": "Discover all the tools and features that make learning seamless and effective",
+        "partner": "Our Partner",
+        "partnerSubtitle": "Collaborating with industry leaders to deliver exceptional educational experiences",
+        "trustedPartnership": "Trusted Partnership",
+        "visitPartnerWebsite": "Visit Partner Website",
+        "schoolNetDescription": "A pioneer in educational technology with over two decades of experience, SchoolNet India empowers schools with innovative digital learning solutions, comprehensive assessment tools, and data-driven insights to enhance student outcomes and operational excellence.",
+        "readyToTransform": "Ready to Transform Education?",
+        "readySubtitle": "Join leading Canadian institutions already using Axion Excelsior to supercharge learning outcomes and streamline operations.",
+        "scheduleDemo": "Schedule Demo",
+        "features": [
+            {
+                "title": "Campus Information Hub",
+                "subtitle": "Centralized Intelligence",
+                "description": "Transform your school's data management with our comprehensive student information system. Monitor real-time attendance, track academic progress, and maintain compliance effortlessly.",
+                "details": [
+                    "Real-Time Student Data Management",
+                    "Comprehensive Campus Management",
+                    "Secure and compliant record-keeping"
+                ],
+                "stats": {
+                    "number": "99.9%",
+                    "label": "Data Accuracy"
+                }
+            },
+            {
+                "title": "Intelligent Form Management",
+                "subtitle": "Streamlined Digital Experience",
+                "description": "Revolutionize enrollment and registration processes with AI-powered digital forms that adapt to your needs and provide predictive analytics.",
+                "details": [
+                    "Digital Form Solutions",
+                    "Enrollment Made Easy",
+                    "AI-powered form management"
+                ],
+                "stats": {
+                    "number": "75%",
+                    "label": "Time Saved"
+                }
+            },
+            {
+                "title": "Tailored Education Solutions",
+                "subtitle": "Personalized Learning Ecosystem",
+                "description": "Deliver customized educational experiences with our advanced LMS platform designed for collaborative learning and curriculum alignment.",
+                "details": [
+                    "Curriculum-Centric Solutions",
+                    "Data-Driven Education",
+                    "Customizable Education Technology"
+                ],
+                "stats": {
+                    "number": "40%",
+                    "label": "Better Outcomes"
+                }
+            },
+            {
+                "title": "Student Wellness & Achievement",
+                "subtitle": "Holistic Student Support",
+                "description": "Foster student success through comprehensive wellness tracking, behavioral insights, and targeted intervention strategies.",
+                "details": [
+                    "Wellness & Achievement Platform",
+                    "Holistic Student Support",
+                    "Student Thrival Platform"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Student Engagement"
+                }
+            },
+            {
+                "title": "Future-Proof Your Career Planning",
+                "subtitle": "Pathway to Success",
+                "description": "Prepare students for tomorrow's workforce with interactive career exploration tools and personalized academic planning features.",
+                "details": [
+                    "Pathway to Success",
+                    "Prepare for Liftoff",
+                    "Future-Ready Students"
+                ],
+                "stats": {
+                    "number": "90%",
+                    "label": "Career Readiness"
+                }
+            },
+            {
+                "title": "Advanced Analytics & Insights",
+                "subtitle": "Data-Driven Decision Making",
+                "description": "Unlock powerful insights with sophisticated data visualization and predictive analytics to identify opportunities and risks.",
+                "details": [
+                    "Student Success Analytics",
+                    "School Improvement Solutions",
+                    "Actionable Intelligence"
+                ],
+                "stats": {
+                    "number": "60%",
+                    "label": "Better Decisions"
+                }
+            },
+            {
+                "title": "Interactive Engagement Hub",
+                "subtitle": "Connected Community",
+                "description": "Build stronger school communities with integrated communication platforms that keep everyone informed and engaged.",
+                "details": [
+                    "Streamlined Communication",
+                    "Secure Collaboration",
+                    "Real-Time Engagement"
+                ],
+                "stats": {
+                    "number": "95%",
+                    "label": "Parent Satisfaction"
+                }
+            },
+            {
+                "title": "AI-Powered Support Systems",
+                "subtitle": "Intelligent Automation",
+                "description": "Leverage cutting-edge AI technology for smarter assessments, personalized guidance, and automated administrative tasks.",
+                "details": [
+                    "AI-Enhanced Education",
+                    "Smart Support Solutions",
+                    "Innovative AI Solutions"
+                ],
+                "stats": {
+                    "number": "50%",
+                    "label": "Admin Time Saved"
+                }
+            }
+        ]
+    },
+    "driving": {
+        "title": "Excelsior Driving",
+        "simulator": "Simulator",
+        "subtitle": "Revolutionizing driver training with our versatile indoor driving simulator designed for comprehensive training of Light, Medium, and Heavy vehicle drivers",
+        "description": "Our versatile indoor driving simulator provides comprehensive training for aspirant drivers of Light, Medium, and Heavy vehicles. With options for Left or Right Hand drive, our simulator is ideal for driving schools and institutes.",
+        "completeTraining": "Complete Training Feature Suite",
+        "trainingSubtitle": "Advanced features designed to provide the most realistic and effective driver training experience",
+        "lightVehicles": "Light Vehicles",
+        "mediumVehicles": "Medium Vehicles",
+        "heavyVehicles": "Heavy Vehicles",
+        "simulationTechnology": "Simulation Technology",
+        "benefits": "Benefits",
+        "benefitsSubtitle": "Experience the advantages of modern simulation technology in driver training",
+        "idealFor": "Ideal For",
+        "idealForSubtitle": "Perfect solution for various educational and training institutions",
+        "readyToTransform": "Ready to Transform Your Driver Training?",
+        "readySubtitle": "Experience the future of driver education with our advanced simulator technology. Contact us to learn more about how we can enhance your training programs.",
+        "spotlightFeatures": [
+            {
+                "title": "Realistic Environment",
+                "subtitle": "Immersive Training Experience",
+                "description": "Real dashboard assembly, controls, instrumentation, and transmission provide an authentic driving experience.",
+                "details": [
+                    "Real Dashboard Assembly",
+                    "Authentic Controls",
+                    "Complete Instrumentation"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Realistic Experience"
+                }
+            },
+            {
+                "title": "Weather Conditions",
+                "subtitle": "All-Weather Training",
+                "description": "Train in various weather conditions including rain, fog, snowfall, and different light intensities.",
+                "details": [
+                    "Rain Simulation",
+                    "Fog Conditions",
+                    "Variable Lighting"
+                ],
+                "stats": {
+                    "number": "12+",
+                    "label": "Weather Scenarios"
+                }
+            },
+            {
+                "title": "Progress Tracking",
+                "subtitle": "Data-Driven Learning",
+                "description": "Comprehensive progress reports and record/playback facility to track improvement and detect errors.",
+                "details": [
+                    "Progress Reports",
+                    "Error Detection",
+                    "Performance Analytics"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Skill Improvement"
+                }
+            },
+            {
+                "title": "Modular Setup",
+                "subtitle": "Adaptive Training System",
+                "description": "Increase difficulty levels progressively with multiple stations and customizable training exercises.",
+                "details": [
+                    "Progressive Difficulty",
+                    "Multiple Stations",
+                    "Custom Exercises"
+                ],
+                "stats": {
+                    "number": "50%",
+                    "label": "Faster Learning"
+                }
+            }
+        ],
+        "features": [
+            {
+                "title": "Realistic Operating Environment",
+                "subtitle": "Immersive Experience",
+                "description": "Real dashboard assembly, controls, instrumentation, and transmission provide the most authentic driving simulation experience possible.",
+                "details": [
+                    "Real dashboard components",
+                    "Authentic control systems",
+                    "Complete instrumentation"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Realism"
+                }
+            },
+            {
+                "title": "Intelligent Traffic Models",
+                "subtitle": "Realistic Traffic Simulation",
+                "description": "Advanced AI-driven traffic models create realistic driving scenarios that mirror real-world traffic patterns and behaviors.",
+                "details": [
+                    "AI traffic behavior",
+                    "Dynamic scenarios",
+                    "Realistic interactions"
+                ],
+                "stats": {
+                    "number": "95%",
+                    "label": "Traffic Accuracy"
+                }
+            },
+            {
+                "title": "Variety of Terrains and Conditions",
+                "subtitle": "All-Weather Training",
+                "description": "Comprehensive weather and terrain simulation including rain, fog, snow, and various lighting conditions for complete training.",
+                "details": [
+                    "Multiple weather conditions",
+                    "Various terrain types",
+                    "Dynamic lighting systems"
+                ],
+                "stats": {
+                    "number": "15+",
+                    "label": "Weather Scenarios"
+                }
+            },
+            {
+                "title": "Modular Training Setup",
+                "subtitle": "Adaptive Learning System",
+                "description": "Progressive difficulty levels with multiple training stations and customizable exercises to match individual learning pace.",
+                "details": [
+                    "Progressive difficulty",
+                    "Multiple stations",
+                    "Custom training modules"
+                ],
+                "stats": {
+                    "number": "8",
+                    "label": "Training Levels"
+                }
+            },
+            {
+                "title": "Customizable Training Pace",
+                "subtitle": "Personalized Learning",
+                "description": "Flexible training programs that adapt to individual learning speeds and requirements for optimal skill development.",
+                "details": [
+                    "Individual pacing",
+                    "Adaptive curriculum",
+                    "Custom objectives"
+                ],
+                "stats": {
+                    "number": "60%",
+                    "label": "Faster Learning"
+                }
+            },
+            {
+                "title": "Record/Playback Facility",
+                "subtitle": "Performance Analysis",
+                "description": "Advanced recording and playback system to review driving sessions, detect errors, and track detailed progress over time.",
+                "details": [
+                    "Session recording",
+                    "Error detection",
+                    "Progress tracking"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Session Coverage"
+                }
+            },
+            {
+                "title": "Progress Reports",
+                "subtitle": "Detailed Analytics",
+                "description": "Comprehensive progress reports with detailed analytics to monitor improvement and identify areas for focused training.",
+                "details": [
+                    "Detailed analytics",
+                    "Performance metrics",
+                    "Improvement tracking"
+                ],
+                "stats": {
+                    "number": "20+",
+                    "label": "Metrics Tracked"
+                }
+            },
+            {
+                "title": "Performance Monitoring",
+                "subtitle": "Real-Time Feedback",
+                "description": "Real-time performance monitoring with instant feedback to help trainees understand and correct driving behaviors immediately.",
+                "details": [
+                    "Real-time feedback",
+                    "Instant corrections",
+                    "Performance alerts"
+                ],
+                "stats": {
+                    "number": "Live",
+                    "label": "Feedback System"
+                }
+            }
+        ],
+        "benefitsList": [
+            {
+                "title": "Effective Training",
+                "description": "Reduce trainees' hours of actual on-road training while improving skills and confidence.",
+                "stats": "70% Less Road Time"
+            },
+            {
+                "title": "Portable and Versatile",
+                "description": "Our simulator is designed for easy setup and use in various locations.",
+                "stats": "Any Location"
+            },
+            {
+                "title": "Cost-Effective",
+                "description": "Minimize costs associated with traditional training methods.",
+                "stats": "60% Cost Savings"
+            }
+        ],
+        "idealForList": [
+            {
+                "title": "Driving Schools",
+                "description": "Enhance training programs with our comprehensive simulator technology.",
+                "features": [
+                    "Complete curriculum support",
+                    "Multiple vehicle types",
+                    "Progress tracking"
+                ]
+            },
+            {
+                "title": "Training Institutes",
+                "description": "Provide comprehensive training for aspirant drivers of all vehicle categories.",
+                "features": [
+                    "Light vehicle training",
+                    "Medium vehicle training",
+                    "Heavy vehicle training"
+                ]
+            }
+        ]
+    },
+    "userGuide": {
+        "title": "Precision Technical",
+        "documentation": "Documentation",
+        "subtitle": "Elevate your aviation and automotive operations with industry-leading technical publications that ensure safety, compliance, and efficiency",
+        "description": "At Excelsior Technical Publications, our team of seasoned experts has extensive experience in creating and revising high-quality technical documentation for various industries, including major Automobile, Aerospace, Medical and other sectors of the technical publications.",
+        "completeSuite": "Complete Technical Documentation Suite",
+        "suiteSubtitle": "Comprehensive solutions for aviation, automotive, medical, and industrial technical publications",
+        "automobile": "Automobile",
+        "aerospace": "Aerospace",
+        "medical": "Medical",
+        "industrial": "Industrial",
+        "readyToElevate": "Ready to Elevate Your Documentation Standards?",
+        "readySubtitle": "Partner with Excelsior Technical Publications and empower your teams with precise, compliant, and future-ready technical manuals.",
+        "spotlightFeatures": [
+            {
+                "title": "Compliance Accuracy",
+                "subtitle": "Documentation Excellence",
+                "description": "Ensure documentation aligns perfectly with global aviation and automotive standards through rigorous quality control.",
+                "details": [
+                    "Global Standards Compliance",
+                    "Quality Assurance Protocols",
+                    "Regulatory Alignment"
+                ],
+                "stats": {
+                    "number": "99.9%",
+                    "label": "Compliance Accuracy"
+                }
+            },
+            {
+                "title": "Faster Onboarding",
+                "subtitle": "Team Efficiency",
+                "description": "Enable teams to work efficiently with clear, structured manuals that reduce training time significantly.",
+                "details": [
+                    "Streamlined Training Process",
+                    "Clear Documentation Structure",
+                    "Rapid Team Integration"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Faster Onboarding"
+                }
+            },
+            {
+                "title": "Issue Resolution Rate",
+                "subtitle": "Problem-Solving Excellence",
+                "description": "Troubleshooting guides designed to minimize downtime and maximize operational efficiency.",
+                "details": [
+                    "Systematic Problem Resolution",
+                    "Downtime Minimization",
+                    "Operational Excellence"
+                ],
+                "stats": {
+                    "number": "90%",
+                    "label": "Issue Resolution Rate"
+                }
+            },
+            {
+                "title": "Safety Aligned",
+                "subtitle": "Safety-First Engineering",
+                "description": "Manuals engineered with safety-first principles to ensure zero-compromise operational standards.",
+                "details": [
+                    "Safety-First Design",
+                    "Risk Mitigation Protocols",
+                    "Zero-Compromise Standards"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Safety Aligned"
+                }
+            }
+        ],
+        "services": [
+            {
+                "title": "Aircraft Maintenance Manuals (AMM)",
+                "subtitle": "Comprehensive Service Guides",
+                "description": "Detailed step-by-step procedures for safe and efficient aircraft maintenance operations.",
+                "details": [
+                    "Inspection protocols",
+                    "Maintenance schedules",
+                    "Repair methods"
+                ],
+                "stats": {
+                    "number": "99%",
+                    "label": "Compliance"
+                }
+            },
+            {
+                "title": "Illustrated Parts Catalogues (IPC)",
+                "subtitle": "Detailed Component Visualization",
+                "description": "Clear, illustrated references for parts and assemblies with comprehensive visual guides.",
+                "details": [
+                    "Exploded diagrams",
+                    "Component lists",
+                    "Compatibility mapping"
+                ],
+                "stats": {
+                    "number": "80%",
+                    "label": "Faster Part Identification"
+                }
+            },
+            {
+                "title": "Structural Repair Manuals (SRM)",
+                "subtitle": "Safe & Efficient Structural Repairs",
+                "description": "Authoritative guidance for repairing structural components with precision and safety.",
+                "details": [
+                    "Structural integrity standards",
+                    "Approved repair methods",
+                    "Compliance-ready documentation"
+                ],
+                "stats": {
+                    "number": "70%",
+                    "label": "Reduced Downtime"
+                }
+            },
+            {
+                "title": "Component Maintenance Manuals (CMM)",
+                "subtitle": "Precision Maintenance at Component Level",
+                "description": "Detailed servicing and repair procedures for individual aircraft systems and components.",
+                "details": [
+                    "Disassembly procedures",
+                    "Testing standards",
+                    "Compliance validation"
+                ],
+                "stats": {
+                    "number": "60%",
+                    "label": "Enhanced Component Life"
+                }
+            },
+            {
+                "title": "Troubleshooting & Fault Isolation (TSM/AFI)",
+                "subtitle": "Smart Problem Resolution",
+                "description": "Streamlined guides to isolate and fix system issues with maximum efficiency.",
+                "details": [
+                    "Diagnostic flowcharts",
+                    "Failure analysis",
+                    "System recovery steps"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Faster Problem Resolution"
+                }
+            },
+            {
+                "title": "Wiring Diagram Manuals (WDM)",
+                "subtitle": "Clarity in Complexity",
+                "description": "Comprehensive electrical diagrams to simplify complex systems and reduce errors.",
+                "details": [
+                    "Wiring layouts",
+                    "Circuit tracing",
+                    "Safe handling instructions"
+                ],
+                "stats": {
+                    "number": "75%",
+                    "label": "Reduced Electrical Errors"
+                }
+            },
+            {
+                "title": "Service Bulletins (SB)",
+                "subtitle": "Critical Updates On Demand",
+                "description": "Time-sensitive updates to ensure compliance and safety with latest regulations.",
+                "details": [
+                    "Modification notices",
+                    "Safety alerts",
+                    "Regulatory changes"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Compliance Guarantee"
+                }
+            },
+            {
+                "title": "Engine Maintenance Manuals (EMM)",
+                "subtitle": "Reliability at the Core",
+                "description": "Authoritative engine maintenance procedures ensuring safety and optimal performance.",
+                "details": [
+                    "Overhaul processes",
+                    "Performance checks",
+                    "Safety compliance"
+                ],
+                "stats": {
+                    "number": "90%",
+                    "label": "Improved Engine Reliability"
+                }
+            },
+            {
+                "title": "Illustrated Tools & Equipment Manuals (ITEM)",
+                "subtitle": "Precision in Every Tool",
+                "description": "Comprehensive guides for specialized tools and equipment handling with safety focus.",
+                "details": [
+                    "Usage instructions",
+                    "Tool calibration",
+                    "Safe operation guides"
+                ],
+                "stats": {
+                    "number": "80%",
+                    "label": "Reduced Handling Errors"
+                }
+            },
+            {
+                "title": "E-Catalogues",
+                "subtitle": "Digital Parts & Product Libraries",
+                "description": "Interactive, searchable catalogues for parts and products with instant access.",
+                "details": [
+                    "Cross-platform access",
+                    "Instant search",
+                    "Interactive diagrams"
+                ],
+                "stats": {
+                    "number": "85%",
+                    "label": "Faster Access"
+                }
+            },
+            {
+                "title": "User Manuals",
+                "subtitle": "Simplified Product Guidance",
+                "description": "Intuitive manuals designed for end-users across industries with clear instructions.",
+                "details": [
+                    "Step-by-step instructions",
+                    "Clear visuals",
+                    "Safety guidelines"
+                ],
+                "stats": {
+                    "number": "95%",
+                    "label": "Customer Satisfaction"
+                }
+            },
+            {
+                "title": "Safety Instructions",
+                "subtitle": "Safety at the Forefront",
+                "description": "Critical safety guidelines to minimize risks and ensure complete compliance.",
+                "details": [
+                    "Hazard warnings",
+                    "Operational do's & don'ts",
+                    "Compliance standards"
+                ],
+                "stats": {
+                    "number": "100%",
+                    "label": "Safety First"
+                }
+            }
+        ]
+    },
+    "alternating": {
+        "title": "Why Choose Us",
+        "subtitle": "Elevate performance with a future‑ready LMS powered by unmatched assessment excellence.",
+        "trustedExpertise": {
+            "title": "Trusted Expertise",
+            "description": "Delivering high-quality solutions backed by proven experience, strong support, and a client-focused approach—helping you succeed with confidence."
+        },
+        "customTailored": {
+            "title": "Custom-Tailored Learning Management Solutions",
+            "description": "From schools to aviation and manufacturing, our solutions adapt to your industry's unique needs with precision and flexibility."
+        },
+        "regulatoryCompliance": {
+            "title": "Regulatory Compliance",
+            "description": "We ensure all our digital training solutions meet provincial education and industry regulations across Canada. From bilingual standards to sector-specific compliance requirements, our platforms are designed to keep your institution aligned with the latest guidelines."
+        }
+    }
+}

@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Mail } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 // EmailJS configuration - Replace these with your actual values from EmailJS dashboard
 const EMAILJS_CONFIG = {
@@ -26,6 +27,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 export default function BookDemoForm() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     organization: '',
@@ -51,7 +53,7 @@ export default function BookDemoForm() {
     e.preventDefault();
 
     if (!formData.name || !formData.organization || !formData.email || !formData.service) {
-      alert('Please fill in all required fields before proceeding.');
+      alert(t.contact.form.requiredFieldsAlert);
       return;
     }
 
@@ -74,7 +76,7 @@ Message: ${formData.message}`;
     e.preventDefault();
 
     if (!formData.name || !formData.organization || !formData.email || !formData.service) {
-      alert('Please fill in all required fields before proceeding.');
+      alert(t.contact.form.requiredFieldsAlert);
       return;
     }
 
@@ -101,7 +103,7 @@ Message: ${formData.message}`;
       );
 
       console.log('Email sent successfully:', response);
-      alert('✅ Demo request sent successfully! We will contact you soon.');
+      alert(t.contact.form.successAlert);
 
       setFormData({
         name: '',
@@ -113,7 +115,7 @@ Message: ${formData.message}`;
       });
     } catch (error) {
       console.error('EmailJS Error:', error);
-      alert('❌ Failed to send email. Please try the WhatsApp option or contact us directly.');
+      alert(t.contact.form.errorAlert);
     } finally {
       setIsLoading(false);
     }
@@ -124,7 +126,7 @@ Message: ${formData.message}`;
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-            Full Name *
+            {t.contact.form.fullName} {t.contact.form.required}
           </label>
           <input
             type="text"
@@ -134,12 +136,12 @@ Message: ${formData.message}`;
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-            placeholder="Your full name"
+            placeholder={t.contact.form.fullNamePlaceholder}
           />
         </div>
         <div>
           <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-2">
-            Organization *
+            {t.contact.form.organization} {t.contact.form.required}
           </label>
           <input
             type="text"
@@ -149,7 +151,7 @@ Message: ${formData.message}`;
             value={formData.organization}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-            placeholder="Your organization name"
+            placeholder={t.contact.form.organizationPlaceholder}
           />
         </div>
       </div>
@@ -157,7 +159,7 @@ Message: ${formData.message}`;
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-            Email Address *
+            {t.contact.form.emailAddress} {t.contact.form.required}
           </label>
           <input
             type="email"
@@ -167,12 +169,12 @@ Message: ${formData.message}`;
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-            placeholder="your.email@example.com"
+            placeholder={t.contact.form.emailPlaceholder}
           />
         </div>
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-            Phone Number
+            {t.contact.form.phoneNumber}
           </label>
           <input
             type="tel"
@@ -181,14 +183,14 @@ Message: ${formData.message}`;
             value={formData.phone}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-            placeholder="+1 (XXX) XXX-XXXX"
+            placeholder={t.contact.form.phonePlaceholder}
           />
         </div>
       </div>
 
       <div>
         <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-          Service of Interest *
+          {t.contact.form.serviceOfInterest} {t.contact.form.required}
         </label>
         <select
           id="service"
@@ -198,19 +200,19 @@ Message: ${formData.message}`;
           onChange={handleChange}
           className="w-full px-4 py-3 border border-gray-300 rounded-lg"
         >
-          <option value="">Select a service</option>
-          <option value="LMS">Student Learning Management System</option>
-          <option value="Driving">Driving School Management System</option>
-          <option value="Aviation">Aircraft Training Institute Solutions</option>
-          <option value="Manufacturing">Manufacturing Training & Digital Manuals</option>
-          <option value="Multiple">Multiple Services</option>
-          <option value="Other">Other</option>
+          <option value="">{t.contact.form.selectService}</option>
+          <option value="LMS">{t.contact.form.services.lms}</option>
+          <option value="Driving">{t.contact.form.services.driving}</option>
+          <option value="Aviation">{t.contact.form.services.aviation}</option>
+          <option value="Manufacturing">{t.contact.form.services.manufacturing}</option>
+          <option value="Multiple">{t.contact.form.services.multiple}</option>
+          <option value="Other">{t.contact.form.services.other}</option>
         </select>
       </div>
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-          Message
+          {t.contact.form.message}
         </label>
         <textarea
           id="message"
@@ -219,7 +221,7 @@ Message: ${formData.message}`;
           value={formData.message}
           onChange={handleChange}
           className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-          placeholder="Tell us about your training needs..."
+          placeholder={t.contact.form.messagePlaceholder}
         />
       </div>
 
@@ -230,7 +232,7 @@ Message: ${formData.message}`;
           className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
         >
           <WhatsAppIcon />
-          Book a Demo on WhatsApp
+          {t.contact.form.bookWhatsApp}
         </button>
 
         <button
@@ -238,12 +240,12 @@ Message: ${formData.message}`;
           onClick={handleEmailSubmit}
           disabled={isLoading}
           className={`w-full px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 ${isLoading
-              ? 'bg-gray-400 cursor-not-allowed text-white'
-              : 'bg-blue-600 hover:bg-blue-700 text-white'
+            ? 'bg-gray-400 cursor-not-allowed text-white'
+            : 'bg-blue-600 hover:bg-blue-700 text-white'
             }`}
         >
           <Mail size={20} />
-          {isLoading ? 'Sending Email...' : 'Book a Demo via Email'}
+          {isLoading ? t.contact.form.sending : t.contact.form.bookEmail}
         </button>
       </div>
     </div>

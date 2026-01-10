@@ -2,92 +2,30 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const K12SchoolsPage = () => {
+  const { t } = useLanguage();
   const [activeFeature, setActiveFeature] = useState(0);
   const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
-  const features = [
-    {
-      icon: "/icons/school.png",
-      gradient: "from-blue-500 to-cyan-400",
-      title: "Campus Information Hub",
-      subtitle: "Centralized Intelligence",
-      description: "Transform your school's data management with our comprehensive student information system. Monitor real-time attendance, track academic progress, and maintain compliance effortlessly.",
-      details: ["Real-Time Student Data Management", "Comprehensive Campus Management", "Secure and compliant record-keeping"],
-      stats: { number: "99.9%", label: "Data Accuracy" },
-      color: "blue"
-    },
-    {
-      icon: "/icons/form.png",
-      gradient: "from-purple-500 to-pink-400",
-      title: "Intelligent Form Management",
-      subtitle: "Streamlined Digital Experience",
-      description: "Revolutionize enrollment and registration processes with AI-powered digital forms that adapt to your needs and provide predictive analytics.",
-      details: ["Digital Form Solutions", "Enrollment Made Easy", "AI-powered form management"],
-      stats: { number: "75%", label: "Time Saved" },
-      color: "purple"
-    },
-    {
-      icon: "/icons/education.png",
-      gradient: "from-green-500 to-teal-400",
-      title: "Tailored Education Solutions",
-      subtitle: "Personalized Learning Ecosystem",
-      description: "Deliver customized educational experiences with our advanced LMS platform designed for collaborative learning and curriculum alignment.",
-      details: ["Curriculum-Centric Solutions", "Data-Driven Education", "Customizable Education Technology"],
-      stats: { number: "40%", label: "Better Outcomes" },
-      color: "green"
-    },
-    {
-      icon: "/icons/student.png",
-      gradient: "from-yellow-500 to-orange-400",
-      title: "Student Wellness & Achievement",
-      subtitle: "Holistic Student Support",
-      description: "Foster student success through comprehensive wellness tracking, behavioral insights, and targeted intervention strategies.",
-      details: ["Wellness & Achievement Platform", "Holistic Student Support", "Student Thrival Platform"],
-      stats: { number: "85%", label: "Student Engagement" },
-      color: "yellow"
-    },
-    {
-      icon: "/icons/career.png",
-      gradient: "from-indigo-500 to-blue-400",
-      title: "Future-Proof Your Career Planning",
-      subtitle: "Pathway to Success",
-      description: "Prepare students for tomorrow's workforce with interactive career exploration tools and personalized academic planning features.",
-      details: ["Pathway to Success", "Prepare for Liftoff", "Future-Ready Students"],
-      stats: { number: "90%", label: "Career Readiness" },
-      color: "indigo"
-    },
-    {
-      icon: "/icons/analysis.png",
-      gradient: "from-red-500 to-pink-400",
-      title: "Advanced Analytics & Insights",
-      subtitle: "Data-Driven Decision Making",
-      description: "Unlock powerful insights with sophisticated data visualization and predictive analytics to identify opportunities and risks.",
-      details: ["Student Success Analytics", "School Improvement Solutions", "Actionable Intelligence"],
-      stats: { number: "60%", label: "Better Decisions" },
-      color: "red"
-    },
-    {
-      icon: "/icons/handshake.png",
-      gradient: "from-teal-500 to-green-400",
-      title: "Interactive Engagement Hub",
-      subtitle: "Connected Community",
-      description: "Build stronger school communities with integrated communication platforms that keep everyone informed and engaged.",
-      details: ["Streamlined Communication", "Secure Collaboration", "Real-Time Engagement"],
-      stats: { number: "95%", label: "Parent Satisfaction" },
-      color: "teal"
-    },
-    {
-      icon: "/icons/aisystem.png",
-      gradient: "from-violet-500 to-purple-400",
-      title: "AI-Powered Support Systems",
-      subtitle: "Intelligent Automation",
-      description: "Leverage cutting-edge AI technology for smarter assessments, personalized guidance, and automated administrative tasks.",
-      details: ["AI-Enhanced Education", "Smart Support Solutions", "Innovative AI Solutions"],
-      stats: { number: "50%", label: "Admin Time Saved" },
-      color: "violet"
-    }
+
+  // UI properties for features (icons, gradients, colors)
+  const featureUIProps = [
+    { icon: "/icons/school.png", gradient: "from-blue-500 to-cyan-400", color: "blue" },
+    { icon: "/icons/form.png", gradient: "from-purple-500 to-pink-400", color: "purple" },
+    { icon: "/icons/education.png", gradient: "from-green-500 to-teal-400", color: "green" },
+    { icon: "/icons/student.png", gradient: "from-yellow-500 to-orange-400", color: "yellow" },
+    { icon: "/icons/career.png", gradient: "from-indigo-500 to-blue-400", color: "indigo" },
+    { icon: "/icons/analysis.png", gradient: "from-red-500 to-pink-400", color: "red" },
+    { icon: "/icons/handshake.png", gradient: "from-teal-500 to-green-400", color: "teal" },
+    { icon: "/icons/aisystem.png", gradient: "from-violet-500 to-purple-400", color: "violet" }
   ];
+
+  // Merge translation data with UI properties
+  const features = t.schools.features.map((feature, index) => ({
+    ...feature,
+    ...featureUIProps[index]
+  }));
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -138,13 +76,13 @@ const K12SchoolsPage = () => {
         <div className="relative container mx-auto px-6 py-20">
           <div className="text-center mb-16">
             <h1 className="text-6xl font-bold text-gray-800 mb-6 leading-tight">
-              Revolutionary Educational
+              {t.schools.title}
               <span className="block bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-                Solutions
+                {t.schools.solutions}
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Experience the future of education with our comprehensive suite of intelligent tools designed to transform learning outcomes
+              {t.schools.subtitle}
             </p>
           </div>
         </div>
@@ -208,10 +146,10 @@ const K12SchoolsPage = () => {
       <section className="container mx-auto px-6 pb-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Complete Educational Ecosystem
+            {t.schools.completeEcosystem}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover all the tools and features that make learning seamless and effective
+            {t.schools.ecosystemSubtitle}
           </p>
         </div>
 
@@ -306,11 +244,11 @@ const K12SchoolsPage = () => {
       <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-16">
         <div className="container mx-auto px-4">
           <div className="mb-4 text-center text-sm font-semibold uppercase tracking-wide text-orange-600">
-            Trusted Partnership
+            {t.schools.trustedPartnership}
           </div>
-          <h2 className="mb-4 text-center text-4xl font-bold">Our Partner</h2>
+          <h2 className="mb-4 text-center text-4xl font-bold">{t.schools.partner}</h2>
           <p className="mx-auto mb-12 max-w-2xl text-center text-pretty text-muted-foreground">
-            Collaborating with industry leaders to deliver exceptional educational experiences
+            {t.schools.partnerSubtitle}
           </p>
 
           <div className="mx-auto max-w-5xl">
@@ -323,9 +261,7 @@ const K12SchoolsPage = () => {
                   </div>
                   <h3 className="mb-4 text-3xl font-bold text-slate-900">SchoolNet India</h3>
                   <p className="mb-6 text-pretty text-lg leading-relaxed text-slate-700">
-                    A pioneer in educational technology with over two decades of experience, SchoolNet India empowers
-                    schools with innovative digital learning solutions, comprehensive assessment tools, and data-driven
-                    insights to enhance student outcomes and operational excellence.
+                    {t.schools.schoolNetDescription}
                   </p>
                   <Link
                     href="https://www.schoolnetindia.com"
@@ -333,7 +269,7 @@ const K12SchoolsPage = () => {
                     rel="noopener noreferrer"
                     className="inline-flex w-fit items-center gap-2 rounded-lg bg-orange-600 px-6 py-3 font-semibold text-white transition-all hover:bg-orange-700"
                   >
-                    Visit Partner Website
+                    {t.schools.visitPartnerWebsite}
                     <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
@@ -378,10 +314,10 @@ const K12SchoolsPage = () => {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Transform Education?
+            {t.schools.readyToTransform}
           </h2>
           <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Join leading Canadian institutions already using Axion Excelsior to supercharge learning outcomes and streamline operations.
+            {t.schools.readySubtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -389,7 +325,7 @@ const K12SchoolsPage = () => {
               href="/contact"
               className="bg-white text-purple-600 hover:bg-purple-50 px-10 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              Schedule Demo
+              {t.schools.scheduleDemo}
             </Link>
           </div>
         </div>

@@ -7,6 +7,7 @@ import FlipTeamMemberCard from '@/components/FlipTeamMember';
 import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import StorySection from '@/components/StorySection';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 // Types
 interface CoreValue {
@@ -28,48 +29,32 @@ interface TeamMember {
 
 // Main AboutUs Component
 const AboutUs: React.FC = () => {
+  const { t } = useLanguage();
 
-  const teamMembers: TeamMember[] = [
-    {
-      name: "Tata Rao",
-      role: "Chief Technology Officer",
-      briefDesc: "Tech leader with 13+ years delivering innovative engineering solutions.",
-      detailedDesc: [
-        "Expert in SAP, Microsoft Power Platform, and CAD/CAM technologies.",
-        "Blends hands-on skills with strategic vision to accelerate growth."
-      ],
-      gradient: "from-purple-500 to-violet-500",
-      image: "/aboutus/tatarao copy.jpg"
-    },
-    {
-      name: "Anisha Aggarwal",
-      role: "Marketing & Business Development",
-      briefDesc: "Strategic marketer growing reach through data-driven storytelling.",
-      detailedDesc: [
-        "Industrial Engineer skilled in analytics and market expansion.",
-        "Builds strong client relationships across industries."
-      ],
-      gradient: "from-violet-500 to-purple-500",
-      image: "/aboutus/anisha.png"
-    },
-    {
-      name: "Payal Uniyal",
-      role: "HR Operations & Finance Manager",
-      briefDesc: "Driving sales growth and operational excellence for 20+ years.",
-      detailedDesc: [
-        "Leads expansion, client success, and seamless execution.",
-        "Co-founded AI House Tech Ltd., bringing a global outlook."
-      ],
-      gradient: "from-purple-500 to-indigo-500",
-      image: "/aboutus/payal.jpg"
-    }
-  ];
+  // Merge team data from translations with UI properties
+  const teamMembers: TeamMember[] = t.about.team.map((member, index) => {
+    const gradients = [
+      "from-purple-500 to-violet-500",
+      "from-violet-500 to-purple-500",
+      "from-purple-500 to-indigo-500"
+    ];
+    const images = [
+      "/aboutus/tatarao copy.jpg",
+      "/aboutus/anisha.png",
+      "/aboutus/payal.jpg"
+    ];
+    return {
+      ...member,
+      gradient: gradients[index],
+      image: images[index]
+    };
+  });
 
   const coreValues: CoreValue[] = [
-    { icon: "/aboutus/innovation.png", title: "Innovation", desc: "Always ahead of the curve", color: "purple" },
-    { icon: "/aboutus/integrity.png", title: "Integrity", desc: "Transparency and trust in everything we do", color: "violet" },
-    { icon: "/aboutus/customer.png", title: "Customer First", desc: "Creating value for our users and clients", color: "indigo" },
-    { icon: "/aboutus/excellence.png", title: "Excellence", desc: "Striving for the highest quality in every product", color: "purple" }
+    { icon: "/aboutus/innovation.png", title: t.about.values.innovation.title, desc: t.about.values.innovation.description, color: "purple" },
+    { icon: "/aboutus/integrity.png", title: t.about.values.integrity.title, desc: t.about.values.integrity.description, color: "violet" },
+    { icon: "/aboutus/customer.png", title: t.about.values.customerFirst.title, desc: t.about.values.customerFirst.description, color: "indigo" },
+    { icon: "/aboutus/excellence.png", title: t.about.values.excellence.title, desc: t.about.values.excellence.description, color: "purple" }
   ];
 
   return (
@@ -100,10 +85,10 @@ const AboutUs: React.FC = () => {
         <div className="relative max-w-6xl mx-auto text-center text-white z-10">
           <div className="mb-12">
             <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tight bg-gradient-to-r from-white via-purple-100 to-violet-100 bg-clip-text text-transparent">
-              About Us
+              {t.about.title}
             </h1>
             <p className="text-2xl md:text-3xl max-w-4xl mx-auto leading-relaxed font-light text-purple-100">
-              Empowering the future of education through innovative technology solutions
+              {t.about.subtitle}
             </p>
           </div>
         </div>
@@ -115,20 +100,20 @@ const AboutUs: React.FC = () => {
           <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-12 shadow-2xl border border-purple-100/50">
             <div className="text-center mb-12">
               <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent mb-6">
-                Who We Are
+                {t.about.whoWeAre}
               </h2>
             </div>
             <div className="max-w-4xl mx-auto space-y-8 text-center">
               <p className="text-xl text-gray-700 leading-relaxed">
-                <strong className="text-purple-600">Excelsior Tech Inc</strong> is a young, ambitious EdTech startup with a simple yet powerful mindset of forward-thinking technology, a startup committed to building innovative digital solutions that empower businesses and individuals. Founded with the belief that technology should simplify lives, we are on a mission to bridge the gap between ideas and execution with smart, scalable, and user-friendly products.
+                <strong className="text-purple-600">Excelsior Tech Inc</strong> {t.about.description1}
               </p>
 
               <p className="text-xl text-gray-700 leading-relaxed">
-                Our journey began with a question:
+                {t.about.description2}
               </p>
 
               <p className="text-xl text-gray-700 leading-relaxed font-medium">
-                <strong className="text-violet-600">&quot;What if schools, educators, students, and parents could all work together on one unified platform, with everything they need at their fingertips?&quot;</strong>
+                <strong className="text-violet-600">{t.about.description3}</strong>
               </p>
             </div>
           </div>
@@ -145,8 +130,8 @@ const AboutUs: React.FC = () => {
             <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-violet-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
               <Heart className="w-10 h-10 text-white" />
             </div>
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-700 via-violet-600 to-indigo-600 bg-clip-text text-transparent mb-4">Our Ethics</h2>
-            <p className="text-xl text-purple-700/80">The principles that guide everything we do</p>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-700 via-violet-600 to-indigo-600 bg-clip-text text-transparent mb-4">{t.about.ourEthics}</h2>
+            <p className="text-xl text-purple-700/80">{t.about.ethicsSubtitle}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -184,8 +169,8 @@ const AboutUs: React.FC = () => {
             <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
               <Award className="w-10 h-10 text-white" />
             </div>
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-700 via-violet-600 to-indigo-600 bg-clip-text text-transparent mb-4">Leadership Team</h2>
-            <p className="text-xl text-purple-700/80">The visionaries behind our success</p>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-700 via-violet-600 to-indigo-600 bg-clip-text text-transparent mb-4">{t.about.leadershipTeam}</h2>
+            <p className="text-xl text-purple-700/80">{t.about.leadershipSubtitle}</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">

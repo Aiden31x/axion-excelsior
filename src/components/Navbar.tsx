@@ -2,18 +2,18 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [schoolsDropdown, setSchoolsDropdown] = useState(false);
   const [partnersDropdown, setPartnersDropdown] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState('English');
   const [languageDropdown, setLanguageDropdown] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
-  const handleLanguageChange = (language: string) => {
-    setCurrentLanguage(language);
-    // Add your language switching logic here
-    console.log('Language changed to:', language);
+  const handleLanguageChange = (lang: 'en' | 'fr') => {
+    setLanguage(lang);
+    setLanguageDropdown(false);
   };
 
   return (
@@ -45,17 +45,17 @@ export default function Navbar() {
               <div className="relative">
                 <button
                   onClick={() => setSchoolsDropdown(!schoolsDropdown)}
-                  className="text-gray-700 hover:text-purple-600 px-3 py-2 text-md font-medium flex items-center transition-colors duration-200"
+                  className="text-gray-700 hover:text-purple-600 px-3 py-2 text-md font-medium flex items-center transition-colors duration-200 whitespace-nowrap"
                 >
-                  Schools
+                  {t.nav.schools}
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
                 {schoolsDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-48 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
-                    <Link href="/schools" className="block px-4 py-2 text-md text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
-                      K-12 Schools
+                  <div className="absolute top-full left-0 mt-1 w-56 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
+                    <Link href="/schools" className="block px-4 py-2 text-md text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1 whitespace-nowrap">
+                      {t.nav.k12Schools}
                     </Link>
                   </div>
                 )}
@@ -65,30 +65,30 @@ export default function Navbar() {
               <div className="relative">
                 <button
                   onClick={() => setPartnersDropdown(!partnersDropdown)}
-                  className="text-gray-700 hover:text-purple-600 px-3 py-2 text-md font-medium flex items-center transition-colors duration-200"
+                  className="text-gray-700 hover:text-purple-600 px-3 py-2 text-md font-medium flex items-center transition-colors duration-200 whitespace-nowrap"
                 >
-                  Tailored Extras
+                  {t.nav.tailoredExtras}
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
                 {partnersDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-48 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
-                    <Link href="/trainingacademy" className="block px-4 py-2 text-gray-700 text-md hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
-                      Training Academies
+                  <div className="absolute top-full left-0 mt-1 w-64 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
+                    <Link href="/trainingacademy" className="block px-4 py-2 text-gray-700 text-md hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1 whitespace-nowrap">
+                      {t.nav.trainingAcademies}
                     </Link>
-                    <Link href="/userguide" className="block px-4 py-2 text-gray-700 text-md hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1">
-                      Product Guides
+                    <Link href="/userguide" className="block px-4 py-2 text-gray-700 text-md hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200 rounded-lg mx-2 my-1 whitespace-nowrap">
+                      {t.nav.productGuides}
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link href="/about" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-md font-medium transition-colors duration-200">
-                About Us
+              <Link href="/about" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-md font-medium transition-colors duration-200 whitespace-nowrap">
+                {t.nav.aboutUs}
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-md font-medium transition-colors duration-200">
-                Contact
+              <Link href="/contact" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-md font-medium transition-colors duration-200 whitespace-nowrap">
+                {t.nav.contact}
               </Link>
             </div>
           </div>
@@ -97,16 +97,28 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="/contact"
-              className="bg-gradient-purple-blue hover:opacity-90 text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover-lift shadow-lg"
+              className="bg-gradient-purple-blue hover:opacity-90 text-white px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover-lift shadow-lg whitespace-nowrap"
             >
-              Request Demo
+              {t.nav.requestDemo}
             </Link>
 
             {/* Language Selector */}
             <div className="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-purple-50 transition-colors duration-200">
-              <span className="text-gray-700 text-sm font-medium">English</span>
+              <button
+                onClick={() => handleLanguageChange('en')}
+                className={`text-sm font-medium transition-colors duration-200 ${language === 'en' ? 'text-purple-600' : 'text-gray-700 hover:text-purple-600'
+                  }`}
+              >
+                {t.nav.english}
+              </button>
               <span className="text-gray-400">|</span>
-              <span className="text-gray-700 text-sm font-medium">Français</span>
+              <button
+                onClick={() => handleLanguageChange('fr')}
+                className={`text-sm font-medium transition-colors duration-200 ${language === 'fr' ? 'text-purple-600' : 'text-gray-700 hover:text-purple-600'
+                  }`}
+              >
+                {t.nav.french}
+              </button>
               <Image
                 src="/canada-flag-icon.svg"
                 alt="Canadian Flag"
@@ -131,27 +143,27 @@ export default function Navbar() {
                   <rect x="6" y="0" width="12" height="16" fill="#FFFFFF" />
                   <path d="M12 3L13.5 6H16.5L14.25 7.5L15 10.5L12 8.5L9 10.5L9.75 7.5L7.5 6H10.5L12 3Z" fill="#FF0000" />
                 </svg>
-                {currentLanguage === 'English' ? 'EN' : 'FR'}
+                {language === 'en' ? 'EN' : 'FR'}
               </button>
               {languageDropdown && (
                 <div className="absolute top-full right-0 mt-1 w-28 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-purple-100">
                   <button
-                    onClick={() => handleLanguageChange('English')}
-                    className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${currentLanguage === 'English'
+                    onClick={() => handleLanguageChange('en')}
+                    className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${language === 'en'
                       ? 'bg-purple-50 text-purple-600'
                       : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
                       }`}
                   >
-                    English
+                    {t.nav.english}
                   </button>
                   <button
-                    onClick={() => handleLanguageChange('Français')}
-                    className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${currentLanguage === 'Français'
+                    onClick={() => handleLanguageChange('fr')}
+                    className={`block w-full text-left px-3 py-2 text-sm transition-colors duration-200 rounded-lg mx-1 my-1 ${language === 'fr'
                       ? 'bg-purple-50 text-purple-600'
                       : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
                       }`}
                   >
-                    Français
+                    {t.nav.french}
                   </button>
                 </div>
               )}
@@ -174,13 +186,13 @@ export default function Navbar() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md border-t border-purple-100">
             <Link href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors duration-200">
-              About Us
+              {t.nav.aboutUs}
             </Link>
             <Link href="/contact" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600 transition-colors duration-200">
-              Contact
+              {t.nav.contact}
             </Link>
             <Link href="/contact" className="block px-3 py-2 text-base font-medium bg-gradient-purple-blue text-white rounded-xl mx-3 mt-2 text-center hover-lift shadow-lg">
-              Request Demo
+              {t.nav.requestDemo}
             </Link>
           </div>
         </div>

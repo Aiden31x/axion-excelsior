@@ -1,0 +1,202 @@
+{
+    "nav": {
+        "schools": "Écoles",
+        "k12Schools": "Écoles K-12",
+        "tailoredExtras": "Extras Sur Mesure",
+        "trainingAcademies": "Académies de Formation",
+        "productGuides": "Guides de Produits",
+        "aboutUs": "À Propos",
+        "contact": "Contact",
+        "requestDemo": "Demander une Démo",
+        "english": "English",
+        "french": "Français"
+    },
+    "hero": {
+        "title": {
+            "part1": "Faire progresser les capacités avec",
+            "innovation": "l'innovation",
+            "part2": "conçue pour",
+            "future": "l'avenir"
+        },
+        "subtitle": "Conçu pour le potentiel de demain.",
+        "explorePrograms": "Explorer les Programmes",
+        "bookDemo": "Réserver une Démo"
+    },
+    "customerSegments": {
+        "title": "Qui Nous Servons",
+        "subtitle": "Transformez les talents à grande échelle avec un LMS immersif conçu pour accélérer l'apprentissage de bout en bout.",
+        "schools": {
+            "title": "Écoles K–12",
+            "description": "Systèmes de gestion de l'apprentissage complets conçus pour les normes du programme canadien avec support bilingue et conformité provinciale.",
+            "features": [
+                "Centre d'Information du Campus",
+                "Gestion Intelligente des Formulaires",
+                "Solutions Éducatives Sur Mesure",
+                "Bien-être et Réussite des Étudiants",
+                "Excellence Inégalée en Évaluation",
+                "Solutions de Support Pilotées par IA",
+                "Stratégies d'Engagement Interactives"
+            ]
+        },
+        "training": {
+            "title": "Académies de Formation",
+            "description": "Académies de formation de pointe conçues pour offrir un développement de compétences réelles grâce à des simulateurs avancés et des systèmes d'apprentissage intelligents. Des écoles de conduite aux programmes de pilotage, nos solutions préparent les apprenants à la sécurité, l'efficacité et la confiance dans n'importe quel environnement.",
+            "features": [
+                "Excellence en Conduite",
+                "Programmes de Formation de Pilotes",
+                "Cadres d'Apprentissage Adaptatifs",
+                "Méthodologie Axée sur la Sécurité",
+                "Évolutivité Rentable",
+                "Compétences Prêtes pour l'Avenir"
+            ]
+        },
+        "userGuides": {
+            "title": "Guides d'Utilisation",
+            "description": "Solutions de formation numériques pour les secteurs manufacturiers, incluant des manuels interactifs et des programmes de certification de sécurité.",
+            "features": [
+                "Manuels de Maintenance d'Aéronefs (AMM)",
+                "Catalogues de Pièces Illustrés (IPC)",
+                "Manuels de Maintenance de Composants (CMM)",
+                "Manuels de Dépannage (TSM) / Isolation de Pannes d'Aéronefs (AFI)",
+                "Manuels de Schémas de Câblage (WDM)",
+                "Bulletins de Service (SB)",
+                "Manuels de Maintenance de Moteurs (EMM)",
+                "Catalogues Électroniques",
+                "Manuels d'Utilisation",
+                "Instructions de Sécurité"
+            ]
+        }
+    },
+    "footer": {
+        "description": "Transformer la formation grâce à des solutions numériques dans les écoles, l'aviation, la conduite et la fabrication avec des plateformes bilingues et conformes conçues pour le Canada.",
+        "quickLinks": "Liens Rapides",
+        "contactInfo": "Informations de Contact",
+        "madeInCanada": "Fabriqué au Canada",
+        "forCanadianInstitutions": "pour les institutions canadiennes",
+        "allRightsReserved": "Tous droits réservés."
+    },
+    "about": {
+        "title": "À Propos de Nous",
+        "subtitle": "Donner du pouvoir à l'avenir de l'éducation grâce à des solutions technologiques innovantes",
+        "whoWeAre": "Qui Nous Sommes",
+        "description1": "est une jeune startup EdTech ambitieuse avec un état d'esprit simple mais puissant de technologie avant-gardiste, une startup engagée à créer des solutions numériques innovantes qui responsabilisent les entreprises et les individus. Fondée avec la conviction que la technologie devrait simplifier la vie, nous sommes en mission pour combler le fossé entre les idées et l'exécution avec des produits intelligents, évolutifs et conviviaux.",
+        "description2": "Notre parcours a commencé avec une question :",
+        "description3": "\"Et si les écoles, les éducateurs, les étudiants et les parents pouvaient tous travailler ensemble sur une plateforme unifiée, avec tout ce dont ils ont besoin à portée de main ?\"",
+        "ourEthics": "Notre Éthique",
+        "ethicsSubtitle": "Les principes qui guident tout ce que nous faisons",
+        "values": {
+            "innovation": {
+                "title": "Innovation",
+                "description": "Toujours en avance sur la courbe"
+            },
+            "integrity": {
+                "title": "Intégrité",
+                "description": "Transparence et confiance dans tout ce que nous faisons"
+            },
+            "customerFirst": {
+                "title": "Client d'Abord",
+                "description": "Créer de la valeur pour nos utilisateurs et clients"
+            },
+            "excellence": {
+                "title": "Excellence",
+                "description": "Viser la plus haute qualité dans chaque produit"
+            }
+        },
+        "leadershipTeam": "Équipe de Direction",
+        "leadershipSubtitle": "Les visionnaires derrière notre succès"
+    },
+    "story": {
+        "title": "Notre Histoire",
+        "history": {
+            "title": "Histoire de l'Entreprise",
+            "content": "Excelsior Tech Inc est une jeune startup EdTech ambitieuse avec un état d'esprit technologique avant-gardiste. Fondée avec la conviction que la technologie devrait simplifier la vie, nous comblons le fossé entre les idées et l'exécution avec des produits intelligents, évolutifs et conviviaux."
+        },
+        "mission": {
+            "title": "Mission",
+            "content": "Redéfinir la façon dont l'éducation est dispensée, gérée et vécue dans le monde moderne. Nous catalysons l'excellence institutionnelle grâce à des solutions d'apprentissage de pointe et des services sur mesure, permettant aux organisations de prospérer dans un paysage en évolution rapide."
+        },
+        "values": {
+            "title": "Valeurs de l'Entreprise",
+            "content": "Devenir un leader mondial dans la fourniture de solutions technologiques qui redéfinissent l'efficacité, l'innovation et la croissance. Nous avons construit une plateforme de gestion de l'apprentissage tout-en-un basée sur le cloud qui allie excellence académique et efficacité opérationnelle, s'étendant au-delà des écoles à toutes les industries."
+        }
+    },
+    "contact": {
+        "title": "Contactez",
+        "us": "Nous",
+        "subtitle": "Prêt à transformer votre formation grâce à des solutions numériques ? Discutons de la façon dont nous pouvons aider votre institution canadienne avec des plateformes bilingues et conformes.",
+        "requestDemo": "Demander une",
+        "demo": "Démo",
+        "formSubtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures pour discuter de vos besoins en formation",
+        "getInTouch": "Entrer en",
+        "touch": "Contact",
+        "getInTouchSubtitle": "Plusieurs façons de joindre notre équipe d'experts en formation numérique",
+        "emailUs": "Envoyez-nous un Email",
+        "callUs": "Appelez-nous",
+        "visitUs": "Visitez-nous",
+        "madeInCanada": "Fabriqué au Canada 🇨🇦",
+        "forCanadianInstitutions": "pour les institutions canadiennes"
+    },
+    "schools": {
+        "title": "Solutions Éducatives",
+        "solutions": "Révolutionnaires",
+        "subtitle": "Découvrez l'avenir de l'éducation avec notre suite complète d'outils intelligents conçus pour transformer les résultats d'apprentissage",
+        "completeEcosystem": "Écosystème Éducatif Complet",
+        "ecosystemSubtitle": "Découvrez tous les outils et fonctionnalités qui rendent l'apprentissage fluide et efficace",
+        "partner": "Notre Partenaire",
+        "partnerSubtitle": "Collaborer avec les leaders de l'industrie pour offrir des expériences éducatives exceptionnelles",
+        "trustedPartnership": "Partenariat de Confiance",
+        "visitPartnerWebsite": "Visiter le Site du Partenaire",
+        "schoolNetDescription": "Un pionnier de la technologie éducative avec plus de deux décennies d'expérience, SchoolNet India donne aux écoles les moyens d'utiliser des solutions d'apprentissage numérique innovantes, des outils d'évaluation complets et des informations basées sur les données pour améliorer les résultats des élèves et l'excellence opérationnelle.",
+        "readyToTransform": "Prêt à Transformer l'Éducation ?",
+        "readySubtitle": "Rejoignez les principales institutions canadiennes qui utilisent déjà Axion Excelsior pour améliorer les résultats d'apprentissage et rationaliser les opérations.",
+        "scheduleDemo": "Planifier une Démo"
+    },
+    "driving": {
+        "title": "Simulateur de Conduite",
+        "simulator": "Excelsior",
+        "subtitle": "Révolutionner la formation des conducteurs avec notre simulateur de conduite intérieur polyvalent conçu pour une formation complète des conducteurs de véhicules légers, moyens et lourds",
+        "description": "Notre simulateur de conduite intérieur polyvalent offre une formation complète pour les conducteurs aspirants de véhicules légers, moyens et lourds. Avec des options pour la conduite à gauche ou à droite, notre simulateur est idéal pour les écoles de conduite et les instituts.",
+        "completeTraining": "Suite Complète de Fonctionnalités de Formation",
+        "trainingSubtitle": "Fonctionnalités avancées conçues pour offrir l'expérience de formation de conducteur la plus réaliste et efficace",
+        "lightVehicles": "Véhicules Légers",
+        "mediumVehicles": "Véhicules Moyens",
+        "heavyVehicles": "Véhicules Lourds",
+        "simulationTechnology": "Technologie de Simulation",
+        "benefits": "Avantages",
+        "benefitsSubtitle": "Découvrez les avantages de la technologie de simulation moderne dans la formation des conducteurs",
+        "idealFor": "Idéal Pour",
+        "idealForSubtitle": "Solution parfaite pour diverses institutions éducatives et de formation",
+        "readyToTransform": "Prêt à Transformer Votre Formation de Conducteur ?",
+        "readySubtitle": "Découvrez l'avenir de l'éducation des conducteurs avec notre technologie de simulateur avancée. Contactez-nous pour en savoir plus sur la façon dont nous pouvons améliorer vos programmes de formation."
+    },
+    "userGuide": {
+        "title": "Documentation Technique",
+        "documentation": "de Précision",
+        "subtitle": "Élevez vos opérations aéronautiques et automobiles avec des publications techniques de pointe qui garantissent la sécurité, la conformité et l'efficacité",
+        "description": "Chez Excelsior Technical Publications, notre équipe d'experts chevronnés possède une vaste expérience dans la création et la révision de documentation technique de haute qualité pour diverses industries, y compris les secteurs majeurs de l'automobile, de l'aérospatiale, du médical et d'autres secteurs des publications techniques.",
+        "completeSuite": "Suite Complète de Documentation Technique",
+        "suiteSubtitle": "Solutions complètes pour les publications techniques aéronautiques, automobiles, médicales et industrielles",
+        "automobile": "Automobile",
+        "aerospace": "Aérospatiale",
+        "medical": "Médical",
+        "industrial": "Industriel",
+        "readyToElevate": "Prêt à Élever Vos Normes de Documentation ?",
+        "readySubtitle": "Associez-vous à Excelsior Technical Publications et donnez à vos équipes les moyens d'utiliser des manuels techniques précis, conformes et prêts pour l'avenir."
+    },
+    "alternating": {
+        "title": "Pourquoi Nous Choisir",
+        "subtitle": "Élevez les performances avec un LMS prêt pour l'avenir alimenté par une excellence d'évaluation inégalée.",
+        "trustedExpertise": {
+            "title": "Expertise de Confiance",
+            "description": "Fournir des solutions de haute qualité soutenues par une expérience éprouvée, un support solide et une approche centrée sur le client—vous aidant à réussir en toute confiance."
+        },
+        "customTailored": {
+            "title": "Solutions de Gestion de l'Apprentissage Sur Mesure",
+            "description": "Des écoles à l'aviation et à la fabrication, nos solutions s'adaptent aux besoins uniques de votre industrie avec précision et flexibilité."
+        },
+        "regulatoryCompliance": {
+            "title": "Conformité Réglementaire",
+            "description": "Nous veillons à ce que toutes nos solutions de formation numériques respectent les réglementations provinciales en matière d'éducation et d'industrie à travers le Canada. Des normes bilingues aux exigences de conformité spécifiques au secteur, nos plateformes sont conçues pour maintenir votre institution alignée sur les dernières directives."
+        }
+    }
+}

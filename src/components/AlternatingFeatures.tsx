@@ -1,38 +1,40 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-
-const features = [
-    {
-        id: 'trust',
-        title: 'Trusted Expertise',
-        description: 'Delivering high-quality solutions backed by proven experience, strong support, and a client-focused approach—helping you succeed with confidence.',
-        image: '/whychooseus.png',
-        imagePosition: 'left',
-        accentColor: 'purple'
-    },
-    {
-        id: 'custom-training',
-        title: 'Custom-Tailored Learning Management Solutions',
-        description: 'From schools to aviation and manufacturing, our solutions adapt to your industry\'s unique needs with precision and flexibility.',
-        image: '/training1.png',
-        imagePosition: 'right',
-        accentColor: 'pink'
-    },
-    {
-        id: 'regulatory-compliance',
-        title: 'Regulatory Compliance',
-        description: 'We ensure all our digital training solutions meet provincial education and industry regulations across Canada. From bilingual standards to sector-specific compliance requirements, our platforms are designed to keep your institution aligned with the latest guidelines.',
-        image: '/compliancefinal.png',
-        imagePosition: 'left',
-        accentColor: 'blue'
-    }
-] as const;
+import { useLanguage } from '@/contexts/LanguageContext';
 
 type FeatureImagePosition = 'left' | 'right';
 type AccentColor = 'green' | 'blue' | 'purple' | 'pink' | 'orange';
 
 export default function AlternatingFeatures() {
+    const { t } = useLanguage();
+
+    const features = [
+        {
+            id: 'trust',
+            title: t.alternating.trustedExpertise.title,
+            description: t.alternating.trustedExpertise.description,
+            image: '/whychooseus.png',
+            imagePosition: 'left' as FeatureImagePosition,
+            accentColor: 'purple' as AccentColor
+        },
+        {
+            id: 'custom-training',
+            title: t.alternating.customTailored.title,
+            description: t.alternating.customTailored.description,
+            image: '/training1.png',
+            imagePosition: 'right' as FeatureImagePosition,
+            accentColor: 'pink' as AccentColor
+        },
+        {
+            id: 'regulatory-compliance',
+            title: t.alternating.regulatoryCompliance.title,
+            description: t.alternating.regulatoryCompliance.description,
+            image: '/compliancefinal.png',
+            imagePosition: 'left' as FeatureImagePosition,
+            accentColor: 'blue' as AccentColor
+        }
+    ];
     const [visibleFeatures, setVisibleFeatures] = useState<Set<string>>(new Set());
     const featureRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
@@ -82,11 +84,11 @@ export default function AlternatingFeatures() {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                         <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                            Why Choose Us
+                            {t.alternating.title}
                         </span>
                     </h2>
                     <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                        Elevate performance with a future‑ready LMS powered by unmatched assessment excellence.
+                        {t.alternating.subtitle}
                     </p>
                 </div>
 
