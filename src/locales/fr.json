@@ -103,8 +103,8 @@
             }
         },
         "leadershipTeam": "Équipe de Direction",
-        "leadershipSubtitle": "Les visionnaires derrière notre succès"
-        ,"team": [
+        "leadershipSubtitle": "Les visionnaires derrière notre succès",
+        "team": [
             {
                 "name": "Tata Rao",
                 "role": "Directeur de la Technologie",
@@ -356,20 +356,6 @@
                 }
             },
             {
-                "title": "Conditions Météorologiques",
-                "subtitle": "Formation Tous Temps",
-                "description": "Entraînez-vous dans diverses conditions météorologiques incluant la pluie, le brouillard, la neige et différentes intensités lumineuses.",
-                "details": [
-                    "Simulation de Pluie",
-                    "Conditions de Brouillard",
-                    "Éclairage Variable"
-                ],
-                "stats": {
-                    "number": "12+",
-                    "label": "Scénarios Météo"
-                }
-            },
-            {
                 "title": "Suivi de la Progression",
                 "subtitle": "Apprentissage Basé sur les Données",
                 "description": "Rapports de progression complets et fonction d'enregistrement/lecture pour suivre l'amélioration et détecter les erreurs.",
@@ -428,17 +414,17 @@
                 }
             },
             {
-                "title": "Variété de Terrains et Conditions",
-                "subtitle": "Formation Tous Temps",
-                "description": "Simulation complète de météo et terrain incluant la pluie, le brouillard, la neige et diverses conditions d'éclairage pour une formation complète.",
+                "title": "Plans de Leçons Prêts pour l'Avenir",
+                "subtitle": "Pédagogie Moderne",
+                "description": "Un programme complet conçu pour préparer les étudiants aux défis futurs avec des leçons interactives, des exercices de pensée critique et des applications concrètes.",
                 "details": [
-                    "Conditions météorologiques multiples",
-                    "Types de terrain variés",
-                    "Systèmes d'éclairage dynamiques"
+                    "Modules de leçons interactifs",
+                    "Focus sur la pensée critique",
+                    "Applications réelles"
                 ],
                 "stats": {
-                    "number": "15+",
-                    "label": "Scénarios Météo"
+                    "number": "100%",
+                    "label": "Prêt pour l'Avenir"
                 }
             },
             {

@@ -25,7 +25,6 @@ const DrivingSimulatorPage = () => {
   // UI properties for spotlight features
   const spotlightUIProps = [
     { icon: "/driving/simulation.png", gradient: "from-blue-500 to-cyan-400", color: "blue" },
-    { icon: "/driving/weather.png", gradient: "from-green-500 to-emerald-400", color: "green" },
     { icon: "/driving/evaluation.png", gradient: "from-purple-500 to-pink-400", color: "purple" },
     { icon: "/driving/modular.png", gradient: "from-orange-500 to-red-400", color: "orange" }
   ];
@@ -39,7 +38,7 @@ const DrivingSimulatorPage = () => {
   const featureUIProps = [
     { icon: "/driving/simulation.png", color: "blue" },
     { icon: "/driving/intelligent.png", color: "indigo" },
-    { icon: "/driving/weather.png", color: "green" },
+    { icon: "/driving/training (1).png", color: "green" },
     { icon: "/driving/modular.png", color: "purple" },
     { icon: "/driving/hand.png", color: "yellow" },
     { icon: "/driving/playback.png", color: "red" },

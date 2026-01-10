@@ -103,8 +103,8 @@
             }
         },
         "leadershipTeam": "Leadership Team",
-        "leadershipSubtitle": "The visionaries behind our success"
-        ,"team": [
+        "leadershipSubtitle": "The visionaries behind our success",
+        "team": [
             {
                 "name": "Tata Rao",
                 "role": "Chief Technology Officer",
@@ -356,20 +356,6 @@
                 }
             },
             {
-                "title": "Weather Conditions",
-                "subtitle": "All-Weather Training",
-                "description": "Train in various weather conditions including rain, fog, snowfall, and different light intensities.",
-                "details": [
-                    "Rain Simulation",
-                    "Fog Conditions",
-                    "Variable Lighting"
-                ],
-                "stats": {
-                    "number": "12+",
-                    "label": "Weather Scenarios"
-                }
-            },
-            {
                 "title": "Progress Tracking",
                 "subtitle": "Data-Driven Learning",
                 "description": "Comprehensive progress reports and record/playback facility to track improvement and detect errors.",
@@ -428,17 +414,17 @@
                 }
             },
             {
-                "title": "Variety of Terrains and Conditions",
-                "subtitle": "All-Weather Training",
-                "description": "Comprehensive weather and terrain simulation including rain, fog, snow, and various lighting conditions for complete training.",
+                "title": "Future Ready Lesson Plans",
+                "subtitle": "Modern Pedagogy",
+                "description": "Comprehensive curriculum designed to prepare students for future challenges with interactive lessons, critical thinking exercises, and real-world applications.",
                 "details": [
-                    "Multiple weather conditions",
-                    "Various terrain types",
-                    "Dynamic lighting systems"
+                    "Interactive Lesson Modules",
+                    "Critical Thinking Focus",
+                    "Real-World Applications"
                 ],
                 "stats": {
-                    "number": "15+",
-                    "label": "Weather Scenarios"
+                    "number": "100%",
+                    "label": "Future Ready"
                 }
             },
             {
