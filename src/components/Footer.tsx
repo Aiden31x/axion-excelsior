@@ -18,12 +18,12 @@ export default function Footer() {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="relative flex items-center justify-center h-16 w-28 overflow-hidden">
+              <div className="relative flex items-center justify-center h-32 w-56 overflow-hidden">
                 <Image
                   src="/excelsior-logo.png"
                   alt="ExcelsiorTech Logo"
-                  width={120}
-                  height={120}
+                  width={250}
+                  height={250}
                   className="object-contain scale-[1.5]"
                 />
               </div>
