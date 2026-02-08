@@ -19,22 +19,20 @@ export default function Navbar() {
   return (
     <nav className="bg-white/95 backdrop-blur-md shadow-lg border-b border-purple-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-28">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center hover-lift">
-              <div className="relative flex items-center justify-center h-14 w-14">
+              <div className="relative flex items-center justify-center h-24 w-40 overflow-hidden">
                 <Image
-                  src="/logofinal_1.jpeg"
+                  src="/excelsior-logo.png"
                   alt="ExcelsiorTech Logo"
-                  fill
-                  className="object-contain rounded-md"
+                  width={200}
+                  height={200}
+                  className="object-contain scale-[1.5]"
                   priority
                 />
               </div>
-              <span className="ml-3 text-xl font-semibold text-gray-700">
-                ExcelsiorTech Inc.
-              </span>
             </Link>
           </div>
 
