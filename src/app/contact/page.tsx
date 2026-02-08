@@ -22,16 +22,15 @@ export default function Contact() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex items-center justify-center mb-6">
-            <div className="w-16 h-16 rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
+            <div className="relative flex items-center justify-center h-20 w-32 overflow-hidden">
               <Image
-                src="/logofinal_1.jpeg"
+                src="/excelsior-logo.png"
                 alt="ExcelsiorTech Logo"
-                width={64}
-                height={64}
-                className="object-contain"
+                width={150}
+                height={150}
+                className="object-contain scale-[1.5]"
               />
             </div>
-            <span className="ml-4 text-3xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">ExcelsiorTech</span>
           </div>
 
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -94,7 +93,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2 relative z-10">{t.contact.emailUs}</h4>
-              <p className="text-gray-700 relative z-10">info@axionexcelsior.ca</p>
+              <p className="text-gray-700 relative z-10">info@excelsiortech.ca</p>
             </div>
 
             {/* Phone */}

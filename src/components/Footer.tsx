@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Footer() {
@@ -17,10 +18,15 @@ export default function Footer() {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center shadow-lg">
-                <img src="logofinal_1.jpeg" alt="ExcelsiorTech Logo" />
+              <div className="relative flex items-center justify-center h-16 w-28 overflow-hidden">
+                <Image
+                  src="/excelsior-logo.png"
+                  alt="ExcelsiorTech Logo"
+                  width={120}
+                  height={120}
+                  className="object-contain scale-[1.5]"
+                />
               </div>
-              <span className="ml-3 text-xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"> ExcelsiorTech</span>
             </div>
             <p className="text-gray-700 mb-6 leading-relaxed">
               {t.footer.description}
@@ -90,7 +96,7 @@ export default function Footer() {
                 <svg className="w-5 h-5 text-purple-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-gray-700">info@axionexcelsior.ca</span>
+                <span className="text-gray-700">info@excelsiortech.ca</span>
               </div>
             </div>
           </div>

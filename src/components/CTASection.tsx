@@ -17,7 +17,7 @@ export default function CTASection() {
           {t.hero.title.part1} {t.hero.title.innovation} {t.hero.title.part2} {t.hero.title.future}
         </h2>
         <p className="text-xl text-purple-100 mb-8 leading-relaxed">
-          Designed for tomorrow’s potential.
+          {t.hero.subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact" className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift">
