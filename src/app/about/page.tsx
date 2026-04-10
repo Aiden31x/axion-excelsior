@@ -34,12 +34,10 @@ const AboutUs: React.FC = () => {
   // Merge team data from translations with UI properties
   const teamMembers: TeamMember[] = t.about.team.map((member, index) => {
     const gradients = [
-      "from-purple-500 to-violet-500",
       "from-violet-500 to-purple-500",
       "from-purple-500 to-indigo-500"
     ];
     const images = [
-      "/aboutus/tatarao copy.jpg",
       "/aboutus/anisha.png",
       "/aboutus/payal.jpg"
     ];
@@ -173,7 +171,7 @@ const AboutUs: React.FC = () => {
             <p className="text-xl text-purple-700/80">{t.about.leadershipSubtitle}</p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member: TeamMember, index: number) => (
               <FlipTeamMemberCard key={index} member={member} />
             ))}

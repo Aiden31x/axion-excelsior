@@ -106,15 +106,6 @@
         "leadershipSubtitle": "Les visionnaires derrière notre succès",
         "team": [
             {
-                "name": "Tata Rao",
-                "role": "Directeur de la Technologie",
-                "briefDesc": "Leader technologique avec 13+ ans d'expérience dans la fourniture de solutions d'ingénierie innovantes.",
-                "detailedDesc": [
-                    "Expert en SAP, Microsoft Power Platform et technologies CAO/FAO.",
-                    "Combine compétences pratiques et vision stratégique pour accélérer la croissance."
-                ]
-            },
-            {
                 "name": "Anisha Aggarwal",
                 "role": "Marketing et Développement Commercial",
                 "briefDesc": "Marketer stratégique élargissant la portée grâce à la narration basée sur les données.",

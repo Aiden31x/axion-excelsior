@@ -106,15 +106,6 @@
         "leadershipSubtitle": "The visionaries behind our success",
         "team": [
             {
-                "name": "Tata Rao",
-                "role": "Chief Technology Officer",
-                "briefDesc": "Tech leader with 13+ years delivering innovative engineering solutions.",
-                "detailedDesc": [
-                    "Expert in SAP, Microsoft Power Platform, and CAD/CAM technologies.",
-                    "Blends hands-on skills with strategic vision to accelerate growth."
-                ]
-            },
-            {
                 "name": "Anisha Aggarwal",
                 "role": "Marketing & Business Development",
                 "briefDesc": "Strategic marketer growing reach through data-driven storytelling.",
