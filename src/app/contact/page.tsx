@@ -93,7 +93,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2 relative z-10">{t.contact.emailUs}</h4>
-              <p className="text-gray-700 relative z-10">info@excelsiortech.ca</p>
+              <p className="text-gray-700 relative z-10">{process.env.NEXT_PUBLIC_COMPANY_EMAIL}</p>
             </div>
 
             {/* Phone */}
@@ -106,7 +106,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2 relative z-10">{t.contact.callUs}</h4>
-              <p className="text-gray-700 relative z-10">+1 236-978-5255</p>
+              <p className="text-gray-700 relative z-10">{process.env.NEXT_PUBLIC_COMPANY_PHONE}</p>
             </div>
 
             {/* Office */}

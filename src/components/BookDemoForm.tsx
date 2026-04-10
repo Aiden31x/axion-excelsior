@@ -4,11 +4,10 @@ import emailjs from '@emailjs/browser';
 import { Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-// EmailJS configuration - Replace these with your actual values from EmailJS dashboard
 const EMAILJS_CONFIG = {
-  serviceId: 'service_n058jsv',     // e.g., 'service_abc123'
-  templateId: 'template_f6mvkpa',   // e.g., 'template_xyz789'
-  publicKey: 'PUoe2EQuAEuKYqytP'    // e.g., 'abcdefghijklmnop'
+  serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+  templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+  publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
 };
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -57,7 +56,7 @@ export default function BookDemoForm() {
       return;
     }
 
-    const phoneNumber = '12369785255'; // Replace with your WhatsApp number in international format
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER!;
     const text = `Hello, I would like to book a demo.
 Name: ${formData.name}
 Organization: ${formData.organization}
@@ -93,7 +92,7 @@ Message: ${formData.message}`;
         phone: formData.phone,
         service: formData.service,
         message: formData.message,
-        to_email: 'aryandadwal2004@gmail.com' // Replace with your email
+        to_email: process.env.NEXT_PUBLIC_CONTACT_EMAIL!
       };
 
       const response = await emailjs.send(
