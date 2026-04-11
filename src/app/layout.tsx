@@ -8,6 +8,10 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'ExcelsiorTech',
   description: 'Transforming training through digital solutions across schools, aviation, driving & manufacturing',
+  icons: {
+    icon: '/excelsior-logo-new.jpg',
+    apple: '/excelsior-logo-new.jpg',
+  },
 };
 
 export default function RootLayout({
